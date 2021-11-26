@@ -1,4 +1,4 @@
-package carFactory;
+package carFactory;s
 
 public class Capacity {
 	private int storageCapacity;

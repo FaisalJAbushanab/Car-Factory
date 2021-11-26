@@ -1,4 +1,4 @@
-package carFactory;
+package carFactory;s
 
 public class Vehicle {
     public String[] info;
