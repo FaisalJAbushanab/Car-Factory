@@ -1,4 +1,4 @@
-package carFactory;s
+package carFactory;
 
 public class Engineer implements Employee {
 

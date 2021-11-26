@@ -1,7 +1,7 @@
 package carFactory;
 
 import java.util.ArrayList;
-s
+
 public class Factory extends Building {
 
     private ArrayList<Warehouse> warehouseAccess;
