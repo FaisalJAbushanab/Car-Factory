@@ -1,4 +1,4 @@
-package carFactory;d
+package carFactory;
 
 public class Building {
 	private Capacity buildingCapacity;

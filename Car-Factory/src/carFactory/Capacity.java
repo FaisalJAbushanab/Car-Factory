@@ -1,4 +1,4 @@
-package carFactory;ds
+package carFactory;
 
 public class Capacity {
 	private int storageCapacity;

@@ -1,5 +1,5 @@
 package carFactory;
-s
+
 public class Worker implements Employee {
 
     private final int SALARY = 5;

@@ -1,5 +1,5 @@
 package carFactory;
-s
+
 public class Warehouse extends Building{
 
     private int[] materialQuantity;
