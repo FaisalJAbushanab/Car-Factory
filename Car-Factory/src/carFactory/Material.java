@@ -103,7 +103,7 @@ public class Material {
            {
                //Generate random materialQuantity value for [ silver]
                   int min = 200000;
-                  int max = 600000;
+                  int max =700000;
                     
                   materialQuantity[8] = (int)Math.floor(Math.random()*(max-min+1)+min);
        	       }
