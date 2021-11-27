@@ -4,7 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
     	System.out.println("Hello World!");
-    	System.out.println("Hello World2dd");
-    	System.out.println("Helook");
+    	System.out.println("Team 4");
     }
 }
