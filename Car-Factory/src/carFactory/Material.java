@@ -123,7 +123,7 @@ public class Material {
          
 	     {
 		//Generate random materialPrice value for [ plastic]
-           int min =100;
+           int min = 100;
            int max = 150;
              
            materialPrice[1] = (int)Math.floor(Math.random()*(max-min+1)+min);

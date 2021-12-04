@@ -1,7 +1,5 @@
 package carFactory;
 
-
-
 	// import the ArrayList class
 	import java.util.ArrayList;
 
@@ -31,9 +29,7 @@ package carFactory;
 
 
 
-
 	     //1A- generate fixed number of warehouses
-
 		   ArrayList<Warehouse> wareHouses =  new ArrayList<>();
 
 		   for (int i = 0; i<1000; i++)
@@ -53,7 +49,7 @@ package carFactory;
 
 		   	//1B- generate fixed number of factories
 
-		   ArrayList<Factory> factories=  new ArrayList<String>();
+		   ArrayList<Factory> factories =  new ArrayList<>();
 
 		   for (int i = 0; i<100; i++)
 
@@ -65,7 +61,7 @@ package carFactory;
 
 
 
-			  �factories.add(i, new factories( location[Location] , workingHours[WorkingHours] , wareHouses , workersCapacity=workers_Capacity  ));
+			  �factories.add(i, new Factory( location[Location] , workingHours[WorkingHours] , wareHouses , workersCapacity=workers_Capacity  ));
 
 	 	 }
 
@@ -74,13 +70,13 @@ package carFactory;
 
 	  	/*------Loop-------*/
 
-			public ArrayList<Request> requests = new ArrayList<> ;
+		   ArrayList<Request> requests = new ArrayList<>;
 
 		   while (true)
 		   {
 			   //3- generate requests
 
-			   ����requests.add(i, new requests(selectedComputers,selectedCost,selectedTime);
+			   requests.add(i, new requests(selectedComputers,selectedCost,selectedTime);
 
 
 			   //4- fulfill requests
