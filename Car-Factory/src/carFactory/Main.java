@@ -36,8 +36,22 @@ class Main {
 			 int Location = random.nextInt(location.length);
 			 int WorkingHours = random.nextInt(workingHours.length);
 //			 int[] storage_Capacity = (int[]) Math.floor(Math.random() * (100000 - 10000 + 1) + 10000);
+			 
 			 int[] storage_Capacity = new int[9];
-			 storage_Capacity = fullUpSto();
+			 
+		     //[alamnuim, plastic, glass, silicon, gold, copper, iron, chrome, silver]
+
+			 storage_Capacity[0] = fullUpSto(5000,10000);
+			 storage_Capacity[1] = fullUpSto(5000,10000);
+			 storage_Capacity[2] = fullUpSto(5000,10000);
+			 storage_Capacity[3] = fullUpSto(5000,10000);
+			 storage_Capacity[4] = fullUpSto(500,1000);
+			 storage_Capacity[5] = fullUpSto(500,3000);
+			 storage_Capacity[6] = fullUpSto(5000,10000);
+			 storage_Capacity[7] = fullUpSto(500,4000);
+			 storage_Capacity[8] = fullUpSto(500,1000);
+			
+
 
 			 Material M1 = new Material();
 
@@ -48,15 +62,20 @@ class Main {
 			 int Location = random.nextInt(location.length);
 			 int WorkingHours = random.nextInt(workingHours.length);
 //			 int[] workers_Capacity = (int) Math.floor(Math.random() * (2000 - 500 + 1) + 500);
+			 
 			 int[] workers_Capacity = new int[3];
-			 workers_Capacity = fullUpWork();
+			 
+			 workers_Capacity[0] = fullUpWork(10,20);
+			 workers_Capacity[1] = fullUpWork(50,70);        
+			 workers_Capacity[2] = fullUpWork(90,110);
+
 
 			 Factory factory = new Factory(workers_Capacity, location[Location], workingHours[WorkingHours]);
 			 factory.setWarehouseAccess(wareHouses);
 			 factories.add(factory);
 		 }
 
-		 /*------Loop-------*/
+		 /------Loop-------/
 
 //		 while (true) {
 //			 //3- generate requests
@@ -98,11 +117,16 @@ class Main {
 			 numOfRequests = 0;
 		 }
 	 }
-	private static int[] fullUpWork() {
-	 	return null;
+	private static int fullUpWork(int min ,int max) {
+    int Worker_Capacity = (int) Math.floor(Math.random() * (max - min + 1) + min);
+
+	 	return Worker_Capacity;
 	}
 
-	private static int[] fullUpSto() {
-	 	return null;
+	private static int fullUpSto(int min ,int max) {
+		int storage_Capacity = (int) Math.floor(Math.random() * (max - min + 1) + min);
+
+	 	return storage_Capacity;
+	 	
 	}
 }
