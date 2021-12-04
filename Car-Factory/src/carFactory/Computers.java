@@ -46,19 +46,21 @@ public enum Computers {
 	private final int mass8;
 	private final int mass9;
 	
-	Computers(String company, String type, String quality, int mass1, int mass2, int mass3, int mass4, int mass5, int mass6, int mass7, int mass8, int mass9){
-		this.company=company;
-		this.type=type;
-		this.quality=quality;
-		this.mass1=mass1;
-		this.mass2=mass2;
-		this.mass3=mass3;
-		this.mass4=mass4;
-		this.mass5=mass5;
-		this.mass6=mass6;
-		this.mass7=mass7;
-		this.mass8=mass8;
-		this.mass9=mass9;
+	Computers(String company, String type, String quality,
+			  int mass1, int mass2, int mass3, int mass4,
+			  int mass5, int mass6, int mass7, int mass8, int mass9){
+		this.company = company;
+		this.type = type;
+		this.quality = quality;
+		this.mass1 = mass1;
+		this.mass2 = mass2;
+		this.mass3 = mass3;
+		this.mass4 = mass4;
+		this.mass5 = mass5;
+		this.mass6 = mass6;
+		this.mass7 = mass7;
+		this.mass8 = mass8;
+		this.mass9 = mass9;
 		
 
 	}

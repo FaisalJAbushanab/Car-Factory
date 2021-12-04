@@ -1,16 +1,15 @@
+package carFactory;
 
 public class Computer {
 
 	    public String[] name;
 	    public int[] constructMaterial;
-	    public int constructHours;
 	    public int[] numberOfEmployees;
 	    
 
-	    public Computer(String[] name, int[] constructMaterial, int constructHours, int[] numberOfEmployees) {
+	    public Computer(String[] name, int[] constructMaterial, int[] numberOfEmployees) {
 	        this.name = name;
 	        this.constructMaterial = constructMaterial;
-	        this.constructHours = constructHours;
 	        this.numberOfEmployees = numberOfEmployees;
 	    }
 
@@ -22,9 +21,6 @@ public class Computer {
 	        return constructMaterial;
 	    }
 
-	    public int getConstructHours() {
-	        return constructHours;
-	    }
 
 	    public int[] getNumberOfEmployees() {
 	        return numberOfEmployees;
