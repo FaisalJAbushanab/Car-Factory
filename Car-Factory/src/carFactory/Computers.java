@@ -1,7 +1,7 @@
 
 public enum Computers {
 
-    //[alamnuim grams, plastic klio and grams, glass klio and grams, silicon mg , gold mg , copper mg, iron g, chrome mg, silver mg]
+    //[alamnuim grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron g, chrome mg, silver mg]
     
 	COMPUTER1("asus", "pc" ,"high quality", 800 , 3 , 1  , 500 ,  200 , 400 , 800 ,  600 , 300),
 	COMPUTER2("asus" ,"pc" , "mid quality", 700 , 2 , 1  , 400 , 100 , 300 , 750 , 500 , 200),
