@@ -1,20 +1,18 @@
 package carFactory;
 
 public class Building {
-	private Capacity buildingCapacity;
+	private int buildingCapacity;
     private String location;
     private int workingHours;
-    private String phoneNumber;
 
-    public Building(Capacity buildingCapacity, String location,
-                    int workingHours, String phoneNumber) {
+    public Building(int buildingCapacity, String location,
+                    int workingHours) {
         this.buildingCapacity = buildingCapacity;
         this.location = location;
         this.workingHours = workingHours;
-        this.phoneNumber = phoneNumber;
     }
 
-    public Capacity getCapacity() {
+    public int getCapacity() {
         return buildingCapacity;
     }
 
@@ -24,10 +22,6 @@ public class Building {
 
     public int getWorkingHours() {
         return workingHours;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
     }
 
 }

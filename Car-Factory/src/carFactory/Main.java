@@ -7,16 +7,15 @@ package carFactory;
 
 
 	 class Main {
-		 
-		 
-		public   ArrayList<Factory> factories; 
-		public   ArrayList<Warehouse> wareHouses ; 
-		public ArrayList<Request> requests; 
+
+
+		public ArrayList<Factory> factories = new ArrayList<>();
+		public ArrayList<Warehouse> wareHouses = new ArrayList<>();
+		public ArrayList<Request> requests = new ArrayList<>();
 	    public int numberOfSuccess;
 
-	    
-	   public static  void main (String [] args ) 
-	   {
+
+	    public void main(String [] args ) {
 
 
 	       Random random = new Random();
@@ -25,14 +24,14 @@ package carFactory;
 		   String  [] location = { "Riyadh " ,"Makkah" ,"Dammam ","Jeddah"};
 		   int  [] workingHours = {12 ,10 ,16,24};
 	       int storageCapacity;
-	      int  workersCapacity ;
+	       int  workersCapacity ;
 
 
 
 	     //1A- generate fixed number of warehouses
-		   ArrayList<Warehouse> wareHouses =  new ArrayList<>();
 
-		   for (int i = 0; i<1000; i++)
+
+		   for (int i = 0; i < 1000; i++)
 
 		   {
 			   int Location  = random.nextInt( location.length);
@@ -40,16 +39,14 @@ package carFactory;
 			   int storage_Capacity  =  (int)Math.floor(Math.random()*(100000-10000+1)+10000);       ;
 
 
-			  materialQuantity M1 =  new materialQuantity ();
+			  Material M1 =  new Material ();
 
-				wareHouses.add(i, new WareHouse( location[Location] , workingHours[WorkingHours] , M1 , storageCapacity =storage_Capacity ));
+			  wareHouses.add(new Warehouse(storage_Capacity ,location[Location] , workingHours[WorkingHours] , M1));
 
 	 	 }
 
 
 		   	//1B- generate fixed number of factories
-
-		   ArrayList<Factory> factories =  new ArrayList<>();
 
 		   for (int i = 0; i<100; i++)
 
@@ -59,12 +56,11 @@ package carFactory;
 			   int WorkingHours  = random.nextInt(workingHours.length);
 			   int workers_Capacity  =  (int)Math.floor(Math.random()*(2000-500+1)+500);       ;
 
-
-
-			  �factories.add(i, new Factory( location[Location] , workingHours[WorkingHours] , wareHouses , workersCapacity=workers_Capacity  ));
+			   Factory factory = new Factory(workers_Capacity, location[Location], workingHours[WorkingHours])
+			   factory.setWarehousAccess(wareHouses);
+			   factories.add(factory);
 
 	 	 }
-
 
 
 

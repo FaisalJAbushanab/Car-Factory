@@ -4,9 +4,9 @@ public class Warehouse extends Building{
 
     private int[] materialQuantity;
 
-    public Warehouse(Capacity buildingCapacity, String location,
-                     int workingHours, String phoneNumber /* ,Material material*/) {
-        super(buildingCapacity, location, workingHours, phoneNumber);
+    public Warehouse(int buildingCapacity, String location,
+                     int workingHours, Material material) {
+        super(buildingCapacity, location, workingHours);
     }
 
     public int[] getMaterialQuantity() {

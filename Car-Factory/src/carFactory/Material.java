@@ -20,17 +20,6 @@ public class Material {
 		
 		 // create instance of Random class
            Random rand = new Random();
-          
-  /*
-         
-           for (int i = 0; i < materialQuantity.length; i++)
-              {
-        	   materialQuantity[i] = rand.nextInt(1000000 ); 
-              }
-           
-           
-           
-           { */
            
            
            {

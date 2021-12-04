@@ -6,9 +6,9 @@ public class Factory extends Building {
 
     private ArrayList<Warehouse> warehouseAccess;
 
-    public Factory(Capacity buildingCapacity, String location,
-                   int workingHours, String phoneNumber) {
-        super(buildingCapacity, location, workingHours, phoneNumber);
+    public Factory(int buildingCapacity, String location,
+                   int workingHours) {
+        super(buildingCapacity, location, workingHours);
     }
 
     public void setWarehousAccess(ArrayList<Warehouse> warehouses) {
