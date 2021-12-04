@@ -24,18 +24,21 @@ public class Factory extends Building {
     }
 
     public int calculateSuitabilty(Request request) {
-        //calculateCost(request.computers);
+        checkMaterial(request.computers);
+
+
         //calculateTime(request.computers);
         return 0;
     }
 
-    private void calculateTime(ArrayList<Computer> computers) {
+    private void checkTime(ArrayList<Computer> computers) {
         int[] computerSumEmployee = new int[9];
         for (Computer comps : computers) {
             comps.getNumberOfEmployees();
         }
 //        if (!(computerSumEmployee < super.buildingCapacity)) {
 //            //
+            calculateTime(computerSumEmployee);
 //        }
 //        else {
 //
@@ -43,7 +46,16 @@ public class Factory extends Building {
 
     }
 
-    private void calculateCost(ArrayList<Computer> computers) {
+    private int calculateTime(int[] computerSumEmployee) {
+        int time = 0;
+        for (Computer comps : computers) {
+            comps.getNumberOfEmployees();
+            time++;
+        }
+        return time;
+    }
+
+    private void checkMaterial(ArrayList<Computer> computers) {
         int[] wareHouseAccessSumMaterials = new int[9];
         for (Warehouse access : warehouseAccess) {
             access.getMaterialQuantity();
@@ -55,6 +67,15 @@ public class Factory extends Building {
         }
 
 
+        //if
+        calculateCostMats(computerSumMaterials);
 
+    }
+
+    private int calculateCostMats(int[] computerSumMaterials) {
+        for (Warehouse access : warehouseAccess) {
+            access.getMaterial().getMaterialPrice();
+        }
+        return 0;
     }
 }
