@@ -2,19 +2,23 @@ package carFactory;
 
 import com.sun.source.tree.UsesTree;
 
-public class Report {
+import java.util.ArrayList;
 
+public class Report {
+    // TODO REPORT
+    private ArrayList<Request> requests;
     private String report;
     //dates
 
-    public Report(String report) {
-        //this.report = setReport();
+    public Report(ArrayList<Request> requests) {
+        this.requests = requests;
+
     }
     public void setReport(String report) {
         report = generateReport();
     }
 
-    private String generateReport() {
+    public String generateReport() {
         return null;
     }
 

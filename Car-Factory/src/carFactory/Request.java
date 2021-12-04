@@ -6,17 +6,26 @@ import java.util.Random;
 public class Request {
 
     public ArrayList<Computer> computers = new ArrayList<>();
-    private int selectedCost;
-    private int selectedTime;
-    private int day;
-    private int hour;
-    private int minute;
+    // TODO private int selectedCost;
+    // TODO private int selectedTime;
+    private String day;
+    private String hour;
+    private String minute;
 
 
     public Request(int day, int hour, int minute) {
-        this.day = day;
-        this.hour = hour;
-        this.minute = minute;
+        if(day < 10)
+            this.day = "0" + String.valueOf(day);
+        else
+            this.day = String.valueOf(day);
+        if(hour < 10)
+            this.hour = "0" + String.valueOf(hour);
+        else
+            this.hour = String.valueOf(hour);
+        if(minute < 10)
+            this.minute = "0" + String.valueOf(minute);
+        else
+            this.minute = String.valueOf(minute);
 
         for (int i = 0; i < 1000; i++) {
 
@@ -30,7 +39,6 @@ public class Request {
 
             Computer computer = new Computer(info, materials, emplys);
             computers.add(computer);
-
         }
     }
 
@@ -64,18 +72,33 @@ public class Request {
         return arr;
     }
 
-    public void findFactory(ArrayList<Factory> factories) {
+    public int findFactory(ArrayList<Factory> factories) {
+        int best = -1;
+        int bestIndex = -1;
         for(Factory fact: factories) {
-            checkSuitabilty(fact);
+         /*   if(!fact.isOccupied) {
+        }*/ int score = checkSuitabilty(fact);
+            if (best < score) {
+                best = score;
+                bestIndex = factories.indexOf(fact);
             }
+        }
+        if (bestIndex != -1) {
+            //factories.get(bestIndex).occupy();
+            System.out.printf("For request (%s/%s:%s)\n", day, hour, minute);
+            System.out.println("Factory " + (bestIndex + 1) + " has been occupied");
+            return 1;
+        }
+        else {
+            System.out.printf("For request (%s/%s:%s)\n", day, hour, minute);
+            System.out.println("No Factory have been found");
+            return 0;
+        }
     }
 
     public int checkSuitabilty(Factory chosenFactory) {
-//        for(Computer comp: computers) {
-//
-//            }
         int suitabilty = chosenFactory.calculateSuitabilty(this);
-        //if()
+        // TODO if() suitibialty
         return suitabilty;
         }
     }

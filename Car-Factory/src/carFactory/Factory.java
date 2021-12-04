@@ -28,7 +28,7 @@ public class Factory extends Building {
 
 
         //calculateTime(request.computers);
-        return 0;
+        return -1;
     }
 
     private void checkTime(ArrayList<Computer> computers) {
@@ -48,10 +48,10 @@ public class Factory extends Building {
 
     private int calculateTime(int[] computerSumEmployee) {
         int time = 0;
-        for (Computer comps : computers) {
-            comps.getNumberOfEmployees();
-            time++;
-        }
+//        for (Computer comps : computers) {
+////            comps.getNumberOfEmployees();
+////            time++;
+////        }
         return time;
     }
 

@@ -1,6 +1,7 @@
 package carFactory;
 
 // import the ArrayList class
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 import java.util.Random;
@@ -14,7 +15,7 @@ class Main {
 		 ArrayList<Factory> factories = new ArrayList<>();
 		 ArrayList<Warehouse> wareHouses = new ArrayList<>();
 		 ArrayList<Request> requests = new ArrayList<>();
-		 int numberOfSuccess;
+		 int numberOfSuccess = 0;
 
 		 System.out.println("Welcome in the Computer Factory simulation program");
 
@@ -35,11 +36,11 @@ class Main {
 		 for (int i = 0; i < 1000; i++) {
 			 int Location = random.nextInt(location.length);
 			 int WorkingHours = random.nextInt(workingHours.length);
-//			 int[] storage_Capacity = (int[]) Math.floor(Math.random() * (100000 - 10000 + 1) + 10000);
-			 
+	//			 int[] storage_Capacity = (int[]) Math.floor(Math.random() * (100000 - 10000 + 1) + 10000);
+
 			 int[] storage_Capacity = new int[9];
-			 
-		     //[alamnuim, plastic, glass, silicon, gold, copper, iron, chrome, silver]
+
+			 //[alamnuim, plastic, glass, silicon, gold, copper, iron, chrome, silver]
 
 			 storage_Capacity[0] = fullUpSto(5000,10000);
 			 storage_Capacity[1] = fullUpSto(5000,10000);
@@ -50,7 +51,7 @@ class Main {
 			 storage_Capacity[6] = fullUpSto(5000,10000);
 			 storage_Capacity[7] = fullUpSto(500,4000);
 			 storage_Capacity[8] = fullUpSto(500,1000);
-			
+
 
 
 			 Material M1 = new Material();
@@ -61,12 +62,12 @@ class Main {
 		 for (int i = 0; i < 100; i++) {
 			 int Location = random.nextInt(location.length);
 			 int WorkingHours = random.nextInt(workingHours.length);
-//			 int[] workers_Capacity = (int) Math.floor(Math.random() * (2000 - 500 + 1) + 500);
-			 
+	//			 int[] workers_Capacity = (int) Math.floor(Math.random() * (2000 - 500 + 1) + 500);
+
 			 int[] workers_Capacity = new int[3];
-			 
+
 			 workers_Capacity[0] = fullUpWork(10,20);
-			 workers_Capacity[1] = fullUpWork(50,70);        
+			 workers_Capacity[1] = fullUpWork(50,70);
 			 workers_Capacity[2] = fullUpWork(90,110);
 
 
@@ -75,40 +76,22 @@ class Main {
 			 factories.add(factory);
 		 }
 
-		// /------Loop-------/
-
-//		 while (true) {
-//			 //3- generate requests
-//			 Request request = new Request();
-//			 requests.add(request);
-//
-//			 //4- fulfill requests
-//			 request.findFactory(factories);
-//
-//			 //2-simulate current days counter
-//		 }
-
-		 ///5- output report
-
-		 ///+toString(): String
-
+		 int numOfRequests = 0;
+		 // days loop
 		 for (int i = 1; i <= days; i++) {
-
-			 int numOfRequests = 0;
 			 // hours loop
 			 for (int j = 0; j < 24; j++) {
-
-				 // mintus loop
+				 // minutes loop
 				 for (int k = 0; k < 60; k++) {
 					 if (numOfRequests < maxRequestsPerDay) {
 						 // probability of getting 1 is 1/500
-					 	int createOrNot = (int) Math.floor(Math.random() * (500 - 1 + 1) + 1);
+						int createOrNot = (int) Math.floor(Math.random() * (500 - 1 + 1) + 1);
 						 if (createOrNot == 1) {
 							 Request request = new Request(i, j, k);
 							 requests.add(request);
 
-//							 //4- fulfill requests
-							 request.findFactory(factories);
+	//							 //4- fulfill requests
+							 numberOfSuccess += request.findFactory(factories);
 							 numOfRequests++;
 						 }
 					 }
@@ -116,17 +99,23 @@ class Main {
 			 }
 			 numOfRequests = 0;
 		 }
+
+		 System.out.println("Number of successful: " + numberOfSuccess);
+		 System.out.println("Number of unsuccessful: " + (requests.size() - numberOfSuccess));
+
+		 Report report = new Report(requests);
+		 report.generateReport();
 	 }
-	private static int fullUpWork(int min ,int max) {
-    int Worker_Capacity = (int) Math.floor(Math.random() * (max - min + 1) + min);
 
-	 	return Worker_Capacity;
-	}
+	 private static int fullUpWork(int min ,int max) {
+		 int Worker_Capacity = (int) Math.floor(Math.random() * (max - min + 1) + min);
 
-	private static int fullUpSto(int min ,int max) {
-		int storage_Capacity = (int) Math.floor(Math.random() * (max - min + 1) + min);
+		 return Worker_Capacity;
+	 }
 
-	 	return storage_Capacity;
-	 	
-	}
+	 private static int fullUpSto(int min ,int max) {
+	 	int storage_Capacity = (int) Math.floor(Math.random() * (max - min + 1) + min);
+
+		return storage_Capacity;
+	 }
 }
