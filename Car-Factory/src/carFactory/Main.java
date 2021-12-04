@@ -57,7 +57,7 @@ package carFactory;
 			   int workers_Capacity  =  (int)Math.floor(Math.random()*(2000-500+1)+500);       ;
 
 			   Factory factory = new Factory(workers_Capacity, location[Location], workingHours[WorkingHours])
-			   factory.setWarehousAccess(wareHouses);
+			   factory.setWarehouseAccess(wareHouses);
 			   factories.add(factory);
 
 	 	 }
@@ -66,17 +66,17 @@ package carFactory;
 
 	  	/*------Loop-------*/
 
-		   ArrayList<Request> requests = new ArrayList<>;
+//		   ArrayList<Request> requests = new ArrayList<>;
 
 		   while (true)
 		   {
 			   //3- generate requests
-
-			   requests.add(i, new requests(selectedComputers,selectedCost,selectedTime);
+			   Request request = new Request();
+			   requests.add(request);
 
 
 			   //4- fulfill requests
-			   requests.findFactory(ArrayList<Factory>);
+			   request.findFactory(factories);
 
 		    	//2-simulate current days counter
 

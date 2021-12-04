@@ -11,7 +11,7 @@ public class Factory extends Building {
         super(buildingCapacity, location, workingHours);
     }
 
-    public void setWarehousAccess(ArrayList<Warehouse> warehouses) {
+    public void setWarehouseAccess(ArrayList<Warehouse> warehouses) {
 
     }
 
