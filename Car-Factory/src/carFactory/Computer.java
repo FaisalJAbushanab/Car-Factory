@@ -21,7 +21,6 @@ public class Computer {
 	        return constructMaterial;
 	    }
 
-
 	    public int[] getNumberOfEmployees() {
 	        return numberOfEmployees;
 	    }

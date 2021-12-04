@@ -7,9 +7,8 @@ public class Factory extends Building {
 
     private ArrayList<Warehouse> warehouseAccess = new ArrayList<>();
 
-    public Factory(int buildingCapacity, String location,
-                   int workingHours) {
-        super(buildingCapacity, location, workingHours);
+    public Factory(int[] workerCapacity, String location, int workingHours) {
+        super(workerCapacity, location, workingHours);
     }
 
     public void setWarehouseAccess(ArrayList<Warehouse> warehouses) {
@@ -22,5 +21,40 @@ public class Factory extends Building {
 
     public int[] getAllWarehouseMaterials(){
         return null;
+    }
+
+    public int calculateSuitabilty(Request request) {
+        //calculateCost(request.computers);
+        //calculateTime(request.computers);
+        return 0;
+    }
+
+    private void calculateTime(ArrayList<Computer> computers) {
+        int[] computerSumEmployee = new int[9];
+        for (Computer comps : computers) {
+            comps.getNumberOfEmployees();
+        }
+//        if (!(computerSumEmployee < super.buildingCapacity)) {
+//            //
+//        }
+//        else {
+//
+//        }
+
+    }
+
+    private void calculateCost(ArrayList<Computer> computers) {
+        int[] wareHouseAccessSumMaterials = new int[9];
+        for (Warehouse access : warehouseAccess) {
+            access.getMaterialQuantity();
+        }
+
+        int[] computerSumMaterials = new int[9];
+        for (Computer comps : computers) {
+            comps.getConstructMaterial();
+        }
+
+
+
     }
 }

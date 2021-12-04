@@ -1,16 +1,22 @@
 package carFactory;
 
 import java.util.ArrayList;
-import java.util.EnumSet;
 import java.util.Random;
 
 public class Request {
 
-    private ArrayList<Computer> computers = new ArrayList<>();
+    public ArrayList<Computer> computers = new ArrayList<>();
     private int selectedCost;
     private int selectedTime;
+    private int day;
+    private int hour;
+    private int minute;
 
-    public Request() {
+
+    public Request(int day, int hour, int minute) {
+        this.day = day;
+        this.hour = hour;
+        this.minute = minute;
 
         for (int i = 0; i < 1000; i++) {
 
@@ -59,6 +65,17 @@ public class Request {
     }
 
     public void findFactory(ArrayList<Factory> factories) {
-
+        for(Factory fact: factories) {
+            checkSuitabilty(fact);
+            }
     }
-}
+
+    public int checkSuitabilty(Factory chosenFactory) {
+//        for(Computer comp: computers) {
+//
+//            }
+        int suitabilty = chosenFactory.calculateSuitabilty(this);
+        //if()
+        return suitabilty;
+        }
+    }
