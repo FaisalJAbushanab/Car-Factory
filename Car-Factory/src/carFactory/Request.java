@@ -6,12 +6,11 @@ import java.util.Random;
 public class Request {
 
     public ArrayList<Computer> computers = new ArrayList<>();
-    // TODO private int selectedCost;
-    // TODO private int selectedTime;
+    private int selectedCost;
+    private int selectedTime;
     private String day;
     private String hour;
     private String minute;
-
 
     public Request(int day, int hour, int minute) {
         if(day < 10)
@@ -27,7 +26,7 @@ public class Request {
         else
             this.minute = String.valueOf(minute);
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100; i++) {
 
             Computers[] comp = Computers.values();
             Random random = new Random();
@@ -35,12 +34,17 @@ public class Request {
 
             String[] info = getInfoArr(comp[n]);
             int[] materials = getMatsArr(comp[n]);
-            int[] emplys = /*getEmplysArr(comp[n]);*/ new int[3];
+            int[] emplys = /*getEmplysArr(comp[n]);*/ {15, 10, 5};
 
             Computer computer = new Computer(info, materials, emplys);
             computers.add(computer);
         }
+//        for(Computer computer : computers) {
+//            selectedTime += computer.productionTime;
+//        }
+        selectedTime = getRandom(10, 20, computers.size());
     }
+
 
 //    public int[] getMatsArr(Computers vals) {
 //        int[] arr = new int[3];
@@ -57,7 +61,6 @@ public class Request {
         arr[2] = vals.getQuality();
         return arr;
     }
-
     public int[] getMatsArr(Computers vals) {
         int[] arr = new int[9];
         arr[0] = vals.getMass1();
@@ -72,33 +75,106 @@ public class Request {
         return arr;
     }
 
-    public int findFactory(ArrayList<Factory> factories) {
-        int best = -1;
-        int bestIndex = -1;
+    private void setSelectedCost(ArrayList<Factory> factories) {
+        int averageCost = 0;
+        int[] computerSumMaterials = new int[9];
+        for (Computer comps : computers) {
+            int[] compsMaterial = comps.getConstructMaterial();
+            for (int i = 0; i < compsMaterial.length; i++) {
+                computerSumMaterials[i] += compsMaterial[i];
+            }
+        }
         for(Factory fact: factories) {
-         /*   if(!fact.isOccupied) {
-        }*/ int score = checkSuitabilty(fact);
-            if (best < score) {
-                best = score;
-                bestIndex = factories.indexOf(fact);
+            int cost =  fact.calculateCostMats(computerSumMaterials);
+            averageCost += cost / (double) factories.size();
+        }
+        selectedCost = getRandom(10,10, averageCost);
+    }
+
+    public String getDay() {
+        return day;
+    }
+
+    public String getHour() {
+        return hour;
+    }
+
+    public String getMinute() {
+        return minute;
+    }
+
+    private int getRandom(int lower, int upper, int val) {
+        int addOrSub = (int) Math.floor(Math.random() * (2) + 1);
+        if (addOrSub == 1) {
+            double random = (Math.random() * (lower + 1));
+            double factor = random / 100;
+            double value = factor * val;
+            return val - ((int) value);
+        }
+        else {
+            double random = (Math.random() * (upper + 1));
+            double factor = random / 100;
+            double value = factor * val;
+            return val + ((int) value);
+        }
+    }
+
+    public ArrayList<Computer> getComputers() {
+        return computers;
+    }
+
+    public int getSelectedTime() {
+        return selectedTime;
+    }
+
+    public int findFactory(ArrayList<Factory> factories) {
+
+        double best = -1;
+        int bestIndex = -1;
+
+        setSelectedCost(factories);
+        System.out.printf("sleccted for request#(%s/%s:%s)\ncost is: %d\ntime is: %d\n",
+                day, hour, minute, selectedCost, selectedTime);
+
+        for(Factory factory: factories) {
+            if (!factory.isOccupied()) {
+                double score = checkSuitabilty(factory);
+                System.out.println("factory#" + factories.indexOf(factory) + " got score" + score);
+                if (score > best) {
+                    best = score;
+                    bestIndex = factories.indexOf(factory);
+                }
             }
         }
         if (bestIndex != -1) {
-            //factories.get(bestIndex).occupy();
-            System.out.printf("For request (%s/%s:%s)\n", day, hour, minute);
+            factories.get(bestIndex).setOccupied();
+            System.out.printf("For request#(%s/%s:%s)\n", day, hour, minute);
             System.out.println("Factory " + (bestIndex + 1) + " has been occupied");
             return 1;
         }
         else {
-            System.out.printf("For request (%s/%s:%s)\n", day, hour, minute);
+            System.out.printf("For request#(%s/%s:%s)\n", day, hour, minute);
             System.out.println("No Factory have been found");
             return 0;
         }
     }
 
-    public int checkSuitabilty(Factory chosenFactory) {
-        int suitabilty = chosenFactory.calculateSuitabilty(this);
-        // TODO if() suitibialty
-        return suitabilty;
+    public double checkSuitabilty(Factory chosenFactory) {
+        return getScore(chosenFactory.getRequirments(this));
+    }
+
+    private double getScore(int[] vals) {
+        double costScore = ((double) selectedCost/vals[0]);
+        double timeScore = ((double) selectedTime/vals[1]);
+        if ((costScore < 0) || (timeScore < 0)) {
+            return -1;
+        }
+        else{
+            return (costScore/2) + (timeScore/2);
         }
     }
+
+    public int getSelectedCost() {
+        return selectedCost;
+    }
+}

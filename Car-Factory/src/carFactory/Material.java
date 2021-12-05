@@ -5,217 +5,104 @@ package carFactory;
 import java.util.Random;
 
 public class Material {
-	
-	
-     //[alamnuim, plastic, glass, silicon, gold, copper, iron, chrome, silver]--9
-	
-	private int[] materialQuantity = new int [9]; 
-	private int[] materialPrice =  new int [9]; 
 
-	
-	
-	public Material()
-	{
-		
-		
-		 // create instance of Random class
-           Random rand = new Random();
-           
-           
-           {
-           //Generate random materialQuantity value for [alamnuim]
-              int min = 500000;
-              int max = 100000;
-                
-              materialQuantity[0] = (int)Math.floor(Math.random()*(max-min+1)+min);
-             
-   	       }
-           
-           {
-               //Generate random materialQuantity value for [plastic]
-                  int min = 500000;
-                  int max = 100000;
-                    
-                  materialQuantity[1] = (int)Math.floor(Math.random()*(max-min+1)+min);
-       	    }
-           
-           {
-               //Generate random materialQuantity value for [ glass]
-                  int min = 500000;
-                  int max = 100000;
-                    
-                  materialQuantity[2] = (int)Math.floor(Math.random()*(max-min+1)+min);
-       	       }
-           
-           
-           {
-               //Generate random materialQuantity value for [ silicon]
-        	      int min = 500000;
-                  int max = 100000;
-                    
-                  materialQuantity[3] = (int)Math.floor(Math.random()*(max-min+1)+min);
-       	       }
-           
-           
-           {
-               //Generate random materialQuantity value for [ gold]
-                  int min = 100000;
-                  int max = 500000;
-                    
-                  materialQuantity[4] = (int)Math.floor(Math.random()*(max-min+1)+min);
-       	       }
-           
-           {
-               //Generate random materialQuantity value for [ copper-]
-                  int min = 700000;
-                  int max = 100000;
-                    
-                  materialQuantity[5] = (int)Math.floor(Math.random()*(max-min+1)+min);
-       	       }
-           
-           {
-               //Generate random materialQuantity value for [ iron]
-                  int min = 500000;
-                  int max = 100000;
-                    
-                  materialQuantity[6] = (int)Math.floor(Math.random()*(max-min+1)+min);
-       	       }
-           
-           {
-               //Generate random materialQuantity value for [ chrom ]
-                  int min = 200000;
-                  int max = 600000;
-                    
-                  materialQuantity[7] = (int)Math.floor(Math.random()*(max-min+1)+min);
-       	       }
-           
-           {
-               //Generate random materialQuantity value for [ silver]
-                  int min = 200000;
-                  int max =700000;
-                    
-                  materialQuantity[8] = (int)Math.floor(Math.random()*(max-min+1)+min);
-       	       }
-           
-           
-           
-        	  ////////////////////////////////////////////////////  
-        	   
-	      {
-        //Generate random materialPrice value for [alamnuim]
 
-           int min = 250;
-           int max = 300;
-             
-           materialPrice[0] = (int)Math.floor(Math.random()*(max-min+1)+min);
-	       }
-         
-	     {
-		//Generate random materialPrice value for [ plastic]
-           int min = 100;
-           int max = 150;
-             
-           materialPrice[1] = (int)Math.floor(Math.random()*(max-min+1)+min);
-	     }
-	     
-	     
-	    {
-	         //Generate random materialPrice value for [ glass]
+    //[alamnuim, plastic, glass, silicon, gold, copper, iron, chrome, silver]--9
 
-           int min = 300;
-           int max = 400;
-             
-           materialPrice[2] = (int)Math.floor(Math.random()*(max-min+1)+min);
-	    }
-	    
-	    
-	   {
-	         //Generate random materialPrice value for [ silicon]
+    private int[] materialQuantity = new int[9];
+    private double[] materialPrice = new double[9];
 
-           int min = 200;
-           int max = 250;
-             
-           materialPrice[3] = (int)Math.floor(Math.random()*(max-min+1)+min);
-	  }
-	   
-	   
-	  {
-         //Generate random materialPrice value for  gold]
+    public Material() {
 
-           int min = 800;
-           int max = 1000;
-             
-           materialPrice[4] = (int)Math.floor(Math.random()*(max-min+1)+min);
-      }
-	
-	
-	 {
-        //Generate random materialPrice value for [ copper]
+        // Generate random materialQuantity value for [alamnuim]
+        materialQuantity[0] = random_materialQuantity(100000, 800000);
 
-          int min = 250;
-          int max = 300;
-            
-          materialPrice[5] = (int)Math.floor(Math.random()*(max-min+1)+min);
-     }
-	 
-	
-	{
-        //Generate random materialPrice value for [ iron]
+        // Generate random materialQuantity value for [plastic]
+        materialQuantity[1] = random_materialQuantity(100000, 800000);
 
-          int min = 200;
-          int max = 250;
-            
-          materialPrice[6] = (int)Math.floor(Math.random()*(max-min+1)+min);
-          }
-	
-	    {
-        //Generate random materialPrice value for [ chrome]
+        // Generate random materialQuantity value for [ glass]
+        materialQuantity[2] = random_materialQuantity(100000, 800000);
 
-          int min = 200;
-          int max = 250;
-            
-          materialPrice[7] = (int)Math.floor(Math.random()*(max-min+1)+min);
-          
-          }
-	    
-	
-	    {
-        //Generate random materialPrice value for[silver] 
+        // Generate random materialQuantity value for [ silicon]
+        materialQuantity[3] = random_materialQuantity(100000, 80000);
 
-          int min = 200;
-          int max = 250;
-            
-          materialPrice[8] = (int)Math.floor(Math.random()*(max-min+1)+min);
-          }
-	
-            
-           
+        // Generate random materialQuantity value for [ gold]
+        materialQuantity[4] = random_materialQuantity(50000, 100000);
+
+        // Generate random materialQuantity value for [ copper]
+        materialQuantity[5] = random_materialQuantity(100000, 400000);
+
+        // Generate random materialQuantity value for [ iron]
+        materialQuantity[6] = random_materialQuantity(10000, 800000);
+
+        // Generate random materialQuantity value for [ chrom ]
+        materialQuantity[7] = random_materialQuantity(100000, 500000);
+
+        // Generate random materialQuantity value for [ silver]
+        materialQuantity[8] = random_materialQuantity(200000, 400000);
+
+        // -----------------------------------------------------------------------------//
+
+        // Generate random materialPrice value for [alamnuim]
+        materialPrice[0] = random_materialPrice(0.02, 0.05);
+
+        // Generate random materialPrice value for [ plastic]
+        materialPrice[1] = random_materialPrice(0.01, 0.03);
+
+        // Generate random materialPrice value for [ glass]
+        materialPrice[2] = random_materialPrice(0.05, 0.08);
+
+        // Generate random materialPrice value for [ silicon]
+        materialPrice[3] = random_materialPrice(0.03, 0.06);
+
+        // Generate random materialPrice value for gold]
+        materialPrice[4] = random_materialPrice(570, 600);
+
+        // Generate random materialPrice value for [ copper]
+        materialPrice[5] = random_materialPrice(0.09, 0.15);
+
+        // Generate random materialPrice value for [ iron]
+        materialPrice[6] = random_materialPrice(0.007, 0.009);
+
+        // Generate random materialPrice value for [ chrome]
+        materialPrice[7] = random_materialPrice(0.3, 0.8);
+
+        // Generate random materialPrice value for[silver]
+        materialPrice[8] = random_materialPrice(7.5, 9.5);
+
+    }
+
+    public int random_materialQuantity(int min, int max) {
+
+        return (int) Math.floor(Math.random() * (max - min + 1) + min);
+
+    }
+
+    public double random_materialPrice(double min, double max) {
+
+        double random = new Random().nextDouble();
+        return min + (random * (max - min));
+    }
+
+    public int[] getMaterialQuantity() {
+
+        return materialQuantity;
+    }
+
+    public void setMaterialQuantity ( int[] materialQuantity){
+
+        this.materialQuantity = materialQuantity;
+    }
+
+    public double[] getMaterialPrice() {
+
+        return materialPrice;
+    }
+
+    public void setMaterialPrice ( double[] MaterialPrice) {
+
+        this.materialPrice = MaterialPrice;
+
+    }
 }
 
-	
-	public int[] getMaterialQuantity() 
-	{
-		return materialQuantity;
-		
-	} 
-	
-	public void setMaterialQuantity( int[] materialQuantity) 
-	{
-		this.materialQuantity=materialQuantity;
-		
-	} 
-	
-    public int[] getMaterialPrice() {
-		
-    	return materialPrice ;
-	} 
-    
-  public void settMaterialPrice( int[] settMaterialPrice) 
-	{
-		this.materialQuantity=settMaterialPrice;
-		
-	} 
-  
-  
-
-}		

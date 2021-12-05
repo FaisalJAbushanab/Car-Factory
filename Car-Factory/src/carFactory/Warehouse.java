@@ -12,7 +12,7 @@ public class Warehouse extends Building{
     }
 
     public int[] getMaterialQuantity() {
-        return null;
+        return material.getMaterialQuantity();
     }
 
     public Material getMaterial() {

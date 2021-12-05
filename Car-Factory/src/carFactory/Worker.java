@@ -6,7 +6,7 @@ public class Worker implements Employee {
 
     @Override
     public int getSalary() {
-        return 0;
+        return SALARY;
     }
 }
 
