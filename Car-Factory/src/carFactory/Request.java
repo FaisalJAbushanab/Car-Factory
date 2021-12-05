@@ -6,26 +6,17 @@ import java.util.Random;
 public class Request {
 
     public ArrayList<Computer> computers = new ArrayList<>();
-    // TODO private int selectedCost;
-    // TODO private int selectedTime;
-    private String day;
-    private String hour;
-    private String minute;
+    private int selectedCost;
+    private int selectedTime;
+    private int day;
+    private int hour;
+    private int minute;
 
 
     public Request(int day, int hour, int minute) {
-        if(day < 10)
-            this.day = "0" + String.valueOf(day);
-        else
-            this.day = String.valueOf(day);
-        if(hour < 10)
-            this.hour = "0" + String.valueOf(hour);
-        else
-            this.hour = String.valueOf(hour);
-        if(minute < 10)
-            this.minute = "0" + String.valueOf(minute);
-        else
-            this.minute = String.valueOf(minute);
+        this.day = day;
+        this.hour = hour;
+        this.minute = minute;
 
         for (int i = 0; i < 1000; i++) {
 
@@ -35,10 +26,14 @@ public class Request {
 
             String[] info = getInfoArr(comp[n]);
             int[] materials = getMatsArr(comp[n]);
-            int[] emplys = /*getEmplysArr(comp[n]);*/ new int[3];
+            int[] emplys = /getEmplysArr(comp[n]);/ new int[3];
 
             Computer computer = new Computer(info, materials, emplys);
             computers.add(computer);
+
+        }
+        for(Computer computer : computers) {
+        	selectedTime += computer.productionTime;
         }
     }
 
@@ -72,33 +67,18 @@ public class Request {
         return arr;
     }
 
-    public int findFactory(ArrayList<Factory> factories) {
-        int best = -1;
-        int bestIndex = -1;
-        for(Factory fact: factories) {
-         /*   if(!fact.isOccupied) {
-        }*/ int score = checkSuitabilty(fact);
-            if (best < score) {
-                best = score;
-                bestIndex = factories.indexOf(fact);
+    public void findFactory(ArrayList<Factory> factories) {
+        for(Factory factory: factories) {
+            checkSuitabilty(factory);
             }
-        }
-        if (bestIndex != -1) {
-            //factories.get(bestIndex).occupy();
-            System.out.printf("For request (%s/%s:%s)\n", day, hour, minute);
-            System.out.println("Factory " + (bestIndex + 1) + " has been occupied");
-            return 1;
-        }
-        else {
-            System.out.printf("For request (%s/%s:%s)\n", day, hour, minute);
-            System.out.println("No Factory have been found");
-            return 0;
-        }
     }
 
     public int checkSuitabilty(Factory chosenFactory) {
-        int suitabilty = chosenFactory.calculateSuitabilty(this);
-        // TODO if() suitibialty
+//        for(Computer comp: computers) {
+//
+//            }
+        int suitabilty = chosenFactory.calculateSuitabilty(this, selectedTime);
+        //if()
         return suitabilty;
         }
     }
