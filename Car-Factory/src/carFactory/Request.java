@@ -8,23 +8,20 @@ public class Request {
     public ArrayList<Computer> computers = new ArrayList<>();
     private int selectedCost;
     private int selectedTime;
+<<<<<<< HEAD
     private String day;
     private String hour;
     private String minute;
+=======
+    private int day;
+    private int hour;
+    private int minute;
+>>>>>>> aba23f4b612a5821993d8a74c70602481a663af3
 
     public Request(int day, int hour, int minute) {
-        if(day < 10)
-            this.day = "0" + String.valueOf(day);
-        else
-            this.day = String.valueOf(day);
-        if(hour < 10)
-            this.hour = "0" + String.valueOf(hour);
-        else
-            this.hour = String.valueOf(hour);
-        if(minute < 10)
-            this.minute = "0" + String.valueOf(minute);
-        else
-            this.minute = String.valueOf(minute);
+        this.day = day;
+        this.hour = hour;
+        this.minute = minute;
 
         for (int i = 0; i < 100; i++) {
 
@@ -34,10 +31,18 @@ public class Request {
 
             String[] info = getInfoArr(comp[n]);
             int[] materials = getMatsArr(comp[n]);
+<<<<<<< HEAD
             int[] emplys = /*getEmplysArr(comp[n]);*/ {15, 10, 5};
+=======
+            int[] emplys = /getEmplysArr(comp[n]);/ new int[3];
+>>>>>>> aba23f4b612a5821993d8a74c70602481a663af3
 
             Computer computer = new Computer(info, materials, emplys);
             computers.add(computer);
+
+        }
+        for(Computer computer : computers) {
+        	selectedTime += computer.productionTime;
         }
 //        for(Computer computer : computers) {
 //            selectedTime += computer.productionTime;
@@ -75,6 +80,7 @@ public class Request {
         return arr;
     }
 
+<<<<<<< HEAD
     private void setSelectedCost(ArrayList<Factory> factories) {
         int averageCost = 0;
         int[] computerSumMaterials = new int[9];
@@ -178,3 +184,20 @@ public class Request {
         return selectedCost;
     }
 }
+=======
+    public void findFactory(ArrayList<Factory> factories) {
+        for(Factory factory: factories) {
+            checkSuitabilty(factory);
+            }
+    }
+
+    public int checkSuitabilty(Factory chosenFactory) {
+//        for(Computer comp: computers) {
+//
+//            }
+        int suitabilty = chosenFactory.calculateSuitabilty(this, selectedTime);
+        //if()
+        return suitabilty;
+        }
+    }
+>>>>>>> aba23f4b612a5821993d8a74c70602481a663af3
