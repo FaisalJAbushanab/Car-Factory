@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class Material {
 
-	// [alamnuim, plastic, glass, silicon, gold, copper, iron, chrome, silver]--9
+	// [alamnuim, plastic, glass, silicon, gold, copper, iron, chrome, silver]
 
 	private int[] materialQuantity = new int[9];
 	private double[] materialPrice = new double[9];
