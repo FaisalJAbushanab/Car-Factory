@@ -83,16 +83,19 @@ class Main {
 			 }
 			 numOfRequests = 0;
 		 }
+		 String conclusion = "\nNumber of successful requests: " + numberOfSuccess + "\n"
+				 + "Number of unsuccessful requests: " + (requests.size() - numberOfSuccess) + "\n";
+		 String percent = String.format("Percentage of Success: %.2f%s ",
+				 (numberOfSuccess / (double) requests.size())*100,"%");
 
 		 Report report = new Report(simulationDate, requests, factories, warehouses);
 		 report.writeRequestsReport();
 		 report.writeWarehousesReport();
 		 report.writeFactoriesReport();
-		 report.writeMainReport();
+		 report.writeMainReport((conclusion+percent));
 
-		 System.out.println("Number of successful requests: " + numberOfSuccess);
-		 System.out.println("Number of unsuccessful requests: " + (requests.size() - numberOfSuccess));
-		 System.out.printf("Percentage of Success: %.2f%s ", (numberOfSuccess / (double) requests.size())*100,"%");
+		 System.out.println(conclusion);
+		 System.out.println(percent);
 	 }
 
 	 private static int fullUp(int min ,int max) {

@@ -26,7 +26,7 @@ public class Material {
         materialQuantity[2] = random_materialQuantity(100000, 800000);
 
         // Generate random materialQuantity value for [ silicon]
-        materialQuantity[3] = random_materialQuantity(100000, 80000);
+        materialQuantity[3] = random_materialQuantity(100000, 800000);
 
         // Generate random materialQuantity value for [ gold]
         materialQuantity[4] = random_materialQuantity(50000, 100000);

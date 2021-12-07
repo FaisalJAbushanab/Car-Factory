@@ -37,7 +37,7 @@ public class Report {
 //        report = generateReport();
 //    }
 //
-    public void writeMainReport() throws IOException {
+    public void writeMainReport(String summary) throws IOException {
         for (Request request: requests) {
             if (request.getTakenFactory() != null) {
                 allReport += (requests.indexOf(request) + 1) + ": request " + request.getDateRequested() +
@@ -47,6 +47,7 @@ public class Report {
                 allReport += (requests.indexOf(request) + 1) + ": request " + request.getDateRequested() + " did not find a factory!\n";
             }
         }
+        allReport += summary;
         // Import the IOException class to handle errors
         writeToFile((name + " Main"), allReport);
 //        BufferedWriter output = null;
