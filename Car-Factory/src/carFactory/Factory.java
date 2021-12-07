@@ -1,19 +1,21 @@
 package carFactory;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Factory extends Building {
 
+    private ArrayList<Warehouse> allwarehouses = new ArrayList<>();
     private ArrayList<Warehouse> warehouseAccess = new ArrayList<>();
     private ArrayList<Employee> employees = new ArrayList<>();
     private int[] employeesList = new int[3];
+    private int[] warehouseAccessTotalMaterials = new int[9];
     private int operatingCost;
     private boolean isOccupied = false;
 
     public Factory(int[] workerCapacity, String location, int workingHours) {
         super(workerCapacity, location, workingHours);
 
-        setWarehouseAccess(warehouseAccess);
         setEmployees();
         setEmployeesList();
         setOperatingCost();
@@ -32,8 +34,10 @@ public class Factory extends Building {
 
     private void setOperatingCost() {
         for (Employee employee : employees) {
+//            System.out.println(employee.toString());
             operatingCost += employee.getSalary();
         }
+        System.out.println(operatingCost);
     }
 
     private void setEmployeesList() {
@@ -48,8 +52,11 @@ public class Factory extends Building {
         }
     }
 
-    private void setEmployees() {
-        int numOfEmployees = (int)Math.floor(Math.random()*(9000-100+1)+4000);
+     private void setEmployees() {
+        //TODO salary on location
+        int max = super.getCapacity()[0] + super.getCapacity()[1] + super.getCapacity()[2];
+        int min = 4500*3;
+        int numOfEmployees = (int)Math.floor(Math.random()*((max*3)-min+1)+min);
         for(int i=0; i < numOfEmployees; i++) {
             int rand = (int)Math.floor(Math.random()*(12)+1);
             if(5 >= rand) {
@@ -66,38 +73,42 @@ public class Factory extends Building {
     }
 
     public void setWarehouseAccess(ArrayList<Warehouse> warehouses) {
+        allwarehouses = warehouses;
         for (Warehouse warehouse : warehouses) {
             if (warehouse.getLocation().equals(super.getLocation())) {
                 warehouseAccess.add(warehouse);
             }
         }
+        setWarehouseTotalMaterial();
     }
 
     public int[] getRequirments(Request request) {
         int calculatedCost = -1;
         int calculatedTime = -1;
+        System.out.printf("Factory of request#(%s/%s:%s)\n",
+                request.getDay(), request.getHour(), request.getMinute());
         if(checkMaterial(request.getComputers()) & checkTime(request.getComputers())) {
-            calculatedCost = calculateCostMats(getComputerTotalMaterial(request.getComputers())) + operatingCost;
+            calculatedCost = calculateCostMats(getComputersTotalMaterial(request.getComputers())) + operatingCost;
             calculatedTime = calculateTime(request.getComputers());
+            System.out.printf("cost is: %d\ntime is: %d\n", calculatedCost, calculatedTime );
         }
-        System.out.printf("Factory of request#(%s/%s:%s)\ncost is: %d\ntime is: %d\n",
-                request.getDay(), request.getHour(), request.getMinute(),
-                calculatedCost, calculatedTime );
         return new int[] {calculatedCost, calculatedTime};
     }
 
-    private int[] getWarehouseTotalMaterial() {
-        int[] wareHouseAccessTotalMaterials = new int[9];
+    private void setWarehouseTotalMaterial() {
         for (Warehouse access : warehouseAccess) {
             int[] warehouseMaterial = access.getMaterialQuantity();
-            for (int i = 0; i < wareHouseAccessTotalMaterials.length; i++) {
-                wareHouseAccessTotalMaterials[i] += warehouseMaterial[i];
+            for (int i = 0; i < warehouseAccessTotalMaterials.length; i++) {
+                warehouseAccessTotalMaterials[i] += warehouseMaterial[i];
             }
         }
-        return wareHouseAccessTotalMaterials;
     }
 
-    public int[] getComputerTotalMaterial(ArrayList<Computer> computers) {
+    public int[] getWarehouseTotalMaterials() {
+        return warehouseAccessTotalMaterials;
+    }
+
+    public int[] getComputersTotalMaterial(ArrayList<Computer> computers) {
         int[] computerSumMaterials = new int[9];
         for (Computer comps : computers) {
             int[] compsMaterial = comps.getConstructMaterial();
@@ -121,8 +132,8 @@ public class Factory extends Building {
 
     private boolean checkMaterial(ArrayList<Computer> computers) {
         boolean materialSufficient = true;
-        for (int i = 0; i < getWarehouseTotalMaterial().length; i++) {
-            if (getComputerTotalMaterial(computers)[i] > getWarehouseTotalMaterial()[i]) {
+        for (int i = 0; i < getWarehouseTotalMaterials().length; i++) {
+            if (getComputersTotalMaterial(computers)[i] > getWarehouseTotalMaterials()[i]) {
                 materialSufficient = false;
                 break;
             }
@@ -142,9 +153,9 @@ public class Factory extends Building {
 //        System.out.println(computerSumEmployee[0] + " and " + super.buildingCapacity[0]);
 //        System.out.println(computerSumEmployee[1] + " and " + super.buildingCapacity[1]);
 //        System.out.println(computerSumEmployee[2] + " and " + super.buildingCapacity[2]);
-        boolean timeSufficient = !((computerSumEmployee[0] > super.buildingCapacity[0])
-                                || (computerSumEmployee[1] > super.buildingCapacity[1])
-                                || (computerSumEmployee[2] > super.buildingCapacity[2]));
+        boolean timeSufficient = !((computerSumEmployee[0] > super.getCapacity()[0])
+                                || (computerSumEmployee[1] > super.getCapacity()[1])
+                                || (computerSumEmployee[2] > super.getCapacity()[2]));
 
         System.out.println("time sufficient: " + timeSufficient);
         return timeSufficient;
@@ -184,6 +195,25 @@ public class Factory extends Building {
         } else {
             return time;
         }
+    }
+
+    public String getFactoryInformation() {
+        String info = "Location: " + super.getLocation() +
+                " | Working hours: " + super.getWorkingHours() + "\n";
+        info += "Employees capacity: " + + super.getCapacity()[0] + " workers "
+                + super.getCapacity()[1] + " technicians "
+                + super.getCapacity()[2] + " engineers \n";
+        info += "Employees: " + employeesList[0] + " workers "
+                + employeesList[1] + " technicians "
+                + employeesList[2] + " engineers \n";
+        info += "Access to warehouses: ";
+        for (Warehouse access: warehouseAccess) {
+            info += "#" + (allwarehouses.indexOf(access)+1) + " ";
+        }
+        info += "\nMaterials: [aluminium grams, plastic grams, glass grams, silicon mg " +
+                ", gold mg, copper mg, iron grams, chrome mg, silver mg]\n" +
+                "Amount: " + Arrays.toString(getWarehouseTotalMaterials()) + "\n";
+        return info + "\n";
     }
 }
 

@@ -1,29 +1,32 @@
 package carFactory;
 
+import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
 class Main {
-	 public static void main(String[] args) {
+	 public static void main(String[] args) throws IOException {
 		 ArrayList<Factory> factories = new ArrayList<>();
-		 ArrayList<Warehouse> wareHouses = new ArrayList<>();
+		 ArrayList<Warehouse> warehouses = new ArrayList<>();
 		 ArrayList<Request> requests = new ArrayList<>();
          String[] location = {"Riyadh", "Makkah", "Dammam", "Jeddah"};
-         int[] workingHours = {12, 10, 16, 24};
+         int[] workingHours = {12, 18, 24};
          int numberOfSuccess = 0;
 
          System.out.println("Welcome in the Computer Factory simulation program");
+         LocalDateTime simulationDate = LocalDateTime.now();
 		 // get user input
-		 Scanner input = new Scanner(System.in);
+//		 Scanner input = new Scanner(System.in);
 		 System.out.println("To begin the simulation please Enter the number of days you want this simulation to run through: ");
 		 //int days = input.nextInt();
-		 int days = 10;
+		 int days = 5;
 		 // maximum number of requests per day
 		 int maxRequestsPerDay = 10;
 		 Random random = new Random();
 		 //1A- generate fixed number of warehouses
-		 for (int i = 0; i < 300; i++) {
+		 for (int i = 0; i < 100; i++) {
 			 int Location = random.nextInt(location.length);
 			 int WorkingHours = random.nextInt(workingHours.length);
 	//			 int[] storage_Capacity = (int[]) Math.floor(Math.random() * (100000 - 10000 + 1) + 10000);
@@ -40,21 +43,21 @@ class Main {
 			 storage_Capacity[8] = fullUp(500, 1000);
 
 			 Material material = new Material();
-			 wareHouses.add(new Warehouse(storage_Capacity, location[Location], workingHours[WorkingHours], material));
+			 warehouses.add(new Warehouse(storage_Capacity, location[Location], workingHours[WorkingHours], material));
 		 }
 		 //1B- generate fixed number of factories
-		 for (int i = 0; i < 30; i++) {
+		 for (int i = 0; i < 20; i++) {
 			 int Location = random.nextInt(location.length);
 			 int WorkingHours = random.nextInt(workingHours.length);
 	//			 int[] workers_Capacity = (int) Math.floor(Math.random() * (2000 - 500 + 1) + 500);
 
 			 int[] workers_Capacity = new int[3];
-			 workers_Capacity[0] = fullUp(1000, 2000);
-			 workers_Capacity[1] = fullUp(900, 1700);
-			 workers_Capacity[2] = fullUp(500, 1100);
+			 workers_Capacity[0] = fullUp(2500, 4000);
+			 workers_Capacity[1] = fullUp(1500, 3000);
+			 workers_Capacity[2] = fullUp(500, 2000);
 
 			 Factory factory = new Factory(workers_Capacity, location[Location], workingHours[WorkingHours]);
-			 factory.setWarehouseAccess(wareHouses);
+			 factory.setWarehouseAccess(warehouses);
 			 factories.add(factory);
 		 }
 
@@ -69,7 +72,7 @@ class Main {
 						 // probability of getting 1 is 1/500
 						int createOrNot = (int) Math.floor(Math.random() * (500) + 1);
 						 if (createOrNot == 1) {
-							 Request request = new Request(i, j, k);
+							 Request request = new Request(simulationDate, i, j, k);
 							 requests.add(request);
 	//							 //4- fulfill requests
 							 numberOfSuccess += request.findFactory(factories);
@@ -80,11 +83,16 @@ class Main {
 			 }
 			 numOfRequests = 0;
 		 }
-		 System.out.println("Number of successful: " + numberOfSuccess);
-		 System.out.println("Number of unsuccessful: " + (requests.size() - numberOfSuccess));
 
-		 Report report = new Report(requests);
-		 report.generateReport();
+		 Report report = new Report(simulationDate, requests, factories, warehouses);
+		 report.writeRequestsReport();
+		 report.writeWarehousesReport();
+		 report.writeFactoriesReport();
+		 report.writeMainReport();
+
+		 System.out.println("Number of successful requests: " + numberOfSuccess);
+		 System.out.println("Number of unsuccessful requests: " + (requests.size() - numberOfSuccess));
+		 System.out.printf("Percentage of Success: %.2f%s ", (numberOfSuccess / (double) requests.size())*100,"%");
 	 }
 
 	 private static int fullUp(int min ,int max) {

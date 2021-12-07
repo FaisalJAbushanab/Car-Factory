@@ -2,6 +2,8 @@ package carFactory;
 
 // using java.util.Random;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Random;
 
 public class Material {
@@ -81,7 +83,7 @@ public class Material {
     public double random_materialPrice(double min, double max) {
 
         double random = new Random().nextDouble();
-        return min + (random * (max - min));
+        return round(min + (random * (max - min)), 5);
     }
 
     public int[] getMaterialQuantity() {
@@ -103,6 +105,14 @@ public class Material {
 
         this.materialPrice = MaterialPrice;
 
+    }
+
+    public static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        BigDecimal bd = BigDecimal.valueOf(value);
+        bd = bd.setScale(places, RoundingMode.HALF_UP);
+        return bd.doubleValue();
     }
 }
 

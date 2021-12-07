@@ -1,7 +1,7 @@
 package carFactory;
 
-public class Building {
-	public int[] buildingCapacity;
+public abstract class Building {
+	private int[] buildingCapacity;
     private String location;
     private int workingHours;
 
@@ -22,5 +22,4 @@ public class Building {
     public int getWorkingHours() {
         return workingHours;
     }
-
 }
