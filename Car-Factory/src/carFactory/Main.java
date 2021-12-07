@@ -7,6 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 class Main {
+
 	 public static void main(String[] args) throws IOException {
 		 ArrayList<Factory> factories = new ArrayList<>();
 		 ArrayList<Warehouse> warehouses = new ArrayList<>();
@@ -21,12 +22,12 @@ class Main {
 //		 Scanner input = new Scanner(System.in);
 		 System.out.println("To begin the simulation please Enter the number of days you want this simulation to run through: ");
 		 //int days = input.nextInt();
-		 int days = 5;
+		 int days = 10;
 		 // maximum number of requests per day
 		 int maxRequestsPerDay = 10;
 		 Random random = new Random();
 		 //1A- generate fixed number of warehouses
-		 for (int i = 0; i < 100; i++) {
+		 for (int i = 0; i < 200; i++) {
 			 int Location = random.nextInt(location.length);
 			 int WorkingHours = random.nextInt(workingHours.length);
 	//			 int[] storage_Capacity = (int[]) Math.floor(Math.random() * (100000 - 10000 + 1) + 10000);
@@ -46,15 +47,16 @@ class Main {
 			 warehouses.add(new Warehouse(storage_Capacity, location[Location], workingHours[WorkingHours], material));
 		 }
 		 //1B- generate fixed number of factories
-		 for (int i = 0; i < 20; i++) {
+		 for (int i = 0; i < 50; i++) {
 			 int Location = random.nextInt(location.length);
 			 int WorkingHours = random.nextInt(workingHours.length);
 	//			 int[] workers_Capacity = (int) Math.floor(Math.random() * (2000 - 500 + 1) + 500);
 
 			 int[] workers_Capacity = new int[3];
-			 workers_Capacity[0] = fullUp(2500, 4000);
-			 workers_Capacity[1] = fullUp(1500, 3000);
-			 workers_Capacity[2] = fullUp(500, 2000);
+			 //TODO worker capacitys
+			 workers_Capacity[0] = fullUp(3500, 7000);
+			 workers_Capacity[1] = fullUp(2000, 4000);
+			 workers_Capacity[2] = fullUp(1000, 2000);
 
 			 Factory factory = new Factory(workers_Capacity, location[Location], workingHours[WorkingHours]);
 			 factory.setWarehouseAccess(warehouses);
@@ -101,4 +103,5 @@ class Main {
 	 private static int fullUp(int min ,int max) {
          return (int) Math.floor(Math.random() * (max - min + 1) + min);
 	 }
+
 }

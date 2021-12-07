@@ -26,7 +26,7 @@ public class Material {
         materialQuantity[2] = random_materialQuantity(100000, 800000);
 
         // Generate random materialQuantity value for [ silicon]
-        materialQuantity[3] = random_materialQuantity(100000, 800000);
+        materialQuantity[3] = random_materialQuantity(100000, 80000);
 
         // Generate random materialQuantity value for [ gold]
         materialQuantity[4] = random_materialQuantity(50000, 100000);
@@ -58,7 +58,7 @@ public class Material {
         materialPrice[3] = random_materialPrice(0.03, 0.06);
 
         // Generate random materialPrice value for gold]
-        materialPrice[4] = random_materialPrice(570, 600);
+        materialPrice[4] = random_materialPrice(0.2, 0.6);
 
         // Generate random materialPrice value for [ copper]
         materialPrice[5] = random_materialPrice(0.09, 0.15);
@@ -70,7 +70,7 @@ public class Material {
         materialPrice[7] = random_materialPrice(0.3, 0.8);
 
         // Generate random materialPrice value for[silver]
-        materialPrice[8] = random_materialPrice(7.5, 9.5);
+        materialPrice[8] = random_materialPrice(0.5, 0.5);
 
     }
 

@@ -53,21 +53,31 @@ public class Factory extends Building {
     }
 
      private void setEmployees() {
-        //TODO salary on location
+        // TODO salary on location
+        // TODO min ???
         int max = super.getCapacity()[0] + super.getCapacity()[1] + super.getCapacity()[2];
-        int min = 4500*3;
-        int numOfEmployees = (int)Math.floor(Math.random()*((max*3)-min+1)+min);
+        int min = 6000;
+        int numOfEmployees = (int)Math.floor(Math.random()*((max)-min+1)+min);
+        int worker = 0;
+        int technician = 0;
+        int engineer = 0;
         for(int i=0; i < numOfEmployees; i++) {
-            int rand = (int)Math.floor(Math.random()*(12)+1);
-            if(5 >= rand) {
+            int rand = (int)Math.floor(Math.random()*(6)+1);
+            if((3 >= rand) && (worker < super.getCapacity()[0])) {
                 Employee employee = new Worker();
                 employees.add(employee);
-            }else if(9 <= rand) {
+                worker++;
+            }else if((5 >= rand) && (technician < super.getCapacity()[1])) {
                 Employee employee = new Technician();
                 employees.add(employee);
-            }else {
+                technician++;
+            }else if((5 < rand) && (engineer < super.getCapacity()[2])){
                 Employee employee = new Engineer();
                 employees.add(employee);
+                engineer++;
+            }
+            else {
+                continue;
             }
         }
     }
@@ -162,44 +172,48 @@ public class Factory extends Building {
     }
 
     private int calculateTime(ArrayList<Computer> computers) {
+        int worker = 0;
+        int technnician = 0;
+        int engineer = 0;
         System.out.println("in calc time");
-        int time = computers.size();
-        int repeated = 0;
-        int[] computerSumEmployee = new int[3];
-        for (Computer comps : computers) {
-            computerSumEmployee[0] += comps.getNumberOfEmployees()[0];
-            computerSumEmployee[1] += comps.getNumberOfEmployees()[1];
-            computerSumEmployee[2] += comps.getNumberOfEmployees()[2];
-        }
-//        System.out.println(computerSumEmployee[0]);
-//        System.out.println(computerSumEmployee[1]);
-//        System.out.println(computerSumEmployee[2]);
-//        System.out.println(employeesList[0]);
-//        System.out.println(employeesList[1]);
-//        System.out.println(employeesList[2]);
-        while ((((employeesList[0] - computerSumEmployee[0]) >= 0) &
-                ((employeesList[1] - computerSumEmployee[1]) >= 0) &
-                ((employeesList[2] - computerSumEmployee[2]) >= 0))) {
-
+        double time = 0;
+//        System.out.println("time start is:" + time);
+        double repeated = 0;
+        boolean breakedOut = false;
+        while((worker < employeesList[0]) &&
+                (technnician < employeesList[0]) &&
+                (engineer < employeesList[0])) {
+            for (Computer computer: computers) {
+                worker += computer.getNumberOfEmployees()[0];
+                technnician += computer.getNumberOfEmployees()[1];
+                engineer += computer.getNumberOfEmployees()[2];
+                if((worker < employeesList[0]) &&
+                    (technnician < employeesList[0]) &&
+                    (engineer < employeesList[0])) {
+                    time += 1/(repeated+1);
+//                    System.out.println("time is:" + time);
+                } else {
+                    breakedOut = true;
+                    break;
+                }
+            }
             repeated++;
-            employeesList[0] -= computerSumEmployee[0];
-//            System.out.println(employeesList[0]);
-            employeesList[1] -= computerSumEmployee[1];
-//            System.out.println(employeesList[1]);
-            employeesList[2] -= computerSumEmployee[2];
-//            System.out.println(employeesList[2]);
+            if (!breakedOut) {
+                time -= computers.size()/(repeated+1);
+            }
         }
-        System.out.println("repeated:" + repeated);
-        if(repeated != 0) {
-            return time/repeated;
-        } else {
-            return time;
-        }
+        return (int) time;
+    }
+
+
+    public int getOperatingCost() {
+        return operatingCost;
     }
 
     public String getFactoryInformation() {
         String info = "Location: " + super.getLocation() +
-                " | Working hours: " + super.getWorkingHours() + "\n";
+                " | Working hours: " + super.getWorkingHours() +
+                " | Operating cost: " + getOperatingCost() +"\n";
         info += "Employees capacity: " + + super.getCapacity()[0] + " workers "
                 + super.getCapacity()[1] + " technicians "
                 + super.getCapacity()[2] + " engineers \n";

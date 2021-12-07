@@ -63,7 +63,7 @@ public class Request {
             //TODO enum
             String[] info = getInfoArr(comp[n]);
             int[] materials = getMatsArr(comp[n]);
-            int[] emplys = /*getEmplysArr(comp[n]);*/ {15, 10, 5};
+            int[] emplys = getEmplysArr(comp[n]);
 
             Computer computer = new Computer(info, materials, emplys);
             computers.add(computer);
@@ -71,7 +71,7 @@ public class Request {
 //        for(Computer computer : computers) {
 //            selectedTime += computer.productionTime;
 //        }
-        selectedTime = getRandom(10, 20, computers.size());
+        selectedTime = getRandom(30, 5, computers.size());
     }
 
     private String setDate(LocalDateTime simulationDate, int day, int hour, int minute) {
@@ -82,13 +82,13 @@ public class Request {
         return simulationDate.format(myFormat);
     }
 
-//    public int[] getMatsArr(Computers vals) {
-//        int[] arr = new int[3];
-//        arr[0] = vals.getWorkers();
-//        arr[1] = vals.getTechnicians();
-//        arr[2] = vals.getEngineers();
-//        return arr;
-//    }
+    public int[] getEmplysArr(Computers vals) {
+        int[] arr = new int[3];
+        arr[0] = vals.getWorkers();
+        arr[1] = vals.getTechnicians();
+        arr[2] = vals.getEngineers();
+        return arr;
+    }
 
     public String[] getInfoArr(Computers vals) {
         String[] arr = new String[3];
@@ -125,7 +125,7 @@ public class Request {
             averageCost += cost / (double) factories.size();
         }
         System.out.println(averageCost + "average cost");
-        selectedCost = getRandom(10,10, averageCost);
+        selectedCost = getRandom(20,10, averageCost);
     }
 
     public String getDay() {
