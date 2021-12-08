@@ -34,6 +34,7 @@ class Main {
 			// int[] storage_Capacity = (int[]) Math.floor(Math.random() * (100000 - 10000 +
 			// 1) + 10000);
 			int[] storage_Capacity = new int[9];
+
 			// [alamnuim, plastic, glass, silicon, gold, copper, iron, chrome, silver]
 			storage_Capacity[0] = fullUp(5000, 10000);
 			storage_Capacity[1] = fullUp(5000, 10000);
