@@ -45,6 +45,7 @@ public class Report {
                 allReport += request.getFullfilmentInfo();
             } else {
                 allReport += (requests.indexOf(request) + 1) + ": request " + request.getDateRequested() + " did not find a factory!\n";
+                allReport += request.getFullfilmentInfo();
             }
         }
         allReport += summary;

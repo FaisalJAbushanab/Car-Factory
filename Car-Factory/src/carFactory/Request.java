@@ -39,7 +39,7 @@ public class Request {
 
     private String dateRequested;
 
-    public Request(LocalDateTime whenRequested, int day, int hour, int minute) {
+    public Request(LocalDateTime whenRequested, int day, int hour, int minute, int size) {
         if(day < 10)
             this.day = "0" + String.valueOf(day);
         else
@@ -55,7 +55,7 @@ public class Request {
 
         dateRequested = setDate(whenRequested, day, hour, minute);
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < size; i++) {
 
             Computers[] comp = Computers.values();
             Random random = new Random();
@@ -121,11 +121,12 @@ public class Request {
             }
         }
         for(Factory fact: factories) {
-            int cost =  fact.calculateCostMats(computerSumMaterials);
-            averageCost += cost / (double) factories.size();
+            int constructCost =  fact.calculateCostMats(computerSumMaterials);
+            int operatingCost = fact.getOperatingCost();
+            averageCost += (operatingCost+constructCost)/ (double) factories.size();
         }
         System.out.println(averageCost + "average cost");
-        selectedCost = getRandom(20,10, averageCost);
+        selectedCost = getRandom(15,5, averageCost);
     }
 
     public String getDay() {

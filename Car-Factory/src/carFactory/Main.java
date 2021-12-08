@@ -27,8 +27,8 @@ class Main {
 		int maxRequestsPerDay = 10;
 		Random random = new Random();
 		// 1A- generate fixed number of warehouses
-		int x = fullUp(200, 500);
-		for (int i = 0; i < x; i++) {
+		int numberWarehouse = fullUp(days*10, days*20);
+		for (int i = 0; i < numberWarehouse; i++) {
 			int Location = random.nextInt(location.length);
 			int WorkingHours = random.nextInt(workingHours.length);
 			// int[] storage_Capacity = (int[]) Math.floor(Math.random() * (100000 - 10000 +
@@ -50,8 +50,9 @@ class Main {
 			warehouses.add(new Warehouse(storage_Capacity, location[Location], workingHours[WorkingHours], material));
 		}
 		// 1B- generate fixed number of factories
-		int y = fullUp(50, 125);
-		for (int i = 0; i < y; i++) {
+		int potential = fullUp(days*0.9, days*1.1);
+		int numberFactory = fullUp(days*4, days*8);
+		for (int i = 0; i < numberFactory; i++) {
 			int Location = random.nextInt(location.length);
 			int WorkingHours = random.nextInt(workingHours.length);
 			// int[] workers_Capacity = (int) Math.floor(Math.random() * (2000 - 500 + 1) +
@@ -59,9 +60,9 @@ class Main {
 
 			int[] workers_Capacity = new int[3];
 			// TODO worker capacitys
-			workers_Capacity[0] = fullUp(3500, 7000);
-			workers_Capacity[1] = fullUp(2000, 4000);
-			workers_Capacity[2] = fullUp(1000, 2000);
+			workers_Capacity[0] = fullUp(potential*30, potential*60);
+			workers_Capacity[1] = fullUp(potential*20, potential*40);
+			workers_Capacity[2] = fullUp(potential*10, potential*20);
 
 			Factory factory = new Factory(workers_Capacity, location[Location], workingHours[WorkingHours]);
 			factory.setWarehouseAccess(warehouses);
@@ -79,7 +80,7 @@ class Main {
 						// probability of getting 1 is 1/500
 						int createOrNot = (int) Math.floor(Math.random() * (500) + 1);
 						if (createOrNot == 1) {
-							Request request = new Request(simulationDate, i, j, k);
+							Request request = new Request(simulationDate, i, j, k, fullUp(potential*0.8,potential*1.2));
 							requests.add(request);
 							// //4- fulfill requests
 							numberOfSuccess += request.findFactory(factories);
@@ -109,4 +110,8 @@ class Main {
 		return (int) Math.floor(Math.random() * (max - min + 1) + min);
 	}
 
+	public static int fullUp(double min, double max) {
+		double random = new Random().nextDouble();
+		return (int)(min + (random * (max - min)));
+	}
 }

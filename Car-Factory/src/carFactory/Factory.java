@@ -54,9 +54,8 @@ public class Factory extends Building {
 
      private void setEmployees() {
         // TODO salary on location
-        // TODO min ???
         int max = super.getCapacity()[0] + super.getCapacity()[1] + super.getCapacity()[2];
-        int min = 6000;
+        int min = max/2;
         int numOfEmployees = (int)Math.floor(Math.random()*((max)-min+1)+min);
         int worker = 0;
         int technician = 0;
@@ -130,14 +129,21 @@ public class Factory extends Building {
     }
 
     public int calculateCostMats(int[] computerSumMaterials) {
-        int matsCost = 0;
+        double matsCost = 1000000000;
+        double tempCost = 0;
         for (Warehouse access : warehouseAccess) {
             double[] materialPrice = access.getMaterial().getMaterialPrice();
             for (int i = 0; i < materialPrice.length; i++) {
-                matsCost += materialPrice[i] * computerSumMaterials[i];
+                tempCost += materialPrice[i] * computerSumMaterials[i];
             }
+//            System.out.println("temp cost is" + tempCost);
+//            System.out.println("mats cost is" + matsCost);
+            if (tempCost < matsCost) {
+                matsCost = tempCost;
+            }
+            tempCost = 0;
         }
-        return matsCost;
+        return (int) matsCost;
     }
 
     private boolean checkMaterial(ArrayList<Computer> computers) {
@@ -153,20 +159,25 @@ public class Factory extends Building {
     }
 
     private boolean checkTime(ArrayList<Computer> computers) {
+        boolean timeSufficient = true;
         int[] computerSumEmployee = new int[3];
         for (Computer comps : computers) {
-            computerSumEmployee[0] += comps.getNumberOfEmployees()[0];
-            computerSumEmployee[1] += comps.getNumberOfEmployees()[1];
-            computerSumEmployee[2] += comps.getNumberOfEmployees()[2];
+            for (int i = 0; i < computerSumEmployee.length; i++) {
+                computerSumEmployee[i] += comps.getNumberOfEmployees()[i];
+            }
         }
-
+        for (int i = 0; i < computerSumEmployee.length; i++) {
+            if ((computerSumEmployee[i] > super.getCapacity()[i])) {
+                timeSufficient = false;
+                break;
+            }
 //        System.out.println(computerSumEmployee[0] + " and " + super.buildingCapacity[0]);
 //        System.out.println(computerSumEmployee[1] + " and " + super.buildingCapacity[1]);
 //        System.out.println(computerSumEmployee[2] + " and " + super.buildingCapacity[2]);
-        boolean timeSufficient = !((computerSumEmployee[0] > super.getCapacity()[0])
-                                || (computerSumEmployee[1] > super.getCapacity()[1])
-                                || (computerSumEmployee[2] > super.getCapacity()[2]));
-
+//        boolean timeSufficient = !((computerSumEmployee[0] > super.getCapacity()[0])
+//                                || (computerSumEmployee[1] > super.getCapacity()[1])
+//                                || (computerSumEmployee[2] > super.getCapacity()[2]));
+        }
         System.out.println("time sufficient: " + timeSufficient);
         return timeSufficient;
     }
@@ -204,7 +215,6 @@ public class Factory extends Building {
         }
         return (int) time;
     }
-
 
     public int getOperatingCost() {
         return operatingCost;
