@@ -16,62 +16,62 @@ public class Factory extends Building {
     public Factory(int[] workerCapacity, String location, int workingHours) {
         super(workerCapacity, location, workingHours);
 
-        setEmployees();
-        setEmployeesList();
-        setOperatingCost();
+        setEmployees(); // Generate Employees
+        setEmployeesList(); // add all the employees to employeesList
+        setOperatingCost();  // calculate operation cost
     }
 
     public boolean isOccupied() {
-        return isOccupied;
+        return isOccupied; // return the status of the factory
     }
 
     public void setOccupied() {
-        isOccupied = true;
+        isOccupied = true; // occupy the factory
     }
     public void setUnOccupied() {
-        isOccupied = false;
+        isOccupied = false; // unoccupy the factory
     }
 
     private void setOperatingCost() {
         for (Employee employee : employees) {
 //            System.out.println(employee.toString());
-            operatingCost += employee.getSalary();
+            operatingCost += employee.getSalary(); // add emplyees' salaries to the operation cost
         }
-        System.out.println(operatingCost);
+        System.out.println(operatingCost); // print the operating cost
     }
 
     private void setEmployeesList() {
         for (Employee employee : employees) {
-            if (employee instanceof Worker) {
-                employeesList[0] += 1;
+            if (employee instanceof Worker) { 
+                employeesList[0] += 1; // increase index 0 means increasing in worker numbers
             } else if (employee instanceof Technician) {
-                employeesList[1] += 1;
+                employeesList[1] += 1; // increase index 1 means increasing in Technician numbers
             } else {
-                employeesList[2] += 1;;
+                employeesList[2] += 1; // increase index 2 means increasing in Engineers numbers
             }
         }
     }
 
      private void setEmployees() {
         // TODO salary on location
-        int max = super.getCapacity()[0] + super.getCapacity()[1] + super.getCapacity()[2];
+        int max = super.getCapacity()[0] + super.getCapacity()[1] + super.getCapacity()[2]; // get employees capacity of the factory
         int min = max/2;
-        int numOfEmployees = (int)Math.floor(Math.random()*((max)-min+1)+min);
+        int numOfEmployees = (int)Math.floor(Math.random()*((max)-min+1)+min); // generate random number of employees
         int worker = 0;
         int technician = 0;
         int engineer = 0;
         for(int i=0; i < numOfEmployees; i++) {
             int rand = (int)Math.floor(Math.random()*(6)+1);
             if((3 >= rand) && (worker < super.getCapacity()[0])) {
-                Employee employee = new Worker();
-                employees.add(employee);
+                Employee employee = new Worker(); 
+                employees.add(employee); // add new worker to the list
                 worker++;
             }else if((5 >= rand) && (technician < super.getCapacity()[1])) {
-                Employee employee = new Technician();
-                employees.add(employee);
+                Employee employee = new Technician(); 
+                employees.add(employee); // add new technician to the list
                 technician++;
             }else if((5 < rand) && (engineer < super.getCapacity()[2])){
-                Employee employee = new Engineer();
+                Employee employee = new Engineer(); // add new engineer to the list
                 employees.add(employee);
                 engineer++;
             }
@@ -85,10 +85,10 @@ public class Factory extends Building {
         allwarehouses = warehouses;
         for (Warehouse warehouse : warehouses) {
             if (warehouse.getLocation().equals(super.getLocation())) {
-                warehouseAccess.add(warehouse);
+                warehouseAccess.add(warehouse); // if the location of the warehouse is the same as the location of the factory make the warehouse accesable by factory
             }
         }
-        setWarehouseTotalMaterial();
+        setWarehouseTotalMaterial(); // set the total material of the factory
     }
 
     public int[] getRequirments(Request request) {
