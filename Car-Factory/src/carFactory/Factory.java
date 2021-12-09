@@ -71,8 +71,8 @@ public class Factory extends Building {
                 employees.add(employee); // add new technician to the list
                 technician++;
             }else if((5 < rand) && (engineer < super.getCapacity()[2])){
-                Employee employee = new Engineer(); // add new engineer to the list
-                employees.add(employee);
+                Employee employee = new Engineer();
+                employees.add(employee);  // add new engineer to the list
                 engineer++;
             }
             else {
@@ -132,12 +132,11 @@ public class Factory extends Building {
         double matsCost = 1000000000;
         double tempCost = 0;
         for (Warehouse access : warehouseAccess) {
-            double[] materialPrice = access.getMaterial().getMaterialPrice();
+            double[] materialPrice = access.getMaterial().getMaterialPrice(); // get material price of the warehouse
             for (int i = 0; i < materialPrice.length; i++) {
                 tempCost += materialPrice[i] * computerSumMaterials[i];
             }
-//            System.out.println("temp cost is" + tempCost);
-//            System.out.println("mats cost is" + matsCost);
+
             if (tempCost < matsCost) {
                 matsCost = tempCost;
             }
@@ -149,8 +148,8 @@ public class Factory extends Building {
     private boolean checkMaterial(ArrayList<Computer> computers) {
         boolean materialSufficient = true;
         for (int i = 0; i < getWarehouseTotalMaterials().length; i++) {
-            if (getComputersTotalMaterial(computers)[i] > getWarehouseTotalMaterials()[i]) {
-                materialSufficient = false;
+            if (getComputersTotalMaterial(computers)[i] > getWarehouseTotalMaterials()[i]) { // compare the material required by the request and compare it to the material available by the factory
+                materialSufficient = false; 
                 break;
             }
         }
@@ -171,24 +170,17 @@ public class Factory extends Building {
                 timeSufficient = false;
                 break;
             }
-//        System.out.println(computerSumEmployee[0] + " and " + super.buildingCapacity[0]);
-//        System.out.println(computerSumEmployee[1] + " and " + super.buildingCapacity[1]);
-//        System.out.println(computerSumEmployee[2] + " and " + super.buildingCapacity[2]);
-//        boolean timeSufficient = !((computerSumEmployee[0] > super.getCapacity()[0])
-//                                || (computerSumEmployee[1] > super.getCapacity()[1])
-//                                || (computerSumEmployee[2] > super.getCapacity()[2]));
         }
         System.out.println("time sufficient: " + timeSufficient);
         return timeSufficient;
     }
-
-    private int calculateTime(ArrayList<Computer> computers) {
+    
+    private int calculateTime(ArrayList<Computer> computers) { // calculated required time by the factory
         int worker = 0;
         int technnician = 0;
         int engineer = 0;
         System.out.println("in calc time");
         double time = 0;
-//        System.out.println("time start is:" + time);
         double repeated = 0;
         boolean breakedOut = false;
         while((worker < employeesList[0]) &&
@@ -202,7 +194,6 @@ public class Factory extends Building {
                     (technnician < employeesList[0]) &&
                     (engineer < employeesList[0])) {
                     time += 1/(repeated+1);
-//                    System.out.println("time is:" + time);
                 } else {
                     breakedOut = true;
                     break;
@@ -217,10 +208,10 @@ public class Factory extends Building {
     }
 
     public int getOperatingCost() {
-        return operatingCost;
+        return operatingCost; // return the total operating cost
     }
 
-    public String getFactoryInformation() {
+    public String getFactoryInformation() { // get all factory's information
         String info = "Location: " + super.getLocation() +
                 " | Working hours: " + super.getWorkingHours() +
                 " | Operating cost: " + getOperatingCost() +"\n";
@@ -231,8 +222,8 @@ public class Factory extends Building {
                 + employeesList[1] + " technicians "
                 + employeesList[2] + " engineers \n";
         info += "Access to warehouses: ";
-        for (Warehouse access: warehouseAccess) {
-            info += "#" + (allwarehouses.indexOf(access)+1) + " ";
+        for (Warehouse access: warehouseAccess) { 
+            info += "#" + (allwarehouses.indexOf(access)+1) + " "; // get all the warehouses that the factory has access to
         }
         info += "\nMaterials: [aluminium grams, plastic grams, glass grams, silicon mg " +
                 ", gold mg, copper mg, iron grams, chrome mg, silver mg]\n" +
