@@ -35,9 +35,9 @@ public class Factory extends Building {
     private void setOperatingCost() {
         for (Employee employee : employees) {
 //            System.out.println(employee.toString());
-            operatingCost += employee.getSalary(); // add emplyees' salaries to the operation cost
+            operatingCost += employee.getSalary(); // add employees' salaries to the operation cost
         }
-        System.out.println(operatingCost); // print the operating cost
+//        System.out.println(operatingCost); // print the operating cost
     }
 
     private void setEmployeesList() {
@@ -60,7 +60,7 @@ public class Factory extends Building {
         int worker = 0;
         int technician = 0;
         int engineer = 0;
-        for(int i=0; i < numOfEmployees; i++) {
+        for(int i= 0; i < numOfEmployees; i++) {
             int rand = (int)Math.floor(Math.random()*(6)+1);
             if((3 >= rand) && (worker < super.getCapacity()[0])) {
                 Employee employee = new Worker(); 
