@@ -14,32 +14,17 @@ public class Request {
     private String day;
     private String hour;
     private String minute;
+    private int[] computerSumMaterials = new int[9];
+    private int[] totalNumberOfEmployees = new int[3];
     private Factory takenFactory;
     private String takenFactoryProvidedCost;
     private Boolean requestComplete = false;
-
-    public String getTakenFactoryProvidedCost() {
-        return takenFactoryProvidedCost;
-    }
-
-    public Boolean isComplete() {
-        return requestComplete;
-    }
-
-    public void setComplete() {
-        this.requestComplete = true;
-    }
-
-    public String getTakenFactoryProvidedTime() {
-        return takenFactoryProvidedTime;
-    }
-
     private String takenFactoryProvidedTime;
     private int takenFactoryIndex;
-
     private String dateRequested;
 
     public Request(LocalDateTime whenRequested, int day, int hour, int minute, int size) {
+        //give a special time for the request
         if(day < 10)
             this.day = "0" + String.valueOf(day);
         else
@@ -53,14 +38,17 @@ public class Request {
         else
             this.minute = String.valueOf(minute);
 
+        // get real time date
         dateRequested = setDate(whenRequested, day, hour, minute);
 
+        //generate #computers
         for (int i = 0; i < size; i++) {
 
+            // select a random computer from enum
             Computers[] comp = Computers.values();
             Random random = new Random();
             int n = random.nextInt(comp.length);
-            //TODO enum
+            // get selected computer information
             String[] info = getInfoArr(comp[n]);
             int[] materials = getMatsArr(comp[n]);
             int[] emplys = getEmplysArr(comp[n]);
@@ -68,12 +56,10 @@ public class Request {
             Computer computer = new Computer(info, materials, emplys);
             computers.add(computer);
         }
-//        for(Computer computer : computers) {
-//            selectedTime += computer.productionTime;
-//        }
         selectedTime = getRandom(30, 5, computers.size());
     }
 
+    // converts simulation time into real time
     private String setDate(LocalDateTime simulationDate, int day, int hour, int minute) {
         simulationDate = simulationDate.plusDays(day);
         simulationDate = simulationDate.plusHours(hour);
@@ -97,6 +83,7 @@ public class Request {
         arr[2] = vals.getQuality();
         return arr;
     }
+
     public int[] getMatsArr(Computers vals) {
         int[] arr = new int[9];
         arr[0] = vals.getMass1();
@@ -111,22 +98,39 @@ public class Request {
         return arr;
     }
 
+    // gets average cost of all factories
     private void setSelectedCost(ArrayList<Factory> factories) {
         int averageCost = 0;
-        int[] computerSumMaterials = new int[9];
-        for (Computer comps : computers) {
-            int[] compsMaterial = comps.getConstructMaterial();
-            for (int i = 0; i < compsMaterial.length; i++) {
-                computerSumMaterials[i] += compsMaterial[i];
-            }
-        }
+        setComputerSumRequirements();
+
         for(Factory fact: factories) {
             int constructCost =  fact.calculateCostMats(computerSumMaterials);
             int operatingCost = fact.getOperatingCost();
             averageCost += (operatingCost+constructCost)/ (double) factories.size();
         }
-        System.out.println(averageCost + "average cost");
         selectedCost = getRandom(15,5, averageCost);
+    }
+
+    // sets array of total requirements needed for all computers in request
+    private void setComputerSumRequirements() {
+        for (Computer comps : computers) {
+            int[] compsMaterial = comps.getConstructMaterial();
+            for (int i = 0; i < compsMaterial.length; i++) {
+                computerSumMaterials[i] += compsMaterial[i];
+            }
+            int[] compsEmployees = comps.getNumberOfEmployees();
+            for (int i = 0; i < compsEmployees.length; i++) {
+                totalNumberOfEmployees[i] += compsEmployees[i];
+            }
+        }
+    }
+
+    public int[] getComputerSumMaterials() {
+        return computerSumMaterials;
+    }
+
+    public Boolean getRequestComplete() {
+        return requestComplete;
     }
 
     public String getDay() {
@@ -141,6 +145,7 @@ public class Request {
         return minute;
     }
 
+    // gets a random value depending on range given
     private int getRandom(int lower, int upper, int val) {
         int addOrSub = (int) Math.floor(Math.random() * (2) + 1);
         if (addOrSub == 1) {
@@ -173,6 +178,7 @@ public class Request {
         return takenFactoryIndex;
     }
 
+    // finds the factory that best provides the request
     public int findFactory(ArrayList<Factory> factories) {
 
         double best = -1;
@@ -184,9 +190,12 @@ public class Request {
 
         for(Factory factory: factories) {
             if (!factory.isOccupied()) {
-                int[] currentValues = factory.getRequirments(this);
+                // checks selected factory
+                int[] currentValues = factory.getRequirments(this, factories.indexOf(factory));
+                // analyze score
                 double score = getScore(currentValues);
-                System.out.println("factory#" + factories.indexOf(factory) + " got score: " + score);
+                System.out.println("Factory#" + factories.indexOf(factory) + " got score: " + score);
+                // assigns best
                 if (score > best) {
                     best = score;
                     bestIndex = factories.indexOf(factory);
@@ -230,6 +239,7 @@ public class Request {
         return dateRequested;
     }
 
+    // summary of request state
     public String getFullfilmentInfo() {
         String requestInfo = "Request's Selected Cost: $" + selectedCost +
                 " and Selected Time: " + selectedTime + " Days \n";
@@ -244,17 +254,40 @@ public class Request {
         return requestInfo + factoryInfo + "\n";
     }
 
+    public String getTakenFactoryProvidedCost() {
+        return takenFactoryProvidedCost;
+    }
+    public Boolean isComplete() {
+        return requestComplete;
+    }
+    private int[] getTotalNumberOfEmployees() {
+        return totalNumberOfEmployees;
+    }
+    public void setComplete() {
+        this.requestComplete = true;
+    }
+
+    public String getTakenFactoryProvidedTime() {
+        return takenFactoryProvidedTime;
+    }
+
+    // summary for request request's
     public String getComputersInformation() {
-        String info = "Number of Computers generated: " + computers.size() + "\n";
+        StringBuilder info = new StringBuilder("Number of Computers generated: " + computers.size() + "\n");
+        info.append("[workers, technicians, engineers]\n");
+        info.append(Arrays.toString(getTotalNumberOfEmployees())).append("\n");
+        info.append("[aluminium grams, plastic grams, glass grams, silicon mg " +
+                ", gold mg, copper mg, iron grams, chrome mg, silver mg]\n");
+        info.append(Arrays.toString(getComputerSumMaterials())).append("\n");
         for (Computer computer: computers) {
-            info += "Computer#" + (computers.indexOf(computer)+1) + ":\n";
-            info += "\t[Company, Type, Quality]\n";
-            info += "\t" + Arrays.toString(computer.getName()) + "\n";
-            info += "\t[workers, technicians, engineers]\n";
-            info += "\t" + Arrays.toString(computer.getNumberOfEmployees()) + "\n";
-            info += "\t[aluminium grams, plastic grams, glass grams, silicon mg " +
-                    ", gold mg, copper mg, iron grams, chrome mg, silver mg]\n";
-            info += "\t" + Arrays.toString(computer.getConstructMaterial()) + "\n";
+            info.append("Computer#").append(computers.indexOf(computer) + 1).append(":\n");
+            info.append("\t[Company, Type, Quality]\n");
+            info.append("\t").append(Arrays.toString(computer.getName())).append("\n");
+            info.append("\t[workers, technicians, engineers]\n");
+            info.append("\t").append(Arrays.toString(computer.getNumberOfEmployees())).append("\n");
+            info.append("\t[aluminium grams, plastic grams, glass grams, silicon mg " +
+                    ", gold mg, copper mg, iron grams, chrome mg, silver mg]\n");
+            info.append("\t").append(Arrays.toString(computer.getConstructMaterial())).append("\n");
         }
         return info + "\n";
     }

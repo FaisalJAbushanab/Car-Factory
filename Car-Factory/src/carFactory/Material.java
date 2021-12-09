@@ -8,9 +8,7 @@ import java.util.Random;
 
 public class Material {
 
-
     //[alamnuim, plastic, glass, silicon, gold, copper, iron, chrome, silver]--9
-
     private int[] materialQuantity = new int[9];
     private double[] materialPrice = new double[9];
 
@@ -58,7 +56,7 @@ public class Material {
         materialPrice[3] = random_materialPrice(0.03, 0.06);
 
         // Generate random materialPrice value for gold]
-        materialPrice[4] = random_materialPrice(0.2, 0.6);
+        materialPrice[4] = random_materialPrice(0.5, 0.7);
 
         // Generate random materialPrice value for [ copper]
         materialPrice[5] = random_materialPrice(0.09, 0.15);
@@ -70,7 +68,7 @@ public class Material {
         materialPrice[7] = random_materialPrice(0.3, 0.8);
 
         // Generate random materialPrice value for[silver]
-        materialPrice[8] = random_materialPrice(0.5, 0.5);
+        materialPrice[8] = random_materialPrice(0.2, 0.4);
 
     }
 

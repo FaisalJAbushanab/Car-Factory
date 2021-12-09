@@ -91,10 +91,10 @@ public class Factory extends Building {
         setWarehouseTotalMaterial();
     }
 
-    public int[] getRequirments(Request request) {
+    public int[] getRequirments(Request request, int index) {
         int calculatedCost = -1;
         int calculatedTime = -1;
-        System.out.printf("Factory of request#(%s/%s:%s)\n",
+        System.out.printf("Factory#" + index + " of request#(%s/%s:%s)\n",
                 request.getDay(), request.getHour(), request.getMinute());
         if(checkMaterial(request.getComputers()) & checkTime(request.getComputers())) {
             calculatedCost = calculateCostMats(getComputersTotalMaterial(request.getComputers())) + operatingCost;
@@ -186,7 +186,7 @@ public class Factory extends Building {
         int worker = 0;
         int technnician = 0;
         int engineer = 0;
-        System.out.println("in calc time");
+//        System.out.println("in calc time");
         double time = 0;
 //        System.out.println("time start is:" + time);
         double repeated = 0;
