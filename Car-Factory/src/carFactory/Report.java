@@ -9,7 +9,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class Report {
-    // TODO REPORT
     private ArrayList<Request> requests;
     private ArrayList<Factory> factories;
     private ArrayList<Warehouse> warehouses;
@@ -17,14 +16,10 @@ public class Report {
     private static String allRequestsReport = "";
     private static String allFactoriesReport = "";
     private static String allWarehousesReport = "";
-    //private String report;
-    //dates
-    private LocalDateTime simDate;
     private String name;
 
     public Report(LocalDateTime simDate, ArrayList<Request> requests,
                   ArrayList<Factory> factories, ArrayList<Warehouse> warehouse) {
-        this.simDate = simDate;
         this.requests = requests;
         this.factories = factories;
         this.warehouses = warehouse;
@@ -33,10 +28,7 @@ public class Report {
 
     }
 
-//    public void setReport(String report) {
-//        report = generateReport();
-//    }
-//
+    // writes on file the main information of the simulation
     public void writeMainReport(String summary) throws IOException {
         for (Request request: requests) {
             if (request.getTakenFactory() != null) {
@@ -49,22 +41,10 @@ public class Report {
             }
         }
         allReport += summary;
-        // Import the IOException class to handle errors
         writeToFile((name + " Main"), allReport);
-//        BufferedWriter output = null;
-//        try {
-//            File file = new File(name);
-//            output = new BufferedWriter(new FileWriter(file));
-//            output.write(allReport);
-//        } catch ( IOException e ) {
-//            e.printStackTrace();
-//        } finally {
-//            if (output != null) {
-//                output.close();
-//            }
-//        }
     }
 
+    // writes on file the warehouse information of the simulation
     public void writeWarehousesReport() throws IOException {
         allWarehousesReport += "Number of warehouse generated: " + warehouses.size() + "\n\n";
         for (Warehouse warehouse : warehouses) {
@@ -73,6 +53,7 @@ public class Report {
         }
         writeToFile((name + " Warehouses"), allWarehousesReport);
     }
+    // writes on file the factories information of the simulation
     public void writeFactoriesReport() throws IOException {
         allFactoriesReport += "Number of factories generated: " + factories.size() + "\n\n";
         for (Factory factory : factories) {
@@ -81,6 +62,7 @@ public class Report {
         }
         writeToFile((name + " Factories"), allFactoriesReport);
     }
+    // writes on file the requests information of the simulation
     public void writeRequestsReport() throws IOException {
         allRequestsReport += "Number of requests generated: " + requests.size() + "\n\n";
         for (Request request : requests) {
@@ -91,7 +73,8 @@ public class Report {
         writeToFile((name + " Requests"), allRequestsReport);
     }
 
-    public void writeToFile(String name, String report) throws IOException {
+    // write to file a report named after simulation date
+    private void writeToFile(String name, String report) throws IOException {
         name += ".txt";
         BufferedWriter output = null;
         try {
