@@ -20,10 +20,10 @@ public class Request {
     private String takenFactoryProvidedCost;
     private Boolean requestComplete = false;
     private String takenFactoryProvidedTime;
-    private int takenFactoryIndex;
-    private String dateRequested;
+    public int takenFactoryIndex;
+//    private String dateRequested;
 
-    public Request(LocalDateTime whenRequested, int day, int hour, int minute, int size) {
+    public Request( int day, int hour, int minute, int size) {
         //give a special time for the request
         if(day < 10)
             this.day = "0" + String.valueOf(day);
@@ -39,7 +39,7 @@ public class Request {
             this.minute = String.valueOf(minute);
 
         // get real time date
-        dateRequested = setDate(whenRequested, day, hour, minute);
+//        dateRequested = setDate(whenRequested, day, hour, minute);
 
         //generate #computers
         for (int i = 0; i < size; i++) {
@@ -214,6 +214,7 @@ public class Request {
         }
         else {
             takenFactory = null;
+            takenFactoryIndex = -1;
             System.out.printf("For request#(%s/%s:%s)\n", day, hour, minute);
             System.out.println("No Factory have been found");
             return 0;
@@ -235,9 +236,9 @@ public class Request {
         return selectedCost;
     }
 
-    public String getDateRequested() {
-        return dateRequested;
-    }
+//    public String getDateRequested() {
+//        return dateRequested;
+//    }
 
     // summary of request state
     public String getFullfilmentInfo() {

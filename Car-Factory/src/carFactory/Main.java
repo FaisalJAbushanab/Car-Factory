@@ -6,30 +6,28 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-class Main {
-
-	public static void main(String[] args) throws IOException {
-		ArrayList<Factory> factories = new ArrayList<>();
-		ArrayList<Warehouse> warehouses = new ArrayList<>();
-		ArrayList<Request> requests = new ArrayList<>();
-		String[] location = { "Riyadh", "Makkah", "Dammam", "Jeddah" };
-		int[] workingHours = { 12, 18, 24 };
-		int numberOfSuccess = 0;
-
-		System.out.println("Welcome in the Computer Factory simulation program");
-		LocalDateTime simulationDate = LocalDateTime.now();
-
-		// get user input
-		Scanner input = new Scanner(System.in);
-		System.out.println("To begin the simulation please " +
-				"Enter the number of days you want this simulation to run through: ");
-		int days = input.nextInt();
-//		int days = 50;
-		// maximum number of requests per day
-		int maxRequestsPerDay = 10;
+public class Main {
+	
+	ArrayList<Factory> factories = new ArrayList<>();
+	ArrayList<Warehouse> warehouses = new ArrayList<>();
+	public ArrayList<Request> requests = new ArrayList<>();
+	String[] location = { "Riyadh", "Makkah", "Dammam", "Jeddah" };
+	int[] workingHours = { 12, 18, 24 };
+	int numberOfSuccess = 0;
+	
+	// simulation begins here
+	public Main(int days, int maxRequestsPerDay) {
+		
+		generateWarehouses(days);
+		generateFactories(days);
+		generateRequests(days, maxRequestsPerDay);
+		
+		
+	}
+	// 1A- generate random number of warehouses
+	public void generateWarehouses(int days) {
+		
 		Random random = new Random();
-
-		// 1A- generate random number of warehouses
 		int numberWarehouse = fullUp(days*10, days*20);
 		for (int i = 0; i < numberWarehouse; i++) {
 
@@ -51,7 +49,10 @@ class Main {
 			Material material = new Material();
 			warehouses.add(new Warehouse(storage_Capacity, location[Location], workingHours[WorkingHours], material));
 		}
-
+	}
+	
+	public void generateFactories(int days) {
+		Random random = new Random();
 		// for establishing a relation between #workers and #computers in each request
 		int potential = fullUp(days*0.9, days*1.1);
 		// 1B- generate random number of factories
@@ -71,8 +72,13 @@ class Main {
 			factory.setWarehouseAccess(warehouses);
 			factories.add(factory);
 		}
-
+	}
+	
+	// Generate random requests
+	public void generateRequests(int days, int maxRequestsPerDay) {
 		int numOfRequests = 0;
+		int potential = fullUp(days*0.9, days*1.1);
+		
 		// days loop
 		for (int i = 1; i <= days; i++) {
 			// hours loop
@@ -83,7 +89,7 @@ class Main {
 						// probability of getting 1 is 1/500
 						int createOrNot = (int) Math.floor(Math.random() * (500) + 1);
 						if (createOrNot == 1) {
-							Request request = new Request(simulationDate, i, j, k, fullUp(potential*0.8,potential*1.2));
+							Request request = new Request(i, j, k, fullUp(potential*0.8,potential*1.2));
 							requests.add(request);
 							// 4- fulfill requests
 							numberOfSuccess += request.findFactory(factories);
@@ -94,20 +100,20 @@ class Main {
 			}
 			numOfRequests = 0;
 		}
-		String conclusion = "\nNumber of successful requests: " + numberOfSuccess + "\n"
-				+ "Number of unsuccessful requests: " + (requests.size() - numberOfSuccess) + "\n";
-		String percent = String.format("Percentage of Success: %.2f%s ",
-				(numberOfSuccess / (double) requests.size()) * 100, "%");
-
-		//generate reports
-		Report report = new Report(simulationDate, requests, factories, warehouses);
-		report.writeRequestsReport();
-		report.writeWarehousesReport();
-		report.writeFactoriesReport();
-		report.writeMainReport((conclusion + percent));
-
-		System.out.println(conclusion);
-		System.out.println(percent);
+//		String conclusion = "\nNumber of successful requests: " + numberOfSuccess + "\n"
+//				+ "Number of unsuccessful requests: " + (requests.size() - numberOfSuccess) + "\n";
+//		String percent = String.format("Percentage of Success: %.2f%s ",
+//				(numberOfSuccess / (double) requests.size()) * 100, "%");
+//
+//		//generate reports
+//		Report report = new Report(simulationDate, requests, factories, warehouses);
+//		report.writeRequestsReport();
+//		report.writeWarehousesReport();
+//		report.writeFactoriesReport();
+//		report.writeMainReport((conclusion + percent));
+//
+//		System.out.println(conclusion);
+//		System.out.println(percent);
 	}
 
 	private static int fullUp(int min, int max) {
