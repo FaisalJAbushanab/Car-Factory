@@ -1,77 +1,122 @@
-Number of requests generated: 17
+Number of requests generated: 16
 
 Request#1:
 Number of Computers generated: 5
 [workers, technicians, engineers]
-[215, 125, 75]
+[205, 115, 75]
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[1670, 1650, 1700, 1300, 500, 940, 2100, 1520, 790]
+[1600, 1630, 1560, 1200, 450, 930, 2000, 1280, 620]
 Computer#1:
 	[Company, Type, Quality]
-	[asus, pc, high quality]
+	[acer, laptop, low quality]
 	[workers, technicians, engineers]
-	[70, 30, 20]
+	[30, 20, 15]
 	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[500, 450, 400, 500, 200, 400, 500, 600, 300]
+	[270, 280, 250, 100, 50, 70, 300, 60, 40]
 Computer#2:
-	[Company, Type, Quality]
-	[acer, pc, low quality]
-	[workers, technicians, engineers]
-	[40, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[300, 350, 350, 300, 100, 200, 450, 400, 200]
-Computer#3:
-	[Company, Type, Quality]
-	[acer, pc, low quality]
-	[workers, technicians, engineers]
-	[40, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[300, 350, 350, 300, 100, 200, 450, 400, 200]
-Computer#4:
 	[Company, Type, Quality]
 	[asus, laptop, low quality]
 	[workers, technicians, engineers]
 	[30, 20, 10]
 	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
 	[280, 300, 300, 100, 50, 70, 350, 60, 40]
+Computer#3:
+	[Company, Type, Quality]
+	[hp, laptop, low quality]
+	[workers, technicians, engineers]
+	[30, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[200, 250, 250, 100, 50, 70, 400, 60, 40]
+Computer#4:
+	[Company, Type, Quality]
+	[acer, pc, high quality]
+	[workers, technicians, engineers]
+	[70, 30, 25]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[450, 400, 410, 500, 200, 420, 500, 600, 300]
 Computer#5:
 	[Company, Type, Quality]
-	[acer, laptop, mid quality]
+	[dell, pc, mid quality]
 	[workers, technicians, engineers]
-	[35, 25, 15]
+	[45, 25, 15]
 	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[290, 200, 300, 100, 50, 70, 350, 60, 50]
+	[400, 400, 350, 400, 100, 300, 450, 500, 200]
 
-Request's Selected Cost: $4142 and Selected Time: 5 Days 
+Request's Selected Cost: $4131 and Selected Time: 5 Days 
 This Request did not find a factory!  
 
 Request#2:
-Number of Computers generated: 4
+Number of Computers generated: 5
 [workers, technicians, engineers]
-[135, 90, 50]
+[205, 130, 70]
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[1280, 1260, 1150, 800, 300, 540, 1450, 920, 490]
+[1500, 1350, 1650, 1000, 320, 600, 2000, 820, 400]
 Computer#1:
 	[Company, Type, Quality]
-	[dell, pc, low quality]
-	[workers, technicians, engineers]
-	[35, 25, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[370, 400, 300, 300, 100, 200, 400, 400, 200]
-Computer#2:
-	[Company, Type, Quality]
-	[hp, pc, low quality]
+	[dell, laptop, mid quality]
 	[workers, technicians, engineers]
 	[35, 20, 10]
 	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[350, 380, 300, 300, 100, 200, 400, 400, 200]
+	[200, 200, 300, 100, 50, 70, 350, 60, 50]
+Computer#2:
+	[Company, Type, Quality]
+	[dell, pc, mid quality]
+	[workers, technicians, engineers]
+	[45, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[400, 400, 350, 400, 100, 300, 450, 500, 200]
 Computer#3:
 	[Company, Type, Quality]
-	[acer, laptop, mid quality]
+	[asus, laptop, high quality]
+	[workers, technicians, engineers]
+	[50, 35, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 250, 350, 200, 60, 80, 400, 100, 50]
+Computer#4:
+	[Company, Type, Quality]
+	[acer, laptop, high quality]
+	[workers, technicians, engineers]
+	[40, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 200, 350, 200, 60, 80, 400, 100, 50]
+Computer#5:
+	[Company, Type, Quality]
+	[asus, laptop, mid quality]
 	[workers, technicians, engineers]
 	[35, 25, 15]
 	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[290, 200, 300, 100, 50, 70, 350, 60, 50]
+	[300, 300, 300, 100, 50, 70, 400, 60, 50]
+
+Request's Selected Cost: $3308 and Selected Time: 4 Days 
+This Request did not find a factory!  
+
+Request#3:
+Number of Computers generated: 4
+[workers, technicians, engineers]
+[170, 90, 50]
+[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+[1120, 1130, 1200, 800, 350, 600, 1550, 780, 430]
+Computer#1:
+	[Company, Type, Quality]
+	[dell, laptop, mid quality]
+	[workers, technicians, engineers]
+	[35, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[200, 200, 300, 100, 50, 70, 350, 60, 50]
+Computer#2:
+	[Company, Type, Quality]
+	[dell, pc, high quality]
+	[workers, technicians, engineers]
+	[75, 30, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[450, 400, 400, 500, 200, 390, 500, 600, 300]
+Computer#3:
+	[Company, Type, Quality]
+	[hp, laptop, low quality]
+	[workers, technicians, engineers]
+	[30, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[200, 250, 250, 100, 50, 70, 400, 60, 40]
 Computer#4:
 	[Company, Type, Quality]
 	[acer, laptop, low quality]
@@ -80,15 +125,233 @@ Computer#4:
 	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
 	[270, 280, 250, 100, 50, 70, 300, 60, 40]
 
-Request's Selected Cost: $3137 and Selected Time: 4 Days 
-Factory's Provided Cost: $2623 and Provided Time: 2 Days 
+Request's Selected Cost: $3097 and Selected Time: 4 Days 
+Factory's Provided Cost: $2729 and Provided Time: 1 Days 
 
-Request#3:
+Request#4:
+Number of Computers generated: 5
+[workers, technicians, engineers]
+[225, 125, 65]
+[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+[1670, 1600, 1600, 1500, 510, 1040, 2050, 1660, 790]
+Computer#1:
+	[Company, Type, Quality]
+	[hp, laptop, high quality]
+	[workers, technicians, engineers]
+	[40, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 200, 300, 200, 60, 80, 400, 100, 50]
+Computer#2:
+	[Company, Type, Quality]
+	[dell, pc, mid quality]
+	[workers, technicians, engineers]
+	[45, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[400, 400, 350, 400, 100, 300, 450, 500, 200]
+Computer#3:
+	[Company, Type, Quality]
+	[dell, pc, high quality]
+	[workers, technicians, engineers]
+	[75, 30, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[450, 400, 400, 500, 200, 390, 500, 600, 300]
+Computer#4:
+	[Company, Type, Quality]
+	[dell, laptop, low quality]
+	[workers, technicians, engineers]
+	[30, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[150, 200, 250, 100, 50, 70, 300, 60, 40]
+Computer#5:
+	[Company, Type, Quality]
+	[dell, pc, low quality]
+	[workers, technicians, engineers]
+	[35, 25, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[370, 400, 300, 300, 100, 200, 400, 400, 200]
+
+Request's Selected Cost: $4210 and Selected Time: 5 Days 
+This Request did not find a factory!  
+
+Request#5:
 Number of Computers generated: 4
 [workers, technicians, engineers]
-[180, 100, 65]
+[145, 95, 55]
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[1200, 1000, 1310, 900, 360, 640, 1650, 820, 450]
+[1090, 1050, 1250, 600, 250, 410, 1550, 580, 350]
+Computer#1:
+	[Company, Type, Quality]
+	[acer, laptop, mid quality]
+	[workers, technicians, engineers]
+	[35, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[290, 200, 300, 100, 50, 70, 350, 60, 50]
+Computer#2:
+	[Company, Type, Quality]
+	[acer, pc, low quality]
+	[workers, technicians, engineers]
+	[40, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 350, 350, 300, 100, 200, 450, 400, 200]
+Computer#3:
+	[Company, Type, Quality]
+	[dell, laptop, mid quality]
+	[workers, technicians, engineers]
+	[35, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[200, 200, 300, 100, 50, 70, 350, 60, 50]
+Computer#4:
+	[Company, Type, Quality]
+	[asus, laptop, mid quality]
+	[workers, technicians, engineers]
+	[35, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 300, 300, 100, 50, 70, 400, 60, 50]
+
+Request's Selected Cost: $2995 and Selected Time: 4 Days 
+Factory's Provided Cost: $2814 and Provided Time: 3 Days 
+
+Request#6:
+Number of Computers generated: 5
+[workers, technicians, engineers]
+[235, 140, 80]
+[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+[1650, 1300, 1650, 1200, 430, 710, 2100, 960, 500]
+Computer#1:
+	[Company, Type, Quality]
+	[asus, laptop, high quality]
+	[workers, technicians, engineers]
+	[50, 35, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 250, 350, 200, 60, 80, 400, 100, 50]
+Computer#2:
+	[Company, Type, Quality]
+	[acer, laptop, high quality]
+	[workers, technicians, engineers]
+	[40, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 200, 350, 200, 60, 80, 400, 100, 50]
+Computer#3:
+	[Company, Type, Quality]
+	[hp, laptop, high quality]
+	[workers, technicians, engineers]
+	[40, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 200, 300, 200, 60, 80, 400, 100, 50]
+Computer#4:
+	[Company, Type, Quality]
+	[hp, laptop, mid quality]
+	[workers, technicians, engineers]
+	[35, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[250, 200, 250, 100, 50, 70, 400, 60, 50]
+Computer#5:
+	[Company, Type, Quality]
+	[asus, pc, high quality]
+	[workers, technicians, engineers]
+	[70, 30, 20]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[500, 450, 400, 500, 200, 400, 500, 600, 300]
+
+Request's Selected Cost: $3942 and Selected Time: 4 Days 
+This Request did not find a factory!  
+
+Request#7:
+Number of Computers generated: 5
+[workers, technicians, engineers]
+[175, 110, 60]
+[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+[1530, 1460, 1450, 1000, 360, 620, 1950, 1020, 540]
+Computer#1:
+	[Company, Type, Quality]
+	[hp, laptop, high quality]
+	[workers, technicians, engineers]
+	[40, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 200, 300, 200, 60, 80, 400, 100, 50]
+Computer#2:
+	[Company, Type, Quality]
+	[asus, laptop, low quality]
+	[workers, technicians, engineers]
+	[30, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[280, 300, 300, 100, 50, 70, 350, 60, 40]
+Computer#3:
+	[Company, Type, Quality]
+	[hp, pc, low quality]
+	[workers, technicians, engineers]
+	[35, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[350, 380, 300, 300, 100, 200, 400, 400, 200]
+Computer#4:
+	[Company, Type, Quality]
+	[hp, laptop, mid quality]
+	[workers, technicians, engineers]
+	[35, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[250, 200, 250, 100, 50, 70, 400, 60, 50]
+Computer#5:
+	[Company, Type, Quality]
+	[hp, pc, low quality]
+	[workers, technicians, engineers]
+	[35, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[350, 380, 300, 300, 100, 200, 400, 400, 200]
+
+Request's Selected Cost: $3913 and Selected Time: 5 Days 
+Factory's Provided Cost: $3424 and Provided Time: 3 Days 
+
+Request#8:
+Number of Computers generated: 5
+[workers, technicians, engineers]
+[220, 120, 70]
+[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+[1660, 1510, 1610, 1400, 500, 1060, 1950, 1620, 790]
+Computer#1:
+	[Company, Type, Quality]
+	[asus, pc, low quality]
+	[workers, technicians, engineers]
+	[40, 25, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 360, 350, 300, 100, 200, 400, 400, 200]
+Computer#2:
+	[Company, Type, Quality]
+	[acer, pc, high quality]
+	[workers, technicians, engineers]
+	[70, 30, 25]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[450, 400, 410, 500, 200, 420, 500, 600, 300]
+Computer#3:
+	[Company, Type, Quality]
+	[hp, pc, mid quality]
+	[workers, technicians, engineers]
+	[45, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[470, 350, 300, 400, 100, 300, 400, 500, 200]
+Computer#4:
+	[Company, Type, Quality]
+	[acer, laptop, mid quality]
+	[workers, technicians, engineers]
+	[35, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[290, 200, 300, 100, 50, 70, 350, 60, 50]
+Computer#5:
+	[Company, Type, Quality]
+	[dell, laptop, low quality]
+	[workers, technicians, engineers]
+	[30, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[150, 200, 250, 100, 50, 70, 300, 60, 40]
+
+Request's Selected Cost: $4116 and Selected Time: 5 Days 
+This Request did not find a factory!  
+
+Request#9:
+Number of Computers generated: 5
+[workers, technicians, engineers]
+[230, 125, 75]
+[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+[1800, 1700, 1700, 1600, 510, 1150, 2200, 1760, 790]
 Computer#1:
 	[Company, Type, Quality]
 	[acer, laptop, high quality]
@@ -96,6 +359,307 @@ Computer#1:
 	[40, 25, 15]
 	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
 	[300, 200, 350, 200, 60, 80, 400, 100, 50]
+Computer#2:
+	[Company, Type, Quality]
+	[hp, laptop, low quality]
+	[workers, technicians, engineers]
+	[30, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[200, 250, 250, 100, 50, 70, 400, 60, 40]
+Computer#3:
+	[Company, Type, Quality]
+	[dell, pc, mid quality]
+	[workers, technicians, engineers]
+	[45, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[400, 400, 350, 400, 100, 300, 450, 500, 200]
+Computer#4:
+	[Company, Type, Quality]
+	[asus, pc, high quality]
+	[workers, technicians, engineers]
+	[70, 30, 20]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[500, 450, 400, 500, 200, 400, 500, 600, 300]
+Computer#5:
+	[Company, Type, Quality]
+	[dell, pc, mid quality]
+	[workers, technicians, engineers]
+	[45, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[400, 400, 350, 400, 100, 300, 450, 500, 200]
+
+Request's Selected Cost: $4409 and Selected Time: 5 Days 
+This Request did not find a factory!  
+
+Request#10:
+Number of Computers generated: 5
+[workers, technicians, engineers]
+[220, 130, 70]
+[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+[1570, 1590, 1600, 1200, 460, 820, 2000, 1220, 630]
+Computer#1:
+	[Company, Type, Quality]
+	[acer, laptop, low quality]
+	[workers, technicians, engineers]
+	[30, 20, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[270, 280, 250, 100, 50, 70, 300, 60, 40]
+Computer#2:
+	[Company, Type, Quality]
+	[asus, laptop, high quality]
+	[workers, technicians, engineers]
+	[50, 35, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 250, 350, 200, 60, 80, 400, 100, 50]
+Computer#3:
+	[Company, Type, Quality]
+	[asus, pc, high quality]
+	[workers, technicians, engineers]
+	[70, 30, 20]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[500, 450, 400, 500, 200, 400, 500, 600, 300]
+Computer#4:
+	[Company, Type, Quality]
+	[asus, pc, low quality]
+	[workers, technicians, engineers]
+	[40, 25, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 360, 350, 300, 100, 200, 400, 400, 200]
+Computer#5:
+	[Company, Type, Quality]
+	[hp, laptop, low quality]
+	[workers, technicians, engineers]
+	[30, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[200, 250, 250, 100, 50, 70, 400, 60, 40]
+
+Request's Selected Cost: $3951 and Selected Time: 5 Days 
+This Request did not find a factory!  
+
+Request#11:
+Number of Computers generated: 5
+[workers, technicians, engineers]
+[225, 120, 75]
+[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+[1810, 1550, 1610, 1500, 500, 1160, 2100, 1720, 790]
+Computer#1:
+	[Company, Type, Quality]
+	[acer, laptop, mid quality]
+	[workers, technicians, engineers]
+	[35, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[290, 200, 300, 100, 50, 70, 350, 60, 50]
+Computer#2:
+	[Company, Type, Quality]
+	[acer, pc, high quality]
+	[workers, technicians, engineers]
+	[70, 30, 25]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[450, 400, 410, 500, 200, 420, 500, 600, 300]
+Computer#3:
+	[Company, Type, Quality]
+	[asus, pc, mid quality]
+	[workers, technicians, engineers]
+	[45, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[400, 350, 350, 400, 100, 300, 450, 500, 200]
+Computer#4:
+	[Company, Type, Quality]
+	[hp, pc, mid quality]
+	[workers, technicians, engineers]
+	[45, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[470, 350, 300, 400, 100, 300, 400, 500, 200]
+Computer#5:
+	[Company, Type, Quality]
+	[hp, laptop, low quality]
+	[workers, technicians, engineers]
+	[30, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[200, 250, 250, 100, 50, 70, 400, 60, 40]
+
+Request's Selected Cost: $3963 and Selected Time: 4 Days 
+This Request did not find a factory!  
+
+Request#12:
+Number of Computers generated: 5
+[workers, technicians, engineers]
+[210, 120, 75]
+[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+[1470, 1420, 1595, 1200, 450, 930, 1900, 1280, 630]
+Computer#1:
+	[Company, Type, Quality]
+	[acer, laptop, low quality]
+	[workers, technicians, engineers]
+	[30, 20, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[270, 280, 250, 100, 50, 70, 300, 60, 40]
+Computer#2:
+	[Company, Type, Quality]
+	[dell, laptop, mid quality]
+	[workers, technicians, engineers]
+	[35, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[200, 200, 300, 100, 50, 70, 350, 60, 50]
+Computer#3:
+	[Company, Type, Quality]
+	[dell, laptop, low quality]
+	[workers, technicians, engineers]
+	[30, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[150, 200, 250, 100, 50, 70, 300, 60, 40]
+Computer#4:
+	[Company, Type, Quality]
+	[acer, pc, mid quality]
+	[workers, technicians, engineers]
+	[45, 30, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[400, 340, 385, 400, 100, 300, 450, 500, 200]
+Computer#5:
+	[Company, Type, Quality]
+	[acer, pc, high quality]
+	[workers, technicians, engineers]
+	[70, 30, 25]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[450, 400, 410, 500, 200, 420, 500, 600, 300]
+
+Request's Selected Cost: $4102 and Selected Time: 5 Days 
+This Request did not find a factory!  
+
+Request#13:
+Number of Computers generated: 4
+[workers, technicians, engineers]
+[140, 95, 60]
+[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+[1110, 1030, 1150, 600, 250, 410, 1500, 580, 340]
+Computer#1:
+	[Company, Type, Quality]
+	[hp, laptop, mid quality]
+	[workers, technicians, engineers]
+	[35, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[250, 200, 250, 100, 50, 70, 400, 60, 50]
+Computer#2:
+	[Company, Type, Quality]
+	[acer, laptop, low quality]
+	[workers, technicians, engineers]
+	[30, 20, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[270, 280, 250, 100, 50, 70, 300, 60, 40]
+Computer#3:
+	[Company, Type, Quality]
+	[acer, pc, low quality]
+	[workers, technicians, engineers]
+	[40, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 350, 350, 300, 100, 200, 450, 400, 200]
+Computer#4:
+	[Company, Type, Quality]
+	[acer, laptop, mid quality]
+	[workers, technicians, engineers]
+	[35, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[290, 200, 300, 100, 50, 70, 350, 60, 50]
+
+Request's Selected Cost: $3460 and Selected Time: 4 Days 
+Factory's Provided Cost: $3427 and Provided Time: 2 Days 
+
+Request#14:
+Number of Computers generated: 5
+[workers, technicians, engineers]
+[215, 125, 75]
+[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+[1690, 1640, 1660, 1300, 500, 960, 2050, 1520, 800]
+Computer#1:
+	[Company, Type, Quality]
+	[asus, pc, low quality]
+	[workers, technicians, engineers]
+	[40, 25, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 360, 350, 300, 100, 200, 400, 400, 200]
+Computer#2:
+	[Company, Type, Quality]
+	[acer, laptop, mid quality]
+	[workers, technicians, engineers]
+	[35, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[290, 200, 300, 100, 50, 70, 350, 60, 50]
+Computer#3:
+	[Company, Type, Quality]
+	[hp, pc, low quality]
+	[workers, technicians, engineers]
+	[35, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[350, 380, 300, 300, 100, 200, 400, 400, 200]
+Computer#4:
+	[Company, Type, Quality]
+	[asus, laptop, mid quality]
+	[workers, technicians, engineers]
+	[35, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 300, 300, 100, 50, 70, 400, 60, 50]
+Computer#5:
+	[Company, Type, Quality]
+	[acer, pc, high quality]
+	[workers, technicians, engineers]
+	[70, 30, 25]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[450, 400, 410, 500, 200, 420, 500, 600, 300]
+
+Request's Selected Cost: $4249 and Selected Time: 5 Days 
+This Request did not find a factory!  
+
+Request#15:
+Number of Computers generated: 4
+[workers, technicians, engineers]
+[145, 85, 40]
+[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+[1320, 1250, 1200, 900, 300, 640, 1500, 1020, 490]
+Computer#1:
+	[Company, Type, Quality]
+	[asus, laptop, low quality]
+	[workers, technicians, engineers]
+	[30, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[280, 300, 300, 100, 50, 70, 350, 60, 40]
+Computer#2:
+	[Company, Type, Quality]
+	[hp, pc, mid quality]
+	[workers, technicians, engineers]
+	[45, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[470, 350, 300, 400, 100, 300, 400, 500, 200]
+Computer#3:
+	[Company, Type, Quality]
+	[dell, pc, low quality]
+	[workers, technicians, engineers]
+	[35, 25, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[370, 400, 300, 300, 100, 200, 400, 400, 200]
+Computer#4:
+	[Company, Type, Quality]
+	[dell, laptop, mid quality]
+	[workers, technicians, engineers]
+	[35, 20, 10]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[200, 200, 300, 100, 50, 70, 350, 60, 50]
+
+Request's Selected Cost: $3930 and Selected Time: 4 Days 
+Factory's Provided Cost: $3761 and Provided Time: 2 Days 
+
+Request#16:
+Number of Computers generated: 4
+[workers, technicians, engineers]
+[190, 110, 65]
+[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+[1250, 1150, 1360, 900, 360, 640, 1650, 820, 450]
+Computer#1:
+	[Company, Type, Quality]
+	[asus, laptop, mid quality]
+	[workers, technicians, engineers]
+	[35, 25, 15]
+	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	[300, 300, 300, 100, 50, 70, 400, 60, 50]
 Computer#2:
 	[Company, Type, Quality]
 	[dell, laptop, mid quality]
@@ -112,579 +676,12 @@ Computer#3:
 	[450, 400, 410, 500, 200, 420, 500, 600, 300]
 Computer#4:
 	[Company, Type, Quality]
-	[hp, laptop, mid quality]
-	[workers, technicians, engineers]
-	[35, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[250, 200, 250, 100, 50, 70, 400, 60, 50]
-
-Request's Selected Cost: $3206 and Selected Time: 4 Days 
-This Request did not find a factory!  
-
-Request#4:
-Number of Computers generated: 4
-[workers, technicians, engineers]
-[145, 95, 55]
-[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[1290, 1280, 1150, 900, 300, 640, 1550, 1020, 490]
-Computer#1:
-	[Company, Type, Quality]
-	[dell, pc, low quality]
-	[workers, technicians, engineers]
-	[35, 25, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[370, 400, 300, 300, 100, 200, 400, 400, 200]
-Computer#2:
-	[Company, Type, Quality]
-	[acer, laptop, low quality]
-	[workers, technicians, engineers]
-	[30, 20, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[270, 280, 250, 100, 50, 70, 300, 60, 40]
-Computer#3:
-	[Company, Type, Quality]
-	[hp, laptop, mid quality]
-	[workers, technicians, engineers]
-	[35, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[250, 200, 250, 100, 50, 70, 400, 60, 50]
-Computer#4:
-	[Company, Type, Quality]
-	[dell, pc, mid quality]
-	[workers, technicians, engineers]
-	[45, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[400, 400, 350, 400, 100, 300, 450, 500, 200]
-
-Request's Selected Cost: $3712 and Selected Time: 3 Days 
-Factory's Provided Cost: $3430 and Provided Time: 2 Days 
-
-Request#5:
-Number of Computers generated: 5
-[workers, technicians, engineers]
-[250, 135, 100]
-[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[2150, 1730, 1800, 1900, 750, 1560, 2300, 2260, 1150]
-Computer#1:
-	[Company, Type, Quality]
-	[hp, pc, low quality]
-	[workers, technicians, engineers]
-	[35, 20, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[350, 380, 300, 300, 100, 200, 400, 400, 200]
-Computer#2:
-	[Company, Type, Quality]
-	[hp, pc, high quality]
-	[workers, technicians, engineers]
-	[60, 30, 25]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[500, 350, 400, 500, 200, 430, 500, 600, 300]
-Computer#3:
-	[Company, Type, Quality]
-	[hp, pc, high quality]
-	[workers, technicians, engineers]
-	[60, 30, 25]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[500, 350, 400, 500, 200, 430, 500, 600, 300]
-Computer#4:
-	[Company, Type, Quality]
-	[asus, laptop, mid quality]
-	[workers, technicians, engineers]
-	[35, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[300, 300, 300, 100, 50, 70, 400, 60, 50]
-Computer#5:
-	[Company, Type, Quality]
-	[hp, pc, high quality]
-	[workers, technicians, engineers]
-	[60, 30, 25]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[500, 350, 400, 500, 200, 430, 500, 600, 300]
-
-Request's Selected Cost: $4548 and Selected Time: 5 Days 
-This Request did not find a factory!  
-
-Request#6:
-Number of Computers generated: 4
-[workers, technicians, engineers]
-[170, 100, 60]
-[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[1250, 1200, 1200, 800, 350, 610, 1700, 780, 440]
-Computer#1:
-	[Company, Type, Quality]
-	[hp, laptop, mid quality]
-	[workers, technicians, engineers]
-	[35, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[250, 200, 250, 100, 50, 70, 400, 60, 50]
-Computer#2:
-	[Company, Type, Quality]
-	[asus, pc, high quality]
-	[workers, technicians, engineers]
-	[70, 30, 20]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[500, 450, 400, 500, 200, 400, 500, 600, 300]
-Computer#3:
-	[Company, Type, Quality]
-	[asus, laptop, mid quality]
-	[workers, technicians, engineers]
-	[35, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[300, 300, 300, 100, 50, 70, 400, 60, 50]
-Computer#4:
-	[Company, Type, Quality]
-	[hp, laptop, low quality]
-	[workers, technicians, engineers]
-	[30, 20, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[200, 250, 250, 100, 50, 70, 400, 60, 40]
-
-Request's Selected Cost: $3519 and Selected Time: 4 Days 
-Factory's Provided Cost: $3387 and Provided Time: 2 Days 
-
-Request#7:
-Number of Computers generated: 4
-[workers, technicians, engineers]
-[185, 105, 70]
-[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[1500, 1100, 1400, 1300, 420, 890, 1750, 1300, 600]
-Computer#1:
-	[Company, Type, Quality]
-	[asus, pc, mid quality]
-	[workers, technicians, engineers]
-	[45, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[400, 350, 350, 400, 100, 300, 450, 500, 200]
-Computer#2:
-	[Company, Type, Quality]
-	[hp, laptop, high quality]
-	[workers, technicians, engineers]
-	[40, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[300, 200, 300, 200, 60, 80, 400, 100, 50]
-Computer#3:
-	[Company, Type, Quality]
-	[acer, laptop, high quality]
-	[workers, technicians, engineers]
-	[40, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[300, 200, 350, 200, 60, 80, 400, 100, 50]
-Computer#4:
-	[Company, Type, Quality]
-	[hp, pc, high quality]
-	[workers, technicians, engineers]
-	[60, 30, 25]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[500, 350, 400, 500, 200, 430, 500, 600, 300]
-
-Request's Selected Cost: $3831 and Selected Time: 4 Days 
-This Request did not find a factory!  
-
-Request#8:
-Number of Computers generated: 5
-[workers, technicians, engineers]
-[210, 125, 70]
-[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[1500, 1380, 1600, 1200, 460, 850, 1950, 1220, 640]
-Computer#1:
-	[Company, Type, Quality]
 	[asus, laptop, high quality]
 	[workers, technicians, engineers]
 	[50, 35, 15]
 	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
 	[300, 250, 350, 200, 60, 80, 400, 100, 50]
-Computer#2:
-	[Company, Type, Quality]
-	[hp, pc, low quality]
-	[workers, technicians, engineers]
-	[35, 20, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[350, 380, 300, 300, 100, 200, 400, 400, 200]
-Computer#3:
-	[Company, Type, Quality]
-	[dell, laptop, low quality]
-	[workers, technicians, engineers]
-	[30, 20, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[150, 200, 250, 100, 50, 70, 300, 60, 40]
-Computer#4:
-	[Company, Type, Quality]
-	[dell, laptop, mid quality]
-	[workers, technicians, engineers]
-	[35, 20, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[200, 200, 300, 100, 50, 70, 350, 60, 50]
-Computer#5:
-	[Company, Type, Quality]
-	[hp, pc, high quality]
-	[workers, technicians, engineers]
-	[60, 30, 25]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[500, 350, 400, 500, 200, 430, 500, 600, 300]
 
-Request's Selected Cost: $3942 and Selected Time: 5 Days 
-This Request did not find a factory!  
-
-Request#9:
-Number of Computers generated: 4
-[workers, technicians, engineers]
-[175, 105, 55]
-[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[1490, 1400, 1300, 1300, 360, 880, 1650, 1500, 650]
-Computer#1:
-	[Company, Type, Quality]
-	[hp, pc, mid quality]
-	[workers, technicians, engineers]
-	[45, 20, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[470, 350, 300, 400, 100, 300, 400, 500, 200]
-Computer#2:
-	[Company, Type, Quality]
-	[dell, pc, low quality]
-	[workers, technicians, engineers]
-	[35, 25, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[370, 400, 300, 300, 100, 200, 400, 400, 200]
-Computer#3:
-	[Company, Type, Quality]
-	[dell, pc, mid quality]
-	[workers, technicians, engineers]
-	[45, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[400, 400, 350, 400, 100, 300, 450, 500, 200]
-Computer#4:
-	[Company, Type, Quality]
-	[dell, laptop, high quality]
-	[workers, technicians, engineers]
-	[50, 35, 20]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[250, 250, 350, 200, 60, 80, 400, 100, 50]
-
-Request's Selected Cost: $4081 and Selected Time: 4 Days 
-Factory's Provided Cost: $3938 and Provided Time: 3 Days 
-
-Request#10:
-Number of Computers generated: 5
-[workers, technicians, engineers]
-[215, 120, 65]
-[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[1650, 1690, 1650, 1300, 500, 940, 2050, 1520, 800]
-Computer#1:
-	[Company, Type, Quality]
-	[hp, pc, low quality]
-	[workers, technicians, engineers]
-	[35, 20, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[350, 380, 300, 300, 100, 200, 400, 400, 200]
-Computer#2:
-	[Company, Type, Quality]
-	[asus, laptop, mid quality]
-	[workers, technicians, engineers]
-	[35, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[300, 300, 300, 100, 50, 70, 400, 60, 50]
-Computer#3:
-	[Company, Type, Quality]
-	[asus, pc, low quality]
-	[workers, technicians, engineers]
-	[40, 25, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[300, 360, 350, 300, 100, 200, 400, 400, 200]
-Computer#4:
-	[Company, Type, Quality]
-	[asus, pc, high quality]
-	[workers, technicians, engineers]
-	[70, 30, 20]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[500, 450, 400, 500, 200, 400, 500, 600, 300]
-Computer#5:
-	[Company, Type, Quality]
-	[dell, laptop, mid quality]
-	[workers, technicians, engineers]
-	[35, 20, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[200, 200, 300, 100, 50, 70, 350, 60, 50]
-
-Request's Selected Cost: $3508 and Selected Time: 5 Days 
-This Request did not find a factory!  
-
-Request#11:
-Number of Computers generated: 4
-[workers, technicians, engineers]
-[170, 100, 60]
-[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[1400, 1270, 1335, 1300, 450, 1000, 1650, 1560, 740]
-Computer#1:
-	[Company, Type, Quality]
-	[dell, laptop, low quality]
-	[workers, technicians, engineers]
-	[30, 20, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[150, 200, 250, 100, 50, 70, 300, 60, 40]
-Computer#2:
-	[Company, Type, Quality]
-	[hp, pc, low quality]
-	[workers, technicians, engineers]
-	[35, 20, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[350, 380, 300, 300, 100, 200, 400, 400, 200]
-Computer#3:
-	[Company, Type, Quality]
-	[hp, pc, high quality]
-	[workers, technicians, engineers]
-	[60, 30, 25]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[500, 350, 400, 500, 200, 430, 500, 600, 300]
-Computer#4:
-	[Company, Type, Quality]
-	[acer, pc, mid quality]
-	[workers, technicians, engineers]
-	[45, 30, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[400, 340, 385, 400, 100, 300, 450, 500, 200]
-
-Request's Selected Cost: $3660 and Selected Time: 4 Days 
-This Request did not find a factory!  
-
-Request#12:
-Number of Computers generated: 4
-[workers, technicians, engineers]
-[155, 95, 55]
-[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[1270, 1220, 1285, 1000, 300, 740, 1550, 1120, 490]
-Computer#1:
-	[Company, Type, Quality]
-	[dell, laptop, mid quality]
-	[workers, technicians, engineers]
-	[35, 20, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[200, 200, 300, 100, 50, 70, 350, 60, 50]
-Computer#2:
-	[Company, Type, Quality]
-	[acer, laptop, low quality]
-	[workers, technicians, engineers]
-	[30, 20, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[270, 280, 250, 100, 50, 70, 300, 60, 40]
-Computer#3:
-	[Company, Type, Quality]
-	[acer, pc, mid quality]
-	[workers, technicians, engineers]
-	[45, 30, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[400, 340, 385, 400, 100, 300, 450, 500, 200]
-Computer#4:
-	[Company, Type, Quality]
-	[dell, pc, mid quality]
-	[workers, technicians, engineers]
-	[45, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[400, 400, 350, 400, 100, 300, 450, 500, 200]
-
-Request's Selected Cost: $3652 and Selected Time: 4 Days 
-Factory's Provided Cost: $2983 and Provided Time: 3 Days 
-
-Request#13:
-Number of Computers generated: 5
-[workers, technicians, engineers]
-[210, 135, 75]
-[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[1460, 1300, 1550, 1000, 320, 600, 1950, 820, 390]
-Computer#1:
-	[Company, Type, Quality]
-	[hp, pc, mid quality]
-	[workers, technicians, engineers]
-	[45, 20, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[470, 350, 300, 400, 100, 300, 400, 500, 200]
-Computer#2:
-	[Company, Type, Quality]
-	[dell, laptop, high quality]
-	[workers, technicians, engineers]
-	[50, 35, 20]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[250, 250, 350, 200, 60, 80, 400, 100, 50]
-Computer#3:
-	[Company, Type, Quality]
-	[acer, laptop, mid quality]
-	[workers, technicians, engineers]
-	[35, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[290, 200, 300, 100, 50, 70, 350, 60, 50]
-Computer#4:
-	[Company, Type, Quality]
-	[hp, laptop, low quality]
-	[workers, technicians, engineers]
-	[30, 20, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[200, 250, 250, 100, 50, 70, 400, 60, 40]
-Computer#5:
-	[Company, Type, Quality]
-	[dell, laptop, high quality]
-	[workers, technicians, engineers]
-	[50, 35, 20]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[250, 250, 350, 200, 60, 80, 400, 100, 50]
-
-Request's Selected Cost: $3612 and Selected Time: 5 Days 
-This Request did not find a factory!  
-
-Request#14:
-Number of Computers generated: 4
-[workers, technicians, engineers]
-[185, 105, 60]
-[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[1400, 1460, 1400, 1200, 450, 870, 1750, 1460, 750]
-Computer#1:
-	[Company, Type, Quality]
-	[asus, pc, low quality]
-	[workers, technicians, engineers]
-	[40, 25, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[300, 360, 350, 300, 100, 200, 400, 400, 200]
-Computer#2:
-	[Company, Type, Quality]
-	[asus, pc, high quality]
-	[workers, technicians, engineers]
-	[70, 30, 20]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[500, 450, 400, 500, 200, 400, 500, 600, 300]
-Computer#3:
-	[Company, Type, Quality]
-	[asus, laptop, mid quality]
-	[workers, technicians, engineers]
-	[35, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[300, 300, 300, 100, 50, 70, 400, 60, 50]
-Computer#4:
-	[Company, Type, Quality]
-	[acer, pc, low quality]
-	[workers, technicians, engineers]
-	[40, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[300, 350, 350, 300, 100, 200, 450, 400, 200]
-
-Request's Selected Cost: $3904 and Selected Time: 4 Days 
-This Request did not find a factory!  
-
-Request#15:
-Number of Computers generated: 4
-[workers, technicians, engineers]
-[185, 110, 60]
-[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[1520, 1340, 1385, 1400, 360, 980, 1700, 1600, 650]
-Computer#1:
-	[Company, Type, Quality]
-	[hp, pc, mid quality]
-	[workers, technicians, engineers]
-	[45, 20, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[470, 350, 300, 400, 100, 300, 400, 500, 200]
-Computer#2:
-	[Company, Type, Quality]
-	[acer, pc, mid quality]
-	[workers, technicians, engineers]
-	[45, 30, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[400, 340, 385, 400, 100, 300, 450, 500, 200]
-Computer#3:
-	[Company, Type, Quality]
-	[dell, pc, mid quality]
-	[workers, technicians, engineers]
-	[45, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[400, 400, 350, 400, 100, 300, 450, 500, 200]
-Computer#4:
-	[Company, Type, Quality]
-	[dell, laptop, high quality]
-	[workers, technicians, engineers]
-	[50, 35, 20]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[250, 250, 350, 200, 60, 80, 400, 100, 50]
-
-Request's Selected Cost: $4015 and Selected Time: 4 Days 
-This Request did not find a factory!  
-
-Request#16:
-Number of Computers generated: 5
-[workers, technicians, engineers]
-[245, 145, 80]
-[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[2070, 1630, 1820, 1900, 560, 1410, 2200, 2200, 950]
-Computer#1:
-	[Company, Type, Quality]
-	[acer, pc, mid quality]
-	[workers, technicians, engineers]
-	[45, 30, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[400, 340, 385, 400, 100, 300, 450, 500, 200]
-Computer#2:
-	[Company, Type, Quality]
-	[hp, pc, high quality]
-	[workers, technicians, engineers]
-	[60, 30, 25]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[500, 350, 400, 500, 200, 430, 500, 600, 300]
-Computer#3:
-	[Company, Type, Quality]
-	[hp, pc, mid quality]
-	[workers, technicians, engineers]
-	[45, 20, 10]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[470, 350, 300, 400, 100, 300, 400, 500, 200]
-Computer#4:
-	[Company, Type, Quality]
-	[asus, laptop, high quality]
-	[workers, technicians, engineers]
-	[50, 35, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[300, 250, 350, 200, 60, 80, 400, 100, 50]
-Computer#5:
-	[Company, Type, Quality]
-	[acer, pc, mid quality]
-	[workers, technicians, engineers]
-	[45, 30, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[400, 340, 385, 400, 100, 300, 450, 500, 200]
-
-Request's Selected Cost: $4401 and Selected Time: 5 Days 
-This Request did not find a factory!  
-
-Request#17:
-Number of Computers generated: 4
-[workers, technicians, engineers]
-[155, 100, 60]
-[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-[1200, 1100, 1200, 900, 300, 640, 1700, 1020, 500]
-Computer#1:
-	[Company, Type, Quality]
-	[hp, laptop, mid quality]
-	[workers, technicians, engineers]
-	[35, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[250, 200, 250, 100, 50, 70, 400, 60, 50]
-Computer#2:
-	[Company, Type, Quality]
-	[asus, pc, mid quality]
-	[workers, technicians, engineers]
-	[45, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[400, 350, 350, 400, 100, 300, 450, 500, 200]
-Computer#3:
-	[Company, Type, Quality]
-	[hp, laptop, mid quality]
-	[workers, technicians, engineers]
-	[35, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[250, 200, 250, 100, 50, 70, 400, 60, 50]
-Computer#4:
-	[Company, Type, Quality]
-	[acer, pc, low quality]
-	[workers, technicians, engineers]
-	[40, 25, 15]
-	[aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
-	[300, 350, 350, 300, 100, 200, 450, 400, 200]
-
-Request's Selected Cost: $3461 and Selected Time: 4 Days 
-Factory's Provided Cost: $3335 and Provided Time: 3 Days 
+Request's Selected Cost: $3542 and Selected Time: 4 Days 
+Factory's Provided Cost: $3426 and Provided Time: 2 Days 
 
