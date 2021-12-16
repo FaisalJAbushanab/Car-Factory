@@ -30,6 +30,10 @@ public class Controller {
 	public TextArea factoriesOutput;
 	public TextArea warehousesOutput;
 	public TextArea requestsOutput;
+	public Button close;
 	
-	
+	public void closeWindow(ActionEvent event) {
+		Stage stage = (Stage) close.getScene().getWindow();
+	    stage.close();
+	}
 }
