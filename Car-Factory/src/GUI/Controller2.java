@@ -23,14 +23,14 @@ public class Controller2 {
 	private Stage stage;
 	private Scene scene;
 	private Parent root;
-	
+
 	@FXML
 	public TextArea phase2Output;
 	public TextField phase2Days;
 	public TextField phase2Max;
 	public TextArea tempOutput1;
 	public Label tempPercentage1;
-	
+
 	public void switchToPhase1(ActionEvent event) throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("Phase1.fxml"));
 		root = loader.load();
@@ -50,8 +50,8 @@ public class Controller2 {
 		stage.setScene(scene);
 		stage.show();
 	}
-	
-	
+
+
 	public void resetSimulation(ActionEvent event) throws IOException {
 			phase1Output.setText("");
 			pos1.setText("");
@@ -62,20 +62,20 @@ public class Controller2 {
 			phase2Output.setText("");
 		}
 	}
-	
-	public void runSimulation(ActionEvent event) throws IOException {
-	
+
+	public void runSimulation(ActionEvent event) throws IOException, CloneNotSupportedException {
+
 		Button btn = (Button) event.getSource();
 		String btnId = btn.getId();
 		if(btnId.equals("run1")) {
-			phase1Output.setText("");
-			days1 = Integer.parseInt(phase1Days.getText());
-			max1 = Integer.parseInt(phase1Max.getText());
-			
+			phase2Output.setText("");
+			days2 = Integer.parseInt(phase1Days.getText());
+			max2 = Integer.parseInt(phase1Max.getText());
+
 			Main run = new Main(days1, max1);
 			ArrayList<Request> requests = run.requests;
-			
-			// Generate Reports
+
+//			 Generate Reports
 			Report report = new Report();
 			ArrayList<String> outputText = report.generateReport(requests);
 			for(String output : outputText) {
@@ -89,20 +89,18 @@ public class Controller2 {
 			phase2Output.setText("");
 		}
 	}
-	
+
 	public void popUpFactories(ActionEvent event) throws IOException {
-		
+
 		try {
 		    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Factories.fxml"));
 		    Parent root1 = (Parent) fxmlLoader.load();
 		    Stage stage = new Stage();
 		    stage.setTitle("Factories info");
-		    stage.setScene(new Scene(root1));  
+		    stage.setScene(new Scene(root1));
 		    stage.show();
 		} catch(Exception e) {
 	        e.printStackTrace();
 	    }
-		
 	}
-	
 }

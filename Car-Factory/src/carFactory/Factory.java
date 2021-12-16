@@ -145,7 +145,7 @@ public class Factory extends Building implements Cloneable{
         return (int) matsCost;
     }
 
-    private boolean checkMaterial(ArrayList<Computer> computers) {
+    public boolean checkMaterial(ArrayList<Computer> computers) {
         boolean materialSufficient = true;
         for (int i = 0; i < getWarehouseTotalMaterials().length; i++) {
             if (getComputersTotalMaterial(computers)[i] > getWarehouseTotalMaterials()[i]) { // compare the material required by the request and compare it to the material available by the factory
@@ -157,7 +157,7 @@ public class Factory extends Building implements Cloneable{
         return materialSufficient;
     }
 
-    private boolean checkTime(ArrayList<Computer> computers) {
+    public boolean checkTime(ArrayList<Computer> computers) {
         boolean timeSufficient = true;
         int[] computerSumEmployee = new int[3];
         for (Computer comps : computers) {
