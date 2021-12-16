@@ -51,22 +51,26 @@ public class Report {
         writeTable(requests, factories);
     }
 
+    public static String getTableReport() {
+        return table;
+    }
+
     private void writeTable(ArrayList<Request> requests, ArrayList<Factory> factories) {
 //        ArrayList<String> requestArray = new ArrayList<>();
 //        ArrayList<String> factoryArray = new ArrayList<>();
-        String factoryInfo = "\t\t";
+        table = "Material/ Time";
         for(Factory factory : factories) {
-            factoryInfo += "factory#:" + (1 + factories.indexOf(factory) + "\t|");
+            table += "factory#:" + (1 + factories.indexOf(factory) + "\t\t|");
         }
-        factoryInfo += "\n";
+        table += "\n";
         for(Request request : requests) {
-            factoryInfo += "request#:" + (1 + requests.indexOf(request));
+            table += "request#:" + (1 + requests.indexOf(request));
             ArrayList<Computer> conditon = request.getComputers();
             for(Factory factory : factories) {
-                factoryInfo += factory.checkMaterial(conditon);
-                factoryInfo += factory.checkTime(conditon);
+                table += factory.checkMaterial(conditon) + "\t\b\b/";
+                table += factory.checkTime(conditon) + "\t\b\b/";
             }
-            factoryInfo += "\n";
+            table += "\n";
 //            TableViewer table = new TableViewer(requestArray, factoryArray);
 //            table.viewTable(requestArray.size(), factoryArray.size());
         }

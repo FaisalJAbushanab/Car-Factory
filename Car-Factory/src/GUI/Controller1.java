@@ -83,12 +83,13 @@ public class Controller1 {
 		//TODO here are other reports
 		String warehousesOutputText = Report.getWarehousesReport();
 		String factoriesOutputText = Report.getFactoriesReport();
-		String requestsoutputText = Report.getRequestsReport();
+		String requestsOutputText = Report.getRequestsReport();
+		String tableOutputText = Report.getTableReport();
 
-		phase1Output.appendText(mainOutputText);
+		phase1Output.appendText(tableOutputText);
 	    tempFactoriesOutput = factoriesOutputText;
 	    tempWarehousesOutput = warehousesOutputText;
-	    tempRequestsOutput = requestsoutputText;
+	    tempRequestsOutput = requestsOutputText;
 		pos1.setText(String.format("%s%.2f%s","Percentage Of Success: ", report.getPos(), "%"));
 		fBtn1.setOpacity(1);
 		wBtn1.setOpacity(1);
