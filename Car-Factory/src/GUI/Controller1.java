@@ -49,7 +49,7 @@ public class Controller1 {
 		controller.phase2Output.setText(tempOutput2.getText());
 		controller.tempOutput1.setText(phase1Output.getText());
 		
-		controller.tempPercentage1.setText(pos1.getText());
+		controller.tempPercentage1 = pos1.getText();
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
