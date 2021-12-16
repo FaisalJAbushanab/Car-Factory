@@ -3,7 +3,7 @@ package carFactory;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Factory extends Building {
+public class Factory extends Building implements Cloneable{
 
     private ArrayList<Warehouse> allwarehouses = new ArrayList<>();
     private ArrayList<Warehouse> warehouseAccess = new ArrayList<>();

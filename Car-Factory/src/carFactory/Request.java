@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Request {
+public class Request implements Cloneable{
 
     private ArrayList<Computer> computers = new ArrayList<>();
     private int selectedCost;
@@ -21,9 +21,9 @@ public class Request {
     private Boolean requestComplete = false;
     private String takenFactoryProvidedTime;
     public int takenFactoryIndex;
-//    private String dateRequested;
+    private String dateRequested;
 
-    public Request( int day, int hour, int minute, int size) {
+    public Request(LocalDateTime whenRequested, int day, int hour, int minute, int size) {
         //give a special time for the request
         if(day < 10)
             this.day = "0" + String.valueOf(day);
@@ -39,7 +39,7 @@ public class Request {
             this.minute = String.valueOf(minute);
 
         // get real time date
-//        dateRequested = setDate(whenRequested, day, hour, minute);
+        dateRequested = setDate(whenRequested, day, hour, minute);
 
         //generate #computers
         for (int i = 0; i < size; i++) {
@@ -236,9 +236,9 @@ public class Request {
         return selectedCost;
     }
 
-//    public String getDateRequested() {
-//        return dateRequested;
-//    }
+    public String getDateRequested() {
+        return dateRequested;
+    }
 
     // summary of request state
     public String getFullfilmentInfo() {
@@ -291,5 +291,12 @@ public class Request {
             info.append("\t").append(Arrays.toString(computer.getConstructMaterial())).append("\n");
         }
         return info + "\n";
+    }
+
+    @Override
+    protected Object clone()
+            throws CloneNotSupportedException
+    {
+        return super.clone();
     }
 }

@@ -2,7 +2,7 @@ package carFactory;
 
 import java.util.Arrays;
 
-public class Warehouse extends Building{
+public class Warehouse extends Building implements Cloneable{
 
     private int[] materialQuantity;
     private Material material;

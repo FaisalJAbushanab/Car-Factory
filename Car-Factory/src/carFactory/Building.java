@@ -22,4 +22,11 @@ public abstract class Building {
     public int getWorkingHours() {
         return workingHours;
     }
+
+    @Override
+    protected Object clone()
+            throws CloneNotSupportedException
+    {
+        return super.clone();
+    }
 }

@@ -1,32 +1,32 @@
 package carFactory;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Main {
 	
-	ArrayList<Factory> factories = new ArrayList<>();
-	ArrayList<Warehouse> warehouses = new ArrayList<>();
+	private ArrayList<Factory> factories = new ArrayList<>();
+	private ArrayList<Warehouse> warehouses = new ArrayList<>();
 	private ArrayList<Request> requests = new ArrayList<>();
-	String[] location = { "Riyadh", "Makkah", "Dammam", "Jeddah" };
-	int[] workingHours = { 12, 18, 24 };
-	int numberOfSuccess = 0;
+	private String[] location = { "Riyadh", "Makkah", "Dammam", "Jeddah" };
+	private int[] workingHours = { 12, 18, 24 };
+	private int numberOfSuccess = 0;
 	
 	// simulation begins here
 	public Main(int days, int maxRequestsPerDay) {
 		
-		generateWarehouses(days);
-		generateFactories(days);
+		generateWarehouses(days, 50);
+		generateFactories(days, 30);
 		generateRequests(days, maxRequestsPerDay);
-		
 		
 	}
 	// 1A- generate random number of warehouses
-	public void generateWarehouses(int days) {
+	public void generateWarehouses(int days, int numberOfWarehouses) {
 		
 		Random random = new Random();
-		int numberWarehouse = fullUp(days*10, days*20);
-		for (int i = 0; i < numberWarehouse; i++) {
+//		int numberWarehouse = fullUp(days*10, days*20);
+		for (int i = 0; i < numberOfWarehouses; i++) {
 
 			int Location = random.nextInt(location.length);
 			int WorkingHours = random.nextInt(workingHours.length);
@@ -48,13 +48,13 @@ public class Main {
 		}
 	}
 	
-	public void generateFactories(int days) {
+	public void generateFactories(int days, int numberOfFactories) {
 		Random random = new Random();
 		// for establishing a relation between #workers and #computers in each request
 		int potential = fullUp(days*0.9, days*1.1);
 		// 1B- generate random number of factories
-		int numberFactory = fullUp(days*4, days*8);
-		for (int i = 0; i < numberFactory; i++) {
+//		int numberFactory = fullUp(days*4, days*8);
+		for (int i = 0; i < numberOfFactories; i++) {
 
 			int Location = random.nextInt(location.length);
 			int WorkingHours = random.nextInt(workingHours.length);
@@ -71,15 +71,21 @@ public class Main {
 		}
 	}
 
-	public ArrayList<Request> getRequests() {
-		return requests;
+	// Generate random requests
+
+	public ArrayList<Factory> getFactories() {
+		return factories;
 	}
 
-	// Generate random requests
+	public ArrayList<Warehouse> getWarehouses() {
+		return warehouses;
+	}
+
 	public void generateRequests(int days, int maxRequestsPerDay) {
 		int numOfRequests = 0;
 		int potential = fullUp(days*0.9, days*1.1);
-		
+		LocalDateTime simulationDate = LocalDateTime.now();
+
 		// days loop
 		for (int i = 1; i <= days; i++) {
 			// hours loop
@@ -90,7 +96,7 @@ public class Main {
 						// probability of getting 1 is 1/500
 						int createOrNot = (int) Math.floor(Math.random() * (500) + 1);
 						if (createOrNot == 1) {
-							Request request = new Request(i, j, k, fullUp(potential*0.8,potential*1.2));
+							Request request = new Request(simulationDate ,i, j, k, fullUp(potential*0.8,potential*1.2));
 							requests.add(request);
 							// 4- fulfill requests
 							numberOfSuccess += request.findFactory(factories);
@@ -116,12 +122,15 @@ public class Main {
 //		System.out.println(conclusion);
 //		System.out.println(percent);
 	}
-
 	private static int fullUp(int min, int max) {
 		return (int) Math.floor(Math.random() * (max - min + 1) + min);
 	}
+
 	public static int fullUp(double min, double max) {
 		double random = new Random().nextDouble();
 		return (int)(min + (random * (max - min)));
+	}
+	public ArrayList<Request> getRequests() {
+		return requests;
 	}
 }

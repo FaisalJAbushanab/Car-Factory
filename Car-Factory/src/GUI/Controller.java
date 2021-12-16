@@ -1,8 +1,7 @@
 package GUI;
 
+import carFactory.*;
 import carFactory.Main;
-import carFactory.Report;
-import carFactory.Request;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,6 +15,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class Controller {
@@ -95,8 +95,8 @@ public class Controller {
 		}
 	}
 	
-	public void runSimulation(ActionEvent event) throws IOException {
-	
+	public void runSimulation(ActionEvent event) throws IOException, CloneNotSupportedException {
+		LocalDateTime simulationDate = LocalDateTime.now();
 		Button btn = (Button) event.getSource();
 		String btnId = btn.getId();
 		if(btnId.equals("run1")) {
@@ -105,15 +105,22 @@ public class Controller {
 			max1 = Integer.parseInt(phase1Max.getText());
 			
 			Main run = new Main(days1, max1);
+			ArrayList<Warehouse> warehouses = run.getWarehouses();
+			ArrayList<Factory> factories = run.getFactories();
 			ArrayList<Request> requests = run.getRequests();
-			
+
 			// Generate Reports
-			Report report = new Report();
-			ArrayList<String> outputText = report.generateReport(requests);
-			for(String output : outputText) {
-				phase1Output.appendText(output + "\n");
-			}
-			pos1.setText(String.format("%s%.2f%s","Percentage Of Success: ", report.pos, "%"));
+			Report report = new Report(simulationDate, requests, factories, warehouses);
+			report.generateReport();
+			String mainOutputText = Report.getMainReport();
+			//TODO here are other reports
+			String warehousesOutputText = Report.getWarehousesReport();
+			String factoriesOutputText = Report.getFactoriesReport();
+			String requestsoutputText = Report.getRequestsReport();
+
+			phase1Output.appendText(factoriesOutputText);
+
+			pos1.setText(String.format("%s%.2f%s","Percentage Of Success: ", report.getPos(), "%"));
 			fBtn1.setOpacity(1);
 			wBtn1.setOpacity(1);
 			rBtn1.setOpacity(1);
