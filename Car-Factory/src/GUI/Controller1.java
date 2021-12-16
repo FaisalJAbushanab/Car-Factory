@@ -68,11 +68,11 @@ public class Controller1 {
 
     public void runSimulation(ActionEvent event) throws IOException, CloneNotSupportedException {
         LocalDateTime simulationDate = LocalDateTime.now();
-        phase1Output.setText("");
         try {
             days1 = Integer.parseInt(phase1Days.getText());
             max1 = Integer.parseInt(phase1Max.getText());
             if(days1 > 0 && max1 >0) {
+                phase1Output.setText("");
                 Main run = new Main(days1, max1);
                 ArrayList<Warehouse> warehouses = run.getWarehouses();
                 ArrayList<Factory> factories = run.getFactories();
@@ -87,7 +87,7 @@ public class Controller1 {
                 String requestsOutputText = Report.getRequestsReport();
                 String tableOutputText = Report.getTableReport();
 
-                phase1Output.appendText(tableOutputText);
+                phase1Output.appendText(mainOutputText);
                 tempFactoriesOutput = factoriesOutputText;
                 tempWarehousesOutput = warehousesOutputText;
                 tempRequestsOutput = requestsOutputText;
