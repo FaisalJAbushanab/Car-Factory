@@ -20,7 +20,6 @@ public class Report {
     private String name;
     private double pos;
 
-
     public Report(LocalDateTime simDate, ArrayList<Request> requests,
                   ArrayList<Factory> factories, ArrayList<Warehouse> warehouses) throws CloneNotSupportedException {
 
@@ -52,7 +51,30 @@ public class Report {
         writeTable(requests, factories);
     }
 
+    public static String getTableReport() {
+        return table;
+    }
+
     private void writeTable(ArrayList<Request> requests, ArrayList<Factory> factories) {
+//        ArrayList<String> requestArray = new ArrayList<>();
+//        ArrayList<String> factoryArray = new ArrayList<>();
+        table = String.format("| %s / %s |\t", "Material", "Time");
+        for(Factory factory : factories) {
+            table += String.format("| %8s%-2d  |\t","Factory#" ,(1 + factories.indexOf(factory)));
+        }
+        table += "\n";
+        for(Request request : requests) {
+            table += String.format("| %14s%-3d |\t","Request#",(1 + requests.indexOf(request)));
+            ArrayList<Computer> condition = request.getComputers();
+            for(Factory factory : factories) {
+                Boolean mat = factory.checkMaterial(condition);
+                Boolean time = factory.checkTime(condition);
+                table += String.format("| %-5b / %-5b |\t", mat, time);
+            }
+            table += "\n";
+//            TableViewer tableViewer = new TableViewer(requestArray, factoryArray);
+//            table += tableViewer.viewTable(1, factoryArray.size());
+        }
     }
 
     // writes on file the main information of the simulation
