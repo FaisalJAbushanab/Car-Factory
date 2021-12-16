@@ -1,352 +1,352 @@
 Number of warehouse generated: 50
 
-#1: Location: Makkah | Working hours: 24
+#1: Location: Dammam | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [6872, 7252, 6754, 6983, 603, 973, 6150, 2363, 531]
-Materials: [263179, 711481, 597500, 84446, 51158, 190503, 420784, 249997, 243804]
+Storage capacity: [7859, 8796, 8547, 6477, 971, 1587, 6373, 3920, 945]
+Materials: [773989, 283396, 659954, 94293, 51744, 115021, 742244, 231351, 372037]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.02547, 0.01083, 0.06941, 0.03896, 0.53637, 0.09675, 0.00842, 0.44667, 0.33812]
+Material prices: [0.04527, 0.0218, 0.07093, 0.04038, 0.60378, 0.11678, 0.00878, 0.30007, 0.27912]
 
-#2: Location: Jeddah | Working hours: 18
+#2: Location: Makkah | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [5876, 6504, 7047, 5617, 706, 2229, 9230, 535, 588]
-Materials: [492785, 340160, 600583, 84781, 56776, 311722, 498329, 127218, 352560]
+Storage capacity: [7814, 6318, 6546, 6602, 833, 1079, 7519, 3764, 596]
+Materials: [687765, 376926, 635456, 94643, 74691, 260786, 434126, 175374, 239980]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.02326, 0.0222, 0.0623, 0.03254, 0.57697, 0.12796, 0.00835, 0.40597, 0.22124]
+Material prices: [0.02456, 0.02319, 0.0649, 0.05597, 0.6842, 0.12308, 0.00808, 0.5995, 0.37003]
 
-#3: Location: Makkah | Working hours: 18
+#3: Location: Riyadh | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [9802, 9613, 9217, 9771, 989, 2927, 7736, 644, 907]
-Materials: [225969, 641425, 127605, 80147, 53462, 225561, 69148, 388323, 352596]
+Storage capacity: [8698, 8747, 7825, 5413, 995, 2618, 7982, 2004, 683]
+Materials: [161873, 325449, 652566, 88076, 50719, 234589, 17073, 195476, 230575]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03341, 0.02129, 0.05572, 0.04692, 0.65807, 0.14531, 0.00747, 0.36957, 0.26421]
+Material prices: [0.03312, 0.0207, 0.07324, 0.05758, 0.61411, 0.09158, 0.00803, 0.43183, 0.26048]
 
-#4: Location: Dammam | Working hours: 24
+#4: Location: Riyadh | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [6921, 5230, 8415, 6510, 728, 555, 6939, 754, 573]
-Materials: [273573, 255560, 568023, 86010, 76667, 188930, 443727, 175156, 244237]
+Storage capacity: [9407, 7390, 7250, 9311, 701, 1148, 6186, 608, 518]
+Materials: [266015, 474241, 579636, 89846, 94371, 116399, 340180, 447956, 356948]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03027, 0.01343, 0.05704, 0.04212, 0.69113, 0.0991, 0.00888, 0.60395, 0.27009]
+Material prices: [0.04974, 0.01682, 0.06294, 0.05753, 0.61479, 0.13882, 0.00742, 0.39636, 0.33104]
 
-#5: Location: Riyadh | Working hours: 24
+#5: Location: Dammam | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [9459, 9578, 7898, 9523, 908, 1363, 9753, 2414, 625]
-Materials: [689552, 486036, 581145, 84715, 56948, 180532, 777236, 484372, 255159]
+Storage capacity: [8974, 9829, 9079, 7511, 641, 938, 6935, 952, 564]
+Materials: [152383, 677412, 264448, 95424, 87671, 119727, 596968, 491969, 255104]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03442, 0.02943, 0.05707, 0.0594, 0.58765, 0.09011, 0.00832, 0.7712, 0.31495]
+Material prices: [0.04118, 0.01642, 0.05429, 0.0531, 0.6664, 0.13852, 0.00812, 0.71507, 0.30472]
 
-#6: Location: Jeddah | Working hours: 24
+#6: Location: Jeddah | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [5650, 6621, 9545, 8553, 952, 2298, 9384, 2156, 748]
-Materials: [536223, 165444, 218153, 83519, 94901, 167222, 761824, 130422, 228022]
+Storage capacity: [9812, 9205, 6266, 9586, 824, 2378, 7094, 2576, 794]
+Materials: [739476, 555667, 425461, 84368, 94447, 370248, 301979, 195682, 217244]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.04932, 0.01399, 0.05332, 0.04321, 0.51361, 0.09408, 0.00734, 0.70714, 0.25519]
+Material prices: [0.03334, 0.01796, 0.064, 0.05352, 0.55383, 0.11984, 0.00732, 0.51867, 0.35717]
 
-#7: Location: Jeddah | Working hours: 24
+#7: Location: Riyadh | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [5008, 9752, 8792, 5928, 995, 505, 8868, 3243, 879]
-Materials: [781569, 669756, 271160, 82925, 69529, 319720, 175513, 435148, 314996]
+Storage capacity: [6865, 9427, 6819, 6157, 543, 1924, 5446, 1741, 559]
+Materials: [198489, 569748, 766507, 91934, 57623, 352856, 717752, 333936, 203788]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.04405, 0.01671, 0.07803, 0.04687, 0.58095, 0.11209, 0.008, 0.4779, 0.35688]
+Material prices: [0.04496, 0.01689, 0.06879, 0.05257, 0.69151, 0.09245, 0.00762, 0.51849, 0.22788]
 
 #8: Location: Dammam | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [5963, 7758, 6353, 9998, 911, 2556, 5169, 874, 644]
-Materials: [510221, 478187, 390404, 95323, 72363, 223019, 268638, 382660, 313421]
+Storage capacity: [8176, 8053, 6166, 5383, 770, 534, 9511, 3115, 930]
+Materials: [607764, 748425, 629660, 80083, 54537, 266548, 646153, 186255, 327194]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.02429, 0.02906, 0.06129, 0.04283, 0.56155, 0.10202, 0.00715, 0.32853, 0.24919]
+Material prices: [0.02648, 0.02663, 0.0689, 0.05414, 0.55266, 0.12928, 0.00873, 0.74059, 0.33865]
 
 #9: Location: Jeddah | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [9861, 8557, 9330, 9968, 753, 2893, 9887, 1136, 744]
-Materials: [758749, 370363, 569484, 95248, 51849, 106031, 796901, 202531, 215517]
+Storage capacity: [5045, 5167, 9171, 8364, 654, 836, 5686, 3674, 636]
+Materials: [785436, 353971, 147699, 81398, 58951, 379381, 624173, 359225, 219936]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.04645, 0.01533, 0.0697, 0.04009, 0.66473, 0.09157, 0.00719, 0.63718, 0.32238]
+Material prices: [0.02271, 0.01561, 0.06318, 0.03559, 0.62621, 0.11576, 0.00802, 0.48012, 0.26922]
 
-#10: Location: Dammam | Working hours: 12
+#10: Location: Makkah | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [5769, 7888, 6190, 9809, 811, 1719, 6113, 1977, 698]
-Materials: [610655, 509554, 324028, 90465, 94762, 281340, 580475, 223808, 367918]
+Storage capacity: [8693, 5445, 8767, 7269, 865, 1536, 5062, 3137, 579]
+Materials: [669236, 342284, 506458, 81718, 98308, 209592, 682446, 117215, 299010]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03049, 0.01656, 0.06404, 0.03992, 0.54628, 0.12397, 0.00875, 0.78422, 0.36023]
+Material prices: [0.02285, 0.02192, 0.06298, 0.03867, 0.56751, 0.14762, 0.00796, 0.46209, 0.26955]
 
-#11: Location: Dammam | Working hours: 24
+#11: Location: Jeddah | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [5820, 9600, 7863, 6627, 865, 1778, 9914, 1973, 561]
-Materials: [539656, 765583, 662650, 84209, 70846, 196181, 30331, 158926, 380389]
+Storage capacity: [9200, 9910, 5593, 8377, 502, 888, 7224, 527, 847]
+Materials: [572550, 206488, 489268, 87231, 87124, 141205, 358478, 473050, 371713]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.04304, 0.02327, 0.06269, 0.03037, 0.67186, 0.14341, 0.00853, 0.69243, 0.30613]
+Material prices: [0.0334, 0.01757, 0.07998, 0.03878, 0.65373, 0.14685, 0.00892, 0.37334, 0.36963]
 
-#12: Location: Jeddah | Working hours: 18
+#12: Location: Riyadh | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [5676, 6092, 6921, 7249, 680, 2224, 7643, 1004, 879]
-Materials: [340183, 742085, 462411, 86936, 94652, 173521, 212515, 167898, 276296]
+Storage capacity: [7218, 6920, 7828, 7235, 562, 2343, 5692, 1307, 928]
+Materials: [105708, 357591, 347460, 89264, 74504, 322708, 193889, 484589, 247237]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.04636, 0.01483, 0.06891, 0.04175, 0.65965, 0.11936, 0.00785, 0.7446, 0.34263]
+Material prices: [0.02325, 0.01072, 0.07025, 0.03239, 0.56909, 0.12124, 0.00748, 0.58959, 0.39207]
 
-#13: Location: Makkah | Working hours: 12
+#13: Location: Dammam | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [6139, 8388, 8060, 8066, 766, 563, 5352, 3043, 516]
-Materials: [711023, 797035, 292448, 86829, 60762, 233327, 699904, 113475, 232845]
+Storage capacity: [8724, 8259, 5619, 6467, 694, 2146, 5698, 3289, 708]
+Materials: [395492, 692758, 280061, 91738, 65971, 122689, 116482, 199772, 233622]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03621, 0.01956, 0.05544, 0.03278, 0.52928, 0.10567, 0.0086, 0.33642, 0.38078]
+Material prices: [0.0356, 0.01506, 0.06132, 0.05629, 0.66501, 0.12016, 0.00842, 0.49669, 0.28763]
 
-#14: Location: Dammam | Working hours: 12
+#14: Location: Makkah | Working hours: 24
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [9651, 8367, 9477, 7485, 667, 2198, 8960, 2967, 566]
-Materials: [227319, 713291, 517802, 95095, 70495, 311919, 772521, 197642, 362185]
+Storage capacity: [6294, 7897, 8622, 8555, 762, 600, 5118, 1064, 835]
+Materials: [308953, 528512, 706327, 91374, 68379, 245451, 734127, 223026, 321146]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03643, 0.0178, 0.07812, 0.03423, 0.58515, 0.14228, 0.00723, 0.75792, 0.37395]
+Material prices: [0.04842, 0.01913, 0.06299, 0.05705, 0.64307, 0.1091, 0.00747, 0.39928, 0.20285]
 
-#15: Location: Jeddah | Working hours: 18
+#15: Location: Jeddah | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [9231, 6439, 5984, 6339, 853, 2909, 7211, 3781, 754]
-Materials: [174078, 616025, 335764, 90187, 74975, 316964, 615447, 275466, 383896]
+Storage capacity: [6395, 9212, 8756, 6751, 804, 1405, 9762, 1712, 562]
+Materials: [471262, 503698, 280869, 95418, 76128, 329084, 475804, 128016, 345476]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.0303, 0.02021, 0.06008, 0.04491, 0.50359, 0.11104, 0.00797, 0.66563, 0.2098]
+Material prices: [0.02268, 0.0165, 0.06614, 0.05344, 0.55796, 0.12621, 0.00738, 0.72258, 0.24469]
 
-#16: Location: Makkah | Working hours: 24
+#16: Location: Dammam | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [7123, 5710, 7193, 8270, 768, 2620, 6547, 3060, 790]
-Materials: [283371, 448689, 135026, 86818, 60339, 209652, 278433, 236865, 336815]
+Storage capacity: [7057, 7053, 7200, 8904, 638, 1484, 7265, 2832, 846]
+Materials: [653347, 404796, 123667, 84338, 57463, 186495, 358485, 459662, 354215]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.02079, 0.01006, 0.06329, 0.05383, 0.57419, 0.11063, 0.00743, 0.55685, 0.27012]
+Material prices: [0.03369, 0.02405, 0.07241, 0.04951, 0.50895, 0.10185, 0.00749, 0.36997, 0.2339]
 
-#17: Location: Makkah | Working hours: 24
+#17: Location: Makkah | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [8448, 8177, 7526, 9554, 952, 2356, 6504, 3471, 525]
-Materials: [790929, 259222, 195432, 85851, 70238, 178660, 459354, 149503, 278549]
+Storage capacity: [8464, 6559, 7930, 5622, 959, 555, 9389, 2961, 832]
+Materials: [571646, 676971, 167442, 93199, 89960, 152139, 301600, 252466, 289414]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.04249, 0.01199, 0.06141, 0.05713, 0.65646, 0.14682, 0.00865, 0.46342, 0.32436]
+Material prices: [0.04917, 0.0231, 0.05378, 0.05238, 0.51579, 0.09674, 0.00851, 0.44356, 0.31803]
 
-#18: Location: Jeddah | Working hours: 12
+#18: Location: Jeddah | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [6619, 5268, 8405, 8907, 957, 1172, 6694, 1248, 814]
-Materials: [165009, 187639, 595786, 91504, 61775, 364326, 232525, 441943, 282388]
+Storage capacity: [9329, 5963, 8813, 9240, 764, 1899, 8205, 953, 739]
+Materials: [328358, 199468, 350317, 83163, 63615, 301501, 418423, 199268, 369811]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03138, 0.0108, 0.0678, 0.04746, 0.59042, 0.1207, 0.00712, 0.48088, 0.35596]
+Material prices: [0.02576, 0.01127, 0.06272, 0.04862, 0.62392, 0.09735, 0.00745, 0.40636, 0.3474]
 
-#19: Location: Makkah | Working hours: 12
+#19: Location: Dammam | Working hours: 24
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [7048, 7776, 6479, 9084, 950, 1337, 5527, 2703, 997]
-Materials: [281559, 757583, 637779, 97057, 87297, 100319, 120630, 107359, 324747]
+Storage capacity: [8849, 9566, 6207, 6452, 725, 2688, 9937, 1570, 586]
+Materials: [500994, 138307, 200537, 98533, 61028, 121628, 338025, 447304, 386702]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.04428, 0.02064, 0.05514, 0.04908, 0.68772, 0.10247, 0.00807, 0.78943, 0.26085]
+Material prices: [0.038, 0.01687, 0.07482, 0.0373, 0.6007, 0.11126, 0.00815, 0.52435, 0.23112]
 
-#20: Location: Dammam | Working hours: 24
+#20: Location: Jeddah | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [9154, 5905, 7031, 5238, 672, 1951, 9848, 2275, 615]
-Materials: [580886, 303784, 105043, 90401, 62899, 124993, 630710, 412074, 376045]
+Storage capacity: [9147, 8527, 9243, 5148, 983, 2147, 8852, 2679, 862]
+Materials: [750678, 105852, 756736, 92438, 55265, 176498, 729226, 446187, 296432]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03946, 0.02568, 0.06787, 0.03806, 0.65362, 0.09312, 0.00758, 0.3042, 0.3745]
+Material prices: [0.0241, 0.02099, 0.07818, 0.05222, 0.54389, 0.10095, 0.00755, 0.32109, 0.20569]
 
-#21: Location: Jeddah | Working hours: 18
+#21: Location: Makkah | Working hours: 24
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [6398, 6280, 8755, 8071, 761, 1033, 7453, 1020, 535]
-Materials: [609466, 609191, 123405, 89983, 78155, 379106, 290521, 344332, 281412]
+Storage capacity: [6075, 6258, 8979, 6747, 600, 1463, 7731, 1447, 630]
+Materials: [331283, 342494, 586860, 89689, 93892, 194941, 108713, 350409, 233397]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03168, 0.01969, 0.07733, 0.04541, 0.53272, 0.14515, 0.008, 0.6042, 0.30878]
+Material prices: [0.05, 0.0217, 0.07533, 0.0458, 0.51987, 0.09417, 0.0071, 0.771, 0.39161]
 
-#22: Location: Dammam | Working hours: 18
+#22: Location: Riyadh | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [5518, 7846, 9361, 8365, 814, 647, 7000, 1010, 715]
-Materials: [379070, 697532, 297773, 80318, 61168, 371264, 443863, 137340, 215350]
+Storage capacity: [6145, 9813, 9781, 5411, 680, 837, 9025, 3026, 588]
+Materials: [478851, 275216, 492724, 85317, 69841, 267908, 668223, 368918, 316422]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.04085, 0.02294, 0.055, 0.05812, 0.60182, 0.09342, 0.00828, 0.53359, 0.31735]
+Material prices: [0.04662, 0.01303, 0.05477, 0.04305, 0.69871, 0.14464, 0.00847, 0.48767, 0.23906]
 
-#23: Location: Riyadh | Working hours: 24
+#23: Location: Dammam | Working hours: 24
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [9534, 8907, 6149, 7967, 596, 959, 5954, 3660, 984]
-Materials: [278155, 245744, 235439, 97305, 80757, 170076, 774574, 303332, 290053]
+Storage capacity: [9157, 5386, 6522, 5869, 756, 2424, 9527, 2046, 852]
+Materials: [411430, 459943, 607152, 85390, 86922, 299698, 616823, 194081, 267627]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.02089, 0.01681, 0.07467, 0.04085, 0.58452, 0.10672, 0.00885, 0.61952, 0.35759]
+Material prices: [0.03411, 0.0253, 0.07028, 0.05417, 0.65448, 0.11467, 0.00837, 0.48072, 0.24575]
 
-#24: Location: Dammam | Working hours: 18
+#24: Location: Makkah | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [5115, 8145, 8797, 5136, 907, 2247, 5790, 2426, 917]
-Materials: [197272, 535617, 398005, 86901, 98279, 352522, 698344, 235151, 317305]
+Storage capacity: [6459, 6506, 6169, 9594, 837, 2632, 9497, 3134, 861]
+Materials: [153165, 486073, 685017, 98924, 56473, 180317, 55376, 226121, 398762]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03065, 0.01993, 0.06286, 0.04489, 0.69339, 0.12207, 0.00812, 0.65599, 0.24513]
+Material prices: [0.03373, 0.01777, 0.06208, 0.03135, 0.67958, 0.11294, 0.009, 0.44766, 0.32138]
 
-#25: Location: Riyadh | Working hours: 24
+#25: Location: Makkah | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [6405, 8406, 8623, 5334, 837, 2692, 8570, 3415, 611]
-Materials: [741949, 293458, 214095, 98492, 56323, 123750, 153719, 437800, 398598]
+Storage capacity: [8861, 5700, 9633, 9734, 888, 2584, 9917, 3337, 863]
+Materials: [178612, 342930, 796992, 99092, 96709, 116506, 654646, 187161, 291070]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03608, 0.01346, 0.05629, 0.04015, 0.53267, 0.1498, 0.00777, 0.78897, 0.26678]
+Material prices: [0.04775, 0.02718, 0.06092, 0.04137, 0.50317, 0.09488, 0.00777, 0.53666, 0.38742]
 
-#26: Location: Riyadh | Working hours: 12
+#26: Location: Dammam | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [5140, 9854, 9131, 5236, 864, 2605, 6670, 816, 928]
-Materials: [649943, 132188, 552626, 86020, 79448, 263625, 525516, 369808, 230304]
+Storage capacity: [5285, 5098, 9122, 7319, 973, 502, 7342, 1179, 888]
+Materials: [580306, 647759, 530503, 93826, 83306, 152485, 599939, 498179, 349617]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03982, 0.01018, 0.07232, 0.03207, 0.61294, 0.14098, 0.00801, 0.63421, 0.23383]
+Material prices: [0.02661, 0.0136, 0.05359, 0.04672, 0.62441, 0.10239, 0.00879, 0.78242, 0.28942]
 
-#27: Location: Jeddah | Working hours: 12
+#27: Location: Riyadh | Working hours: 24
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [6538, 7771, 7246, 5408, 610, 960, 7092, 3088, 682]
-Materials: [112513, 572001, 457851, 96853, 83159, 181459, 211916, 184950, 346668]
+Storage capacity: [8730, 7768, 8982, 8654, 927, 1714, 7642, 3568, 563]
+Materials: [657115, 615697, 271985, 92761, 67586, 170516, 634403, 335105, 353410]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03342, 0.01647, 0.06436, 0.04968, 0.66756, 0.10123, 0.00871, 0.44841, 0.24914]
+Material prices: [0.02404, 0.01092, 0.06931, 0.05446, 0.66117, 0.12182, 0.00867, 0.36433, 0.36289]
 
-#28: Location: Jeddah | Working hours: 24
+#28: Location: Makkah | Working hours: 24
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [7792, 7660, 5778, 7848, 784, 1609, 7310, 2724, 994]
-Materials: [565254, 707196, 649783, 99628, 74858, 171263, 34776, 306577, 322082]
+Storage capacity: [6819, 9301, 8955, 6720, 850, 1909, 6217, 2193, 712]
+Materials: [275978, 164467, 759934, 83969, 61940, 370764, 445771, 206377, 353540]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.04295, 0.02165, 0.0796, 0.03092, 0.69121, 0.14329, 0.00726, 0.65295, 0.36865]
+Material prices: [0.0378, 0.0105, 0.05211, 0.05367, 0.65595, 0.14583, 0.00719, 0.51379, 0.35297]
 
-#29: Location: Makkah | Working hours: 24
+#29: Location: Dammam | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [9352, 9341, 5856, 7247, 540, 2262, 5570, 1095, 789]
-Materials: [417480, 289844, 349862, 88378, 93375, 396332, 569913, 433728, 358241]
+Storage capacity: [5711, 8953, 7034, 5632, 583, 2797, 8794, 3264, 566]
+Materials: [234761, 564476, 392076, 91909, 53871, 291359, 455657, 278679, 250874]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.02123, 0.01115, 0.0625, 0.03819, 0.62861, 0.11109, 0.00828, 0.76058, 0.29331]
+Material prices: [0.04643, 0.01567, 0.05902, 0.0358, 0.60846, 0.12047, 0.00893, 0.55662, 0.32814]
 
-#30: Location: Jeddah | Working hours: 18
+#30: Location: Riyadh | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [9626, 6713, 8510, 5455, 503, 1391, 6387, 2827, 617]
-Materials: [670866, 121002, 516050, 89614, 69397, 352299, 171594, 220790, 286573]
+Storage capacity: [8056, 9938, 9440, 8278, 562, 1785, 7211, 3034, 542]
+Materials: [469196, 541230, 510918, 81559, 63890, 337245, 684149, 152124, 273721]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.04434, 0.01953, 0.0793, 0.05753, 0.63112, 0.1218, 0.00799, 0.67261, 0.35122]
+Material prices: [0.02033, 0.0147, 0.05374, 0.04639, 0.5318, 0.09329, 0.00786, 0.76373, 0.23764]
 
-#31: Location: Makkah | Working hours: 24
+#31: Location: Jeddah | Working hours: 24
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [7087, 7582, 7969, 7363, 986, 1354, 6414, 2677, 870]
-Materials: [139266, 781001, 613487, 91727, 95638, 212073, 584072, 397263, 320652]
+Storage capacity: [8544, 6532, 9592, 9922, 644, 2616, 7075, 2749, 551]
+Materials: [558508, 257364, 459606, 93954, 85478, 201336, 520806, 238597, 288636]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03398, 0.02442, 0.06878, 0.05574, 0.66118, 0.1169, 0.00719, 0.30003, 0.2464]
+Material prices: [0.04391, 0.02355, 0.05994, 0.05206, 0.5001, 0.09755, 0.00859, 0.57644, 0.30022]
 
-#32: Location: Dammam | Working hours: 24
+#32: Location: Jeddah | Working hours: 24
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [6361, 9059, 8413, 8326, 708, 743, 6023, 1354, 605]
-Materials: [360046, 469261, 567628, 99722, 84335, 361986, 221142, 464115, 348743]
+Storage capacity: [6832, 8754, 6230, 7870, 915, 1871, 7522, 3504, 870]
+Materials: [159343, 640612, 659881, 98872, 90301, 187423, 136195, 371546, 331500]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03619, 0.02767, 0.06188, 0.03362, 0.51526, 0.09078, 0.00723, 0.32656, 0.20901]
+Material prices: [0.04598, 0.02549, 0.05095, 0.05265, 0.55121, 0.12132, 0.00745, 0.57938, 0.38881]
 
-#33: Location: Jeddah | Working hours: 12
+#33: Location: Makkah | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [5142, 9418, 6663, 9869, 961, 1876, 7694, 2753, 574]
-Materials: [730872, 786664, 292857, 82496, 97851, 355481, 135583, 437480, 218173]
+Storage capacity: [7825, 7174, 7502, 9666, 670, 1388, 8676, 905, 954]
+Materials: [689064, 199636, 442523, 81629, 89741, 101409, 698289, 272547, 311700]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.0322, 0.02807, 0.06794, 0.05103, 0.62062, 0.09328, 0.00737, 0.56279, 0.24301]
+Material prices: [0.02098, 0.0266, 0.07599, 0.03225, 0.6596, 0.12909, 0.00879, 0.64767, 0.27106]
 
-#34: Location: Dammam | Working hours: 18
+#34: Location: Jeddah | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [8223, 8844, 6217, 5596, 698, 1611, 5431, 2864, 689]
-Materials: [649333, 328960, 268901, 91525, 91081, 215854, 389471, 384325, 238831]
+Storage capacity: [8581, 7114, 8126, 9390, 807, 801, 8547, 2997, 630]
+Materials: [201404, 698013, 320333, 85812, 56594, 279004, 447608, 276154, 393271]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.0327, 0.01798, 0.06859, 0.03118, 0.54572, 0.14913, 0.00742, 0.51599, 0.21447]
+Material prices: [0.0272, 0.02935, 0.06719, 0.04115, 0.51525, 0.13655, 0.00809, 0.6246, 0.38009]
 
-#35: Location: Riyadh | Working hours: 18
+#35: Location: Jeddah | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [9613, 8976, 9020, 6081, 835, 1405, 9955, 3824, 948]
-Materials: [270952, 415578, 193407, 87934, 78444, 281704, 89130, 439935, 233879]
+Storage capacity: [5289, 8152, 7673, 7752, 743, 2781, 6769, 3204, 547]
+Materials: [699656, 427622, 607795, 82210, 83502, 343555, 63521, 182717, 320079]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.02567, 0.01002, 0.06024, 0.03968, 0.61686, 0.09683, 0.00743, 0.6395, 0.3762]
+Material prices: [0.03706, 0.02387, 0.05575, 0.05901, 0.6266, 0.09011, 0.00885, 0.69504, 0.29575]
 
-#36: Location: Dammam | Working hours: 24
+#36: Location: Makkah | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [5367, 8028, 8633, 7701, 505, 2619, 6786, 1998, 635]
-Materials: [665373, 775409, 726580, 85717, 72773, 244355, 187640, 201495, 256090]
+Storage capacity: [5475, 6584, 9956, 7712, 648, 2418, 6925, 3760, 838]
+Materials: [575898, 174436, 619437, 98273, 68252, 159736, 626111, 338217, 357264]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.02779, 0.02838, 0.05444, 0.03036, 0.5809, 0.13276, 0.00883, 0.50846, 0.20555]
+Material prices: [0.02458, 0.01785, 0.05635, 0.04676, 0.65827, 0.14914, 0.00725, 0.56347, 0.38455]
 
-#37: Location: Jeddah | Working hours: 24
+#37: Location: Riyadh | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [6989, 8089, 8143, 5420, 779, 1058, 8754, 3836, 681]
-Materials: [582885, 419278, 703101, 90851, 53849, 353755, 330865, 199811, 335297]
+Storage capacity: [5926, 6725, 6259, 6795, 668, 2467, 8343, 2893, 891]
+Materials: [396136, 463754, 140607, 91759, 89798, 206513, 600165, 156055, 251396]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.04164, 0.01635, 0.05157, 0.05363, 0.53143, 0.11724, 0.00767, 0.41233, 0.30389]
+Material prices: [0.04937, 0.02112, 0.05458, 0.05179, 0.61455, 0.12699, 0.00883, 0.76822, 0.27796]
 
 #38: Location: Dammam | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [5053, 8809, 9068, 5038, 911, 669, 7890, 566, 820]
-Materials: [171931, 740586, 319400, 94690, 64116, 164027, 39937, 162695, 346962]
+Storage capacity: [6021, 5766, 9097, 7158, 638, 1068, 6656, 1202, 846]
+Materials: [578077, 568501, 416262, 87978, 92461, 267736, 16929, 179809, 253110]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03415, 0.01875, 0.0648, 0.03135, 0.6835, 0.1211, 0.00896, 0.79526, 0.3901]
+Material prices: [0.0392, 0.01124, 0.05031, 0.03749, 0.61199, 0.12347, 0.00828, 0.45319, 0.23997]
 
-#39: Location: Jeddah | Working hours: 12
+#39: Location: Makkah | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [6309, 9652, 9970, 7222, 906, 2750, 9718, 1308, 995]
-Materials: [401789, 492393, 547833, 83211, 52679, 139629, 523616, 355439, 217320]
+Storage capacity: [5457, 9094, 5841, 7329, 544, 2246, 8872, 3074, 720]
+Materials: [574576, 396652, 112340, 91351, 62816, 329695, 449060, 176143, 337727]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03373, 0.02386, 0.06747, 0.05884, 0.57644, 0.14092, 0.00867, 0.77199, 0.2739]
+Material prices: [0.02934, 0.02298, 0.07076, 0.03098, 0.51092, 0.13049, 0.00839, 0.70975, 0.25271]
 
-#40: Location: Riyadh | Working hours: 18
+#40: Location: Jeddah | Working hours: 24
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [6999, 7417, 8915, 9442, 513, 2216, 5019, 3549, 942]
-Materials: [168267, 355841, 532071, 96372, 63588, 102980, 435193, 428934, 283789]
+Storage capacity: [7695, 6535, 8523, 8817, 617, 2101, 7735, 1878, 648]
+Materials: [335880, 324157, 623529, 99430, 73015, 122772, 463727, 337440, 243927]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.02182, 0.02233, 0.0554, 0.04289, 0.61574, 0.14827, 0.00839, 0.70023, 0.20259]
+Material prices: [0.04371, 0.02648, 0.07017, 0.03685, 0.51292, 0.14187, 0.00724, 0.43192, 0.26451]
 
-#41: Location: Jeddah | Working hours: 18
+#41: Location: Riyadh | Working hours: 24
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [9499, 8209, 8870, 9757, 932, 875, 6063, 1480, 551]
-Materials: [729647, 254255, 514057, 81225, 84120, 171632, 762485, 493544, 390152]
+Storage capacity: [7151, 9190, 7442, 7848, 934, 2446, 8316, 3684, 882]
+Materials: [118362, 113333, 744579, 99446, 73227, 207235, 219123, 414699, 223331]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.04179, 0.02469, 0.06981, 0.04982, 0.62522, 0.10978, 0.00781, 0.77288, 0.37065]
+Material prices: [0.0243, 0.02317, 0.07093, 0.04871, 0.64189, 0.1299, 0.00854, 0.50632, 0.35725]
 
-#42: Location: Makkah | Working hours: 12
+#42: Location: Riyadh | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [5773, 6216, 5614, 7959, 920, 737, 8201, 3320, 603]
-Materials: [257154, 516380, 427599, 92737, 64938, 121925, 600266, 192184, 347548]
+Storage capacity: [9933, 8042, 7735, 7267, 546, 967, 6644, 1081, 836]
+Materials: [737866, 657262, 539786, 93982, 92542, 131311, 791688, 199527, 353603]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.04304, 0.02507, 0.06479, 0.05789, 0.53468, 0.11911, 0.00757, 0.62041, 0.28896]
+Material prices: [0.03625, 0.01744, 0.05784, 0.03761, 0.63644, 0.14471, 0.00758, 0.3163, 0.28959]
 
-#43: Location: Makkah | Working hours: 12
+#43: Location: Riyadh | Working hours: 24
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [6293, 5768, 5470, 8349, 680, 2138, 9455, 2565, 653]
-Materials: [771686, 585911, 198142, 84315, 79105, 333091, 666359, 350863, 370522]
+Storage capacity: [6111, 5369, 7477, 6354, 886, 615, 5070, 717, 503]
+Materials: [169493, 295669, 597568, 91095, 63430, 200681, 283629, 392374, 366120]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.04905, 0.01779, 0.06893, 0.03099, 0.50816, 0.10549, 0.00754, 0.7205, 0.34655]
+Material prices: [0.0325, 0.02452, 0.07573, 0.04603, 0.64163, 0.12986, 0.00737, 0.6349, 0.36239]
 
-#44: Location: Jeddah | Working hours: 24
+#44: Location: Riyadh | Working hours: 24
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [9178, 7252, 8875, 7932, 721, 1442, 5246, 3121, 783]
-Materials: [794808, 621250, 154603, 99186, 96724, 284759, 237022, 177022, 391680]
+Storage capacity: [9580, 8460, 9186, 8287, 523, 2709, 6614, 1622, 645]
+Materials: [521029, 382594, 591125, 94744, 56850, 351871, 295950, 251901, 231276]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03737, 0.02116, 0.07514, 0.04315, 0.57118, 0.13424, 0.00871, 0.37541, 0.2905]
+Material prices: [0.04054, 0.01148, 0.06124, 0.05045, 0.6557, 0.10725, 0.00895, 0.72353, 0.27405]
 
-#45: Location: Makkah | Working hours: 24
+#45: Location: Dammam | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [5907, 5896, 7301, 8974, 694, 2287, 8534, 2181, 795]
-Materials: [697087, 186354, 315344, 90300, 87999, 117640, 570522, 149643, 361199]
+Storage capacity: [5969, 9730, 9108, 5419, 926, 1623, 7750, 1291, 643]
+Materials: [288393, 700155, 789574, 90588, 78839, 194743, 616602, 492651, 338010]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03471, 0.02344, 0.05855, 0.05486, 0.67332, 0.09073, 0.00848, 0.68422, 0.20576]
+Material prices: [0.04307, 0.02508, 0.05047, 0.03265, 0.55903, 0.09061, 0.00831, 0.62128, 0.36841]
 
-#46: Location: Jeddah | Working hours: 12
+#46: Location: Jeddah | Working hours: 24
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [9286, 5553, 6711, 8144, 896, 554, 5122, 1962, 748]
-Materials: [395813, 380760, 445471, 83180, 89570, 154878, 168593, 150501, 394033]
+Storage capacity: [5972, 7440, 6578, 9103, 688, 2699, 5838, 3188, 777]
+Materials: [233943, 753317, 720437, 99179, 61062, 250328, 732217, 416881, 210476]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03936, 0.02756, 0.07165, 0.05219, 0.67231, 0.11528, 0.00817, 0.74039, 0.2871]
+Material prices: [0.02616, 0.01227, 0.06985, 0.04842, 0.52531, 0.13477, 0.00739, 0.57227, 0.22101]
 
-#47: Location: Riyadh | Working hours: 18
+#47: Location: Jeddah | Working hours: 24
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [8554, 5558, 7573, 7129, 729, 1863, 5693, 1782, 581]
-Materials: [413842, 773466, 521434, 88541, 87660, 245612, 12274, 229900, 286827]
+Storage capacity: [7376, 5373, 6999, 6575, 666, 949, 8180, 1422, 830]
+Materials: [343003, 668865, 428467, 89453, 66847, 295831, 387573, 219268, 288019]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.04102, 0.02488, 0.06765, 0.0574, 0.50885, 0.10366, 0.00719, 0.72832, 0.38572]
+Material prices: [0.04062, 0.02732, 0.06802, 0.03578, 0.57709, 0.12823, 0.00834, 0.32619, 0.34853]
 
-#48: Location: Makkah | Working hours: 12
+#48: Location: Jeddah | Working hours: 18
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [8233, 9483, 8484, 8067, 909, 2443, 5565, 1324, 809]
-Materials: [273853, 143297, 117340, 92009, 60769, 324962, 537305, 345568, 390032]
+Storage capacity: [7949, 6685, 7943, 6613, 705, 1788, 9700, 1248, 974]
+Materials: [353039, 627103, 348096, 98690, 96016, 217317, 547238, 334380, 322154]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03233, 0.01628, 0.07765, 0.05857, 0.50622, 0.09506, 0.00757, 0.4741, 0.28065]
+Material prices: [0.04011, 0.01154, 0.06782, 0.04998, 0.5755, 0.13761, 0.00876, 0.34844, 0.34102]
 
-#49: Location: Riyadh | Working hours: 24
+#49: Location: Makkah | Working hours: 24
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [6037, 7095, 9884, 9078, 878, 2070, 6430, 866, 852]
-Materials: [791285, 788595, 567173, 81477, 84048, 120779, 595513, 279264, 393356]
+Storage capacity: [9802, 6462, 9180, 5065, 586, 1503, 7512, 3148, 930]
+Materials: [141260, 170156, 308677, 96374, 59874, 357748, 168652, 206775, 236800]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.03416, 0.02105, 0.05258, 0.05, 0.60159, 0.14196, 0.00899, 0.45135, 0.28428]
+Material prices: [0.03557, 0.0156, 0.05477, 0.04911, 0.51662, 0.11835, 0.00723, 0.48973, 0.39803]
 
-#50: Location: Dammam | Working hours: 18
+#50: Location: Makkah | Working hours: 12
 [aluminium grams, plastic grams, glass grams, silicon mg , gold mg , copper mg, iron grams, chrome mg, silver mg]
-Storage capacity: [8882, 8367, 7710, 5848, 747, 578, 9443, 2199, 892]
-Materials: [753644, 275456, 440983, 80562, 64911, 328848, 585510, 397429, 222567]
+Storage capacity: [5393, 6858, 5517, 6795, 517, 2015, 8609, 3275, 664]
+Materials: [589131, 347284, 660675, 96372, 66396, 121685, 484898, 308884, 378853]
 [$ per grams, $ per grams, $ per grams, $ per mg , $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]
-Material prices: [0.02322, 0.01091, 0.05068, 0.03866, 0.52984, 0.13464, 0.00837, 0.75283, 0.28838]
+Material prices: [0.04242, 0.01321, 0.07697, 0.03194, 0.67153, 0.12495, 0.00771, 0.6813, 0.28236]
 
