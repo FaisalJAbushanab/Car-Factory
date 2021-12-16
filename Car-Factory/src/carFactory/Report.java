@@ -58,21 +58,22 @@ public class Report {
     private void writeTable(ArrayList<Request> requests, ArrayList<Factory> factories) {
 //        ArrayList<String> requestArray = new ArrayList<>();
 //        ArrayList<String> factoryArray = new ArrayList<>();
-        table = "Material/ Time";
+        table = String.format("| %s / %s |\t", "Material", "Time");
         for(Factory factory : factories) {
-            table += "factory#:" + (1 + factories.indexOf(factory) + "\t\t|");
+            table += String.format("| %8s%-2d  |\t","Factory#" ,(1 + factories.indexOf(factory)));
         }
         table += "\n";
         for(Request request : requests) {
-            table += "request#:" + (1 + requests.indexOf(request));
-            ArrayList<Computer> conditon = request.getComputers();
+            table += String.format("| %14s%-3d |\t","Request#",(1 + requests.indexOf(request)));
+            ArrayList<Computer> condition = request.getComputers();
             for(Factory factory : factories) {
-                table += factory.checkMaterial(conditon) + "\t\b\b/";
-                table += factory.checkTime(conditon) + "\t\b\b/";
+                Boolean mat = factory.checkMaterial(condition);
+                Boolean time = factory.checkTime(condition);
+                table += String.format("| %-5b / %-5b |\t", mat, time);
             }
             table += "\n";
-//            TableViewer table = new TableViewer(requestArray, factoryArray);
-//            table.viewTable(requestArray.size(), factoryArray.size());
+//            TableViewer tableViewer = new TableViewer(requestArray, factoryArray);
+//            table += tableViewer.viewTable(1, factoryArray.size());
         }
     }
 

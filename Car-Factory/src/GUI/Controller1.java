@@ -82,7 +82,6 @@ public class Controller1 {
                 Report report = new Report(simulationDate, requests, factories, warehouses);
                 report.generateReport();
                 String mainOutputText = Report.getMainReport();
-                //TODO here are other reports
                 String warehousesOutputText = Report.getWarehousesReport();
                 String factoriesOutputText = Report.getFactoriesReport();
                 String requestsOutputText = Report.getRequestsReport();
