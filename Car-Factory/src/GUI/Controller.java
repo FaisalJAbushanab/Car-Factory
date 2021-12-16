@@ -32,6 +32,9 @@ public class Controller {
 	public TextField phase1Max;
 	public Label pos1;
 	public TextArea tempOutput2;
+	public Button fBtn1;
+	public Button wBtn1;
+	public Button rBtn1;
 	
 	@FXML
 	public TextArea phase2Output;
@@ -48,7 +51,11 @@ public class Controller {
 		controller.phase1Max.setText(phase2Max.getText());
 		controller.phase1Output.setText(tempOutput1.getText());
 		controller.tempOutput2.setText(phase2Output.getText());
-		
+		if(!tempOutput1.getText().equals("")) {
+			controller.fBtn1.setOpacity(1);
+			controller.wBtn1.setOpacity(1);
+			controller.rBtn1.setOpacity(1);
+		}
 		controller.pos1.setText(tempPercentage1.getText());
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
@@ -80,6 +87,9 @@ public class Controller {
 		if(btnId.equals("reset1")) {
 			phase1Output.setText("");
 			pos1.setText("");
+			fBtn1.setOpacity(0);
+			wBtn1.setOpacity(0);
+			rBtn1.setOpacity(0);
 		}else {
 			phase2Output.setText("");
 		}
@@ -90,6 +100,7 @@ public class Controller {
 		Button btn = (Button) event.getSource();
 		String btnId = btn.getId();
 		if(btnId.equals("run1")) {
+			phase1Output.setText("");
 			days1 = Integer.parseInt(phase1Days.getText());
 			max1 = Integer.parseInt(phase1Max.getText());
 			
@@ -103,9 +114,27 @@ public class Controller {
 				phase1Output.appendText(output + "\n");
 			}
 			pos1.setText(String.format("%s%.2f%s","Percentage Of Success: ", report.pos, "%"));
+			fBtn1.setOpacity(1);
+			wBtn1.setOpacity(1);
+			rBtn1.setOpacity(1);
 		}else {
 			phase2Output.setText("");
 		}
+	}
+	
+	public void popUpFactories(ActionEvent event) throws IOException {
+		
+		try {
+		    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Factories.fxml"));
+		    Parent root1 = (Parent) fxmlLoader.load();
+		    Stage stage = new Stage();
+		    stage.setTitle("Factories info");
+		    stage.setScene(new Scene(root1));  
+		    stage.show();
+		} catch(Exception e) {
+	        e.printStackTrace();
+	    }
+		
 	}
 	
 }

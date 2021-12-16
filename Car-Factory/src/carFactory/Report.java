@@ -50,7 +50,7 @@ public class Report {
     	for(Request request : requests) {
     		String time = request.getDay() + " - " + request.getHour() + ":" + request.getMinute();
     		String status;
-    		if(request.takenFactoryIndex == -1) {
+    		if(request.takenFactoryIndex != -1) {
     			status = "success";
     			numOfSuccess++;
     		}else {
