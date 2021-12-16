@@ -1,7 +1,8 @@
 package GUI;
 
-import java.io.IOException;
-import java.util.*;
+import carFactory.Main;
+import carFactory.Report;
+import carFactory.Request;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,12 +13,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
-import carFactory.Main;
-import carFactory.Report;
-import carFactory.Request;
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class Controller {
 	private Stage stage;
@@ -95,7 +94,7 @@ public class Controller {
 			max1 = Integer.parseInt(phase1Max.getText());
 			
 			Main run = new Main(days1, max1);
-			ArrayList<Request> requests = run.requests;
+			ArrayList<Request> requests = run.getRequests();
 			
 			// Generate Reports
 			Report report = new Report();

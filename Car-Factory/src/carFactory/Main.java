@@ -1,16 +1,13 @@
 package carFactory;
 
-import java.io.IOException;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Main {
 	
 	ArrayList<Factory> factories = new ArrayList<>();
 	ArrayList<Warehouse> warehouses = new ArrayList<>();
-	public ArrayList<Request> requests = new ArrayList<>();
+	private ArrayList<Request> requests = new ArrayList<>();
 	String[] location = { "Riyadh", "Makkah", "Dammam", "Jeddah" };
 	int[] workingHours = { 12, 18, 24 };
 	int numberOfSuccess = 0;
@@ -73,7 +70,11 @@ public class Main {
 			factories.add(factory);
 		}
 	}
-	
+
+	public ArrayList<Request> getRequests() {
+		return requests;
+	}
+
 	// Generate random requests
 	public void generateRequests(int days, int maxRequestsPerDay) {
 		int numOfRequests = 0;
