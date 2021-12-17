@@ -17,7 +17,7 @@ public class Main {
 	public Main(int days, int maxRequestsPerDay) {
 
 		generateWarehouses(days, 50);
-		generateFactories(days, 30);
+		generateFactories(days, 50);
 		generateRequests(days, maxRequestsPerDay);
 
 	}

@@ -97,6 +97,9 @@ public class Factory extends Building implements Cloneable{
                 	employee.setSalary(empSalary/2);
                 	employees.add(employee); // add new worker to the list
                 	worker++;
+                } else {
+                    employees.add(employee); // add new engineer to the list
+                    engineer++;
                 }
             }else if((5 >= rand) && (technician < super.getCapacity()[1])) {
             	Employee employee = new Technician();
@@ -105,6 +108,9 @@ public class Factory extends Building implements Cloneable{
                 	employee.setSalary(empSalary/2);
                 	employees.add(employee); // add new technician to the list
                 	technician++;
+                }else {
+                    employees.add(employee); // add new engineer to the list
+                    engineer++;
                 }
             }else if((5 < rand) && (engineer < super.getCapacity()[2])){
                 Employee employee = new Engineer();
@@ -113,6 +119,9 @@ public class Factory extends Building implements Cloneable{
                 	employee.setSalary(empSalary/2);
                 	employees.add(employee); // add new engineer to the list
                 	engineer++;
+                } else {
+                    employees.add(employee); // add new engineer to the list
+                    engineer++;
                 }
             }
             else {

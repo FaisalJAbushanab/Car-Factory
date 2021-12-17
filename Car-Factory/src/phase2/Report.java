@@ -82,12 +82,14 @@ public class Report {
         int numOfSuccess = 0;
         for (Request request : requests) {
             if (request.getTakenFactory() != null) {
-                mainReport += (requests.indexOf(request) + 1) + ": request " + request.getDateRequested() +
-                        " found factory#" + (request.getTakenFactoryIndex()) + "\n";
+                mainReport += (requests.indexOf(request) + 1) + ": request "
+                        + request.getDateRequested() +
+                        " found factory#" + (request.getTakenFactoryIndex() + 1) + "\n";
                 mainReport += request.getFullfilmentInfo();
                 numOfSuccess++;
             } else {
-                mainReport += (requests.indexOf(request) + 1) + ": request " + request.getDateRequested() + " did not find a factory!\n";
+                mainReport += (requests.indexOf(request) + 1) + ": request "
+                        + request.getDateRequested() + " did not find a factory!\n";
                 mainReport += request.getFullfilmentInfo();
             }
         }

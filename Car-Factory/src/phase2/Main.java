@@ -17,7 +17,7 @@ public class Main {
 	public Main(int days, int maxRequestsPerDay) {
 		
 		generateWarehouses(days, 50);
-		generateFactories(days, 30);
+		generateFactories(days, 50);
 		generateRequests(days, maxRequestsPerDay);
 		
 	}
@@ -96,7 +96,8 @@ public class Main {
 						// probability of getting 1 is 1/500
 						int createOrNot = (int) Math.floor(Math.random() * (500) + 1);
 						if (createOrNot == 1) {
-							Request request = new Request(simulationDate ,i, j, k, fullUp(potential*0.8,potential*1.2));
+							Request request = new Request(simulationDate , factories,
+									i, j, k, fullUp(potential*0.8,potential*1.2));
 							requests.add(request);
 							// 4- fulfill requests
 							numberOfSuccess += request.findFactory(factories);
@@ -107,24 +108,23 @@ public class Main {
 			}
 			numOfRequests = 0;
 			for(Request request : requests) {
-				unoccupyFinishedFactories(request, i);
+				if (request.getTakenFactory() != null
+					|| !request.isComplete()) {
+					unoccupyFinishedFactories(request, i);
+				}
+				else {
+					if (!request.isComplete()) {
+						splitRequest(request);
+					}
+				}
 			}
 		}
-//		String conclusion = "\nNumber of successful requests: " + numberOfSuccess + "\n"
-//				+ "Number of unsuccessful requests: " + (requests.size() - numberOfSuccess) + "\n";
-//		String percent = String.format("Percentage of Success: %.2f%s ",
-//				(numberOfSuccess / (double) requests.size()) * 100, "%");
-//
-//		//generate reports
-//		Report report = new Report(simulationDate, requests, factories, warehouses);
-//		report.writeRequestsReport();
-//		report.writeWarehousesReport();
-//		report.writeFactoriesReport();
-//		report.writeMainReport((conclusion + percent));
-//
-//		System.out.println(conclusion);
-//		System.out.println(percent);
 	}
+
+	private void splitRequest(Request OGrequest) {
+		numberOfSuccess += OGrequest.split(factories);
+	}
+
 	private static int fullUp(int min, int max) {
 		return (int) Math.floor(Math.random() * (max - min + 1) + min);
 	}
@@ -139,13 +139,11 @@ public class Main {
 
 	public void unoccupyFinishedFactories(Request request, int currentDay) {
 		Factory factory = request.getTakenFactory();
-		if (factory != null) {
-			int passedDays = currentDay - Integer.parseInt(request.getDay());
-			if(passedDays >= factory.getRequirments(request,
-					factories.indexOf(factory))[1]) {
-				factory.deductMaterials(request);
-				factory.setUnOccupied();
-			}
+		int passedDays = currentDay - Integer.parseInt(request.getDay());
+		if(passedDays >= Integer.parseInt(request.getTakenFactoryProvidedTime())) {
+			factory.deductMaterials(request);
+			factory.setUnOccupied();
+			request.setComplete();
 		}
 	}
 }

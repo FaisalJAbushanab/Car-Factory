@@ -18,12 +18,14 @@ public class Request implements Cloneable{
     private int[] totalNumberOfEmployees = new int[3];
     private Factory takenFactory;
     private String takenFactoryProvidedCost;
-    private Boolean requestComplete = false;
     private String takenFactoryProvidedTime;
     public int takenFactoryIndex;
     private String dateRequested;
+    private Boolean requestComplete = false;
+    private Boolean requestSplit = false;
 
-    public Request(LocalDateTime whenRequested, int day, int hour, int minute, int size) {
+    public Request(LocalDateTime whenRequested, ArrayList<Factory> factories,
+                   int day, int hour, int minute, int size) {
         //give a special time for the request
         if(day < 10)
             this.day = "0" + String.valueOf(day);
@@ -57,9 +59,11 @@ public class Request implements Cloneable{
             computers.add(computer);
         }
         selectedTime = getRandom(30, 5, computers.size());
+        setSelectedCost(factories);
     }
 
     // converts simulation time into real time
+
     private String setDate(LocalDateTime simulationDate, int day, int hour, int minute) {
         simulationDate = simulationDate.plusDays(day);
         simulationDate = simulationDate.plusHours(hour);
@@ -67,7 +71,6 @@ public class Request implements Cloneable{
         DateTimeFormatter myFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
         return simulationDate.format(myFormat);
     }
-
     public int[] getEmplysArr(Computers vals) {
         int[] arr = new int[3];
         arr[0] = vals.getWorkers();
@@ -99,6 +102,7 @@ public class Request implements Cloneable{
     }
 
     // gets average cost of all factories
+
     private void setSelectedCost(ArrayList<Factory> factories) {
         int averageCost = 0;
         setComputerSumRequirements();
@@ -110,8 +114,8 @@ public class Request implements Cloneable{
         }
         selectedCost = getRandom(15,5, averageCost);
     }
-
     // sets array of total requirements needed for all computers in request
+
     private void setComputerSumRequirements() {
         for (Computer comps : computers) {
             int[] compsMaterial = comps.getConstructMaterial();
@@ -124,7 +128,6 @@ public class Request implements Cloneable{
             }
         }
     }
-
     public int[] getComputerSumMaterials() {
         return computerSumMaterials;
     }
@@ -146,6 +149,7 @@ public class Request implements Cloneable{
     }
 
     // gets a random value depending on range given
+
     private int getRandom(int lower, int upper, int val) {
         int addOrSub = (int) Math.floor(Math.random() * (2) + 1);
         if (addOrSub == 1) {
@@ -161,7 +165,6 @@ public class Request implements Cloneable{
             return val + ((int) value);
         }
     }
-
     public ArrayList<Computer> getComputers() {
         return computers;
     }
@@ -179,12 +182,12 @@ public class Request implements Cloneable{
     }
 
     // finds the factory that best provides the request
+
     public int findFactory(ArrayList<Factory> factories) {
 
         double best = -1;
         int bestIndex = -1;
 
-        setSelectedCost(factories);
         System.out.printf("selected for request#(%s/%s:%s)\ncost is: %d\ntime is: %d\n",
                 day, hour, minute, selectedCost, selectedTime);
 
@@ -207,7 +210,8 @@ public class Request implements Cloneable{
         if (bestIndex != -1) {
             takenFactory = factories.get(bestIndex);
             takenFactoryIndex = bestIndex;
-            factories.get(bestIndex).setOccupied();
+            if(!isRequestSplit())
+                factories.get(bestIndex).setOccupied();
             factories.get(bestIndex).setNumOfoccupies((factories.get(bestIndex).getNumOfoccupies()+1));
             System.out.printf("For request#(%s/%s:%s)\n", day, hour, minute);
             System.out.println("Factory " + (bestIndex + 1) + " has been occupied");
@@ -221,6 +225,53 @@ public class Request implements Cloneable{
             return 0;
         }
     }
+    public int split(ArrayList<Factory> factories) {
+        setSplit();
+        selectedCost = selectedCost/2;
+        selectedTime = selectedTime/2;
+        ArrayList<Computer> OGcomps = computers;
+        ArrayList<Computer> splitComps1 = new ArrayList<>();
+        ArrayList<Computer> splitComps2 = new ArrayList<>();
+        for (Computer computer : computers) {
+            if (computers.indexOf(computer) % 2 == 0 )
+                splitComps1.add(computer);
+            else
+                splitComps2.add(computer);
+        }
+        setComputers(splitComps1);
+        if (findFactory(factories) == 1) {
+            setComputers(splitComps2);
+            setUnsplit();
+            if (findFactory(factories) == 1) {
+                setComputers(OGcomps);
+                selectedCost = selectedCost*2;
+                selectedTime = selectedTime*2;
+                    return 1;
+            }
+            setFactoryNull();
+            setComputers(OGcomps);
+            selectedCost = selectedCost*2;
+            selectedTime = selectedTime*2;
+            return 0;
+        }
+        setFactoryNull();
+        setComputers(OGcomps);
+        selectedCost = selectedCost*2;
+        selectedTime = selectedTime*2;
+        setUnsplit();
+        return 0;
+    }
+
+    private void setUnsplit() {
+        requestSplit = false;
+    }
+    private void setSplit() {
+        requestSplit = true;
+    }
+
+    public void setComputers(ArrayList<Computer> computers) {
+        this.computers = computers;
+    }
 
     private double getScore(int[] values) {
         double costScore = (selectedCost / (double) values[0]) / 2;
@@ -228,6 +279,10 @@ public class Request implements Cloneable{
         if ((costScore < 0.5) || (timeScore < 0.5)) {
             return -1;
         }
+//        if (((costScore < 0.5) || (costScore < 2.5)) ||
+//                ((timeScore < 0.5) || (timeScore < 2.5))) {
+//            return -1;
+//        }
         else{
             return costScore + timeScore;
         }
@@ -242,6 +297,7 @@ public class Request implements Cloneable{
     }
 
     // summary of request state
+
     public String getFullfilmentInfo() {
         String requestInfo = "Request's Selected Cost: $" + selectedCost +
                 " and Selected Time: " + selectedTime + " Days \n";
@@ -255,25 +311,29 @@ public class Request implements Cloneable{
         }
         return requestInfo + factoryInfo + "\n";
     }
-
     public String getTakenFactoryProvidedCost() {
         return takenFactoryProvidedCost;
+    }
+
+    private int[] getTotalNumberOfEmployees() {
+        return totalNumberOfEmployees;
     }
     public Boolean isComplete() {
         return requestComplete;
     }
-    private int[] getTotalNumberOfEmployees() {
-        return totalNumberOfEmployees;
-    }
     public void setComplete() {
+//        setFactoryNull();
         this.requestComplete = true;
     }
-
     public String getTakenFactoryProvidedTime() {
-        return takenFactoryProvidedTime;
+        if (takenFactoryProvidedTime != null)
+            return takenFactoryProvidedTime;
+        else
+            return "10000";
     }
 
     // summary for request request's
+
     public String getComputersInformation() {
         StringBuilder info = new StringBuilder("Number of Computers generated: " + computers.size() + "\n");
         info.append("[workers, technicians, engineers]\n");
@@ -293,11 +353,18 @@ public class Request implements Cloneable{
         }
         return info + "\n";
     }
+    public Boolean isRequestSplit() {
+        return requestSplit;
+    }
 
     @Override
     protected Object clone()
             throws CloneNotSupportedException
     {
         return super.clone();
+    }
+
+    public void setFactoryNull() {
+        takenFactory = null;
     }
 }
