@@ -138,12 +138,11 @@ public class Main {
 	}
 
 	public void unoccupyFinishedFactories(Request request, int currentDay) {
-//		int passedDays = currentDay - Integer.parseInt(request.getDay());
 		Factory factory = request.getTakenFactory();
 		if (factory != null) {
-			int passedDays = currentDay - factory.getRequirments(request,
-					factories.indexOf(factory))[1];
-			if(passedDays >= request.getSelectedTime()) {
+			int passedDays = currentDay - Integer.parseInt(request.getDay());
+			if(passedDays >= factory.getRequirments(request,
+					factories.indexOf(factory))[1]) {
 				factory.deductMaterials(request);
 				factory.setUnOccupied();
 			}
