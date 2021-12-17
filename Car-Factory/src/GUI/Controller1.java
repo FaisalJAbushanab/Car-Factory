@@ -84,20 +84,12 @@ public class Controller1 {
                 // Generate Reports
                 Report report = new Report(simulationDate, requests, factories, warehouses);
                 report.generateReport();
-<<<<<<< HEAD
                 String mainOutputText = report.getMainReport();
                 //TODO here are other reports
                 String warehousesOutputText = report.getWarehousesReport();
                 String factoriesOutputText = report.getFactoriesReport();
                 String requestsOutputText = report.getRequestsReport();
                 String tableOutputText = report.getTableReport();
-=======
-                String mainOutputText = Report.getMainReport();
-                String warehousesOutputText = Report.getWarehousesReport();
-                String factoriesOutputText = Report.getFactoriesReport();
-                String requestsOutputText = Report.getRequestsReport();
-                String tableOutputText = Report.getTableReport();
->>>>>>> branch 'main' of https://github.com/FaisalJAbushanab/Car-Factory.git
 
                 phase1Output.appendText(mainOutputText);
                 tempFactoriesOutput = factoriesOutputText;
