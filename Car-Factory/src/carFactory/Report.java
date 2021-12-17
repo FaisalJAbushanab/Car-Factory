@@ -12,11 +12,11 @@ public class Report {
     private ArrayList<Request> requests;
     private ArrayList<Factory> factories;
     private ArrayList<Warehouse> warehouses;
-    private static String mainReport = "";
-    private static String requestsReport = "";
-    private static String factoriesReport = "";
-    private static String warehousesReport = "";
-    private static String table = "";
+    private String mainReport = "";
+    private String requestsReport = "";
+    private String factoriesReport = "";
+    private String warehousesReport = "";
+    private String table = "";
     private String name;
     private double pos;
 
@@ -51,7 +51,7 @@ public class Report {
         writeTable(requests, factories);
     }
 
-    public static String getTableReport() {
+    public String getTableReport() {
         return table;
     }
 
@@ -144,19 +144,19 @@ public class Report {
     }
 
 
-    public static String getMainReport() {
+    public String getMainReport() {
         return mainReport;
     }
 
-    public static String getRequestsReport() {
+    public String getRequestsReport() {
         return requestsReport;
     }
 
-    public static String getFactoriesReport() {
+    public String getFactoriesReport() {
         return factoriesReport;
     }
 
-    public static String getWarehousesReport() {
+    public String getWarehousesReport() {
         return warehousesReport;
     }
 
