@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Factory extends Building implements Cloneable{
 
-    private ArrayList<Warehouse> allwarehouses = new ArrayList<>();
+    private ArrayList<Warehouse> allWarehouses = new ArrayList<>();
     private ArrayList<Warehouse> warehouseAccess = new ArrayList<>();
     private ArrayList<Employee> employees = new ArrayList<>();
     private int[] employeesList = new int[3];
@@ -83,7 +83,7 @@ public class Factory extends Building implements Cloneable{
     }
 
     public void setWarehouseAccess(ArrayList<Warehouse> warehouses) {
-        allwarehouses = warehouses;
+        allWarehouses = warehouses;
         for (Warehouse warehouse : warehouses) {
             if (warehouse.getLocation().equals(super.getLocation())) {
                 warehouseAccess.add(warehouse); // if the location of the warehouse is the same as the location of the factory make the warehouse accesable by factory
@@ -146,7 +146,7 @@ public class Factory extends Building implements Cloneable{
         return (int) matsCost;
     }
 
-    private boolean checkMaterial(ArrayList<Computer> computers) {
+    public boolean checkMaterial(ArrayList<Computer> computers) {
         boolean materialSufficient = true;
         for (int i = 0; i < getWarehouseTotalMaterials().length; i++) {
             if (getComputersTotalMaterial(computers)[i] > getWarehouseTotalMaterials()[i]) { // compare the material required by the request and compare it to the material available by the factory
@@ -158,7 +158,7 @@ public class Factory extends Building implements Cloneable{
         return materialSufficient;
     }
 
-    private boolean checkTime(ArrayList<Computer> computers) {
+    public boolean checkTime(ArrayList<Computer> computers) {
         boolean timeSufficient = true;
         int[] computerSumEmployee = new int[3];
         for (Computer comps : computers) {
@@ -224,7 +224,7 @@ public class Factory extends Building implements Cloneable{
                 + employeesList[2] + " engineers \n";
         info += "Access to warehouses: ";
         for (Warehouse access: warehouseAccess) { 
-            info += "#" + (allwarehouses.indexOf(access)+1) + " "; // get all the warehouses that the factory has access to
+            info += "#" + (allWarehouses.indexOf(access)+1) + " "; // get all the warehouses that the factory has access to
         }
         info += "\nMaterials: [aluminium grams, plastic grams, glass grams, silicon mg " +
                 ", gold mg, copper mg, iron grams, chrome mg, silver mg]\n" +

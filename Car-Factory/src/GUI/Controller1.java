@@ -75,7 +75,7 @@ public class Controller1 {
             days1 = Integer.parseInt(phase1Days.getText());
             max1 = Integer.parseInt(phase1Max.getText());
             if(days1 > 0 && max1 >0) {
-            	phase1Output.setText("");
+                phase1Output.setText("");
                 Main run = new Main(days1, max1);
                 ArrayList<Warehouse> warehouses = run.getWarehouses();
                 ArrayList<Factory> factories = run.getFactories();
@@ -84,12 +84,20 @@ public class Controller1 {
                 // Generate Reports
                 Report report = new Report(simulationDate, requests, factories, warehouses);
                 report.generateReport();
+<<<<<<< HEAD
                 String mainOutputText = report.getMainReport();
                 //TODO here are other reports
                 String warehousesOutputText = report.getWarehousesReport();
                 String factoriesOutputText = report.getFactoriesReport();
                 String requestsOutputText = report.getRequestsReport();
                 String tableOutputText = report.getTableReport();
+=======
+                String mainOutputText = Report.getMainReport();
+                String warehousesOutputText = Report.getWarehousesReport();
+                String factoriesOutputText = Report.getFactoriesReport();
+                String requestsOutputText = Report.getRequestsReport();
+                String tableOutputText = Report.getTableReport();
+>>>>>>> branch 'main' of https://github.com/FaisalJAbushanab/Car-Factory.git
 
                 phase1Output.appendText(mainOutputText);
                 tempFactoriesOutput = factoriesOutputText;
