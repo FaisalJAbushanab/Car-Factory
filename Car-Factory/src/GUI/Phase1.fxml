@@ -40,6 +40,15 @@
       </Label>
       <TextField fx:id="phase1Days" layoutX="227.0" layoutY="188.0" prefHeight="25.0" prefWidth="56.0" />
       <TextField fx:id="phase1Max" layoutX="371.0" layoutY="229.0" prefHeight="25.0" prefWidth="56.0" />
+      <Button fx:id="tBtn1" layoutX="668.0" layoutY="232.0" mnemonicParsing="false" onAction="#popUpTable" opacity="0.0" prefHeight="44.0" prefWidth="113.0" text="Table View">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../table.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
       <Button fx:id="run1" layoutX="515.0" layoutY="229.0" mnemonicParsing="false" onAction="#runSimulation" prefHeight="25.0" prefWidth="66.0" text="Run" />
       <Button fx:id="reset1" layoutX="587.0" layoutY="229.0" mnemonicParsing="false" onAction="#resetSimulation" prefHeight="25.0" prefWidth="66.0" text="Reset" />
       <Button layoutY="108.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="397.0" style="-fx-background-color: #243342; -fx-background-radius: 0; -fx-border-style: hidden hidden solid hidden; -fx-border-color: #f1c40f; -fx-border-width: 2;" text="Phase 1" textFill="WHITE">

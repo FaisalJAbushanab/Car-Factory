@@ -30,6 +30,7 @@ public class Controller1 {
     public String tempFactoriesOutput;
     public String tempWarehousesOutput;
     public String tempRequestsOutput;
+    public String tempTableOutput;
     @FXML
     public TextArea phase1Output;
     public TextField phase1Days;
@@ -39,6 +40,7 @@ public class Controller1 {
     public Button fBtn1;
     public Button wBtn1;
     public Button rBtn1;
+    public Button tBtn1;
 
     public void switchToPhase2(ActionEvent event) throws IOException {
 
@@ -48,7 +50,7 @@ public class Controller1 {
         controller.phase2Days.setText(phase1Days.getText());
         controller.phase2Max.setText(phase1Max.getText());
         controller.phase2Output.setText(tempOutput2.getText());
-        controller.tempOutput1.setText(phase1Output.getText());
+        controller.tempOutput1 = phase1Output.getText();
 
         controller.tempPercentage1 = pos1.getText();
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -64,6 +66,7 @@ public class Controller1 {
         fBtn1.setOpacity(0);
         wBtn1.setOpacity(0);
         rBtn1.setOpacity(0);
+        tBtn1.setOpacity(0);
     }
 
     public void runSimulation(ActionEvent event) throws IOException, CloneNotSupportedException {
@@ -81,21 +84,23 @@ public class Controller1 {
                 // Generate Reports
                 Report report = new Report(simulationDate, requests, factories, warehouses);
                 report.generateReport();
-                String mainOutputText = Report.getMainReport();
+                String mainOutputText = report.getMainReport();
                 //TODO here are other reports
-                String warehousesOutputText = Report.getWarehousesReport();
-                String factoriesOutputText = Report.getFactoriesReport();
-                String requestsOutputText = Report.getRequestsReport();
-                String tableOutputText = Report.getTableReport();
+                String warehousesOutputText = report.getWarehousesReport();
+                String factoriesOutputText = report.getFactoriesReport();
+                String requestsOutputText = report.getRequestsReport();
+                String tableOutputText = report.getTableReport();
 
-                phase1Output.appendText(tableOutputText);
+                phase1Output.appendText(mainOutputText);
                 tempFactoriesOutput = factoriesOutputText;
                 tempWarehousesOutput = warehousesOutputText;
                 tempRequestsOutput = requestsOutputText;
+                tempTableOutput = tableOutputText;
                 pos1.setText(String.format("%s%.2f%s","Percentage Of Success: ", report.getPos(), "%"));
                 fBtn1.setOpacity(1);
                 wBtn1.setOpacity(1);
                 rBtn1.setOpacity(1);
+                tBtn1.setOpacity(1);
             }else {
                 popUpError(event);
             }
@@ -166,6 +171,24 @@ public class Controller1 {
             Stage stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);
             stage.setTitle("Error");
+            stage.setScene(new Scene(root));
+
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+    
+    public void popUpTable(ActionEvent event) throws IOException {
+
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Table.fxml"));
+            root = loader.load();
+            Controller controller = loader.getController();
+            controller.tableOutput.setText(tempTableOutput);
+            Stage stage = new Stage();
+            stage.setTitle("Table View");
             stage.setScene(new Scene(root));
 
             stage.show();

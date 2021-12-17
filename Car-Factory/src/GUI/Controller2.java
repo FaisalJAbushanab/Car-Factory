@@ -30,12 +30,12 @@ public class Controller2 {
 	public String tempWarehousesOutput;
 	public String tempRequestsOutput;
 	public String tempPercentage1;
+	public String tempOutput1;
 	@FXML
 	public TextArea phase2Output;
 	public TextField phase2Days;
 	public TextField phase2Max;
 	public Label pos2;
-	public TextArea tempOutput1;
 	public Button fBtn2;
 	public Button wBtn2;
 	public Button rBtn2;
@@ -47,7 +47,7 @@ public class Controller2 {
 		Controller1 controller = loader.getController();
 		controller.phase1Days.setText(phase2Days.getText());
 		controller.phase1Max.setText(phase2Max.getText());
-		controller.phase1Output.setText(tempOutput1.getText());
+		controller.phase1Output.setText(tempOutput1);
 		controller.tempOutput2.setText(phase2Output.getText());
 
 //		controller.tempPercentage2.setText(pos1.getText());

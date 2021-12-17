@@ -106,6 +106,9 @@ public class Main {
 				}
 			}
 			numOfRequests = 0;
+			for(Request request : requests) {
+				unoccupyFineshedFactories(request, i);
+			}
 		}
 //		String conclusion = "\nNumber of successful requests: " + numberOfSuccess + "\n"
 //				+ "Number of unsuccessful requests: " + (requests.size() - numberOfSuccess) + "\n";
@@ -133,4 +136,14 @@ public class Main {
 	public ArrayList<Request> getRequests() {
 		return requests;
 	}
+	public void unoccupyFineshedFactories(Request request, int currentDay) {
+		int passedDays = currentDay - Integer.parseInt(request.getDay());
+		if(passedDays >= request.getSelectedTime()) {
+			Factory factory = request.getTakenFactory();
+			if (factory != null) {
+				factory.setUnOccupied();
+			}
+		}
+	}
+	
 }

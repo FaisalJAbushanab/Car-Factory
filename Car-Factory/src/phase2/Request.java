@@ -208,6 +208,7 @@ public class Request implements Cloneable{
             takenFactory = factories.get(bestIndex);
             takenFactoryIndex = bestIndex;
             factories.get(bestIndex).setOccupied();
+            factories.get(bestIndex).setNumOfoccupies((factories.get(bestIndex).getNumOfoccupies()+1));
             System.out.printf("For request#(%s/%s:%s)\n", day, hour, minute);
             System.out.println("Factory " + (bestIndex + 1) + " has been occupied");
             return 1;

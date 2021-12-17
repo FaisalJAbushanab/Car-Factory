@@ -30,6 +30,7 @@ public class Controller {
 	public TextArea factoriesOutput;
 	public TextArea warehousesOutput;
 	public TextArea requestsOutput;
+	public TextArea tableOutput;
 	public Button close;
 	
 	public void closeWindow(ActionEvent event) {

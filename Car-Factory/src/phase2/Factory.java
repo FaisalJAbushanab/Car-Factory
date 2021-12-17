@@ -12,6 +12,7 @@ public class Factory extends Building implements Cloneable{
     private int[] warehouseAccessTotalMaterials = new int[9];
     private int operatingCost;
     private boolean isOccupied = false;
+    private int numOfoccupies;
 
     public Factory(int[] workerCapacity, String location, int workingHours) {
         super(workerCapacity, location, workingHours);
@@ -228,7 +229,16 @@ public class Factory extends Building implements Cloneable{
         info += "\nMaterials: [aluminium grams, plastic grams, glass grams, silicon mg " +
                 ", gold mg, copper mg, iron grams, chrome mg, silver mg]\n" +
                 "Amount: " + Arrays.toString(getWarehouseTotalMaterials()) + "\n";
+        info += "number of times this factory has been occupied: " + getNumOfoccupies() + "\n";
         return info + "\n";
     }
+
+	public int getNumOfoccupies() {
+		return numOfoccupies;
+	}
+
+	public void setNumOfoccupies(int numOfoccupies) {
+		this.numOfoccupies = numOfoccupies;
+	}
 }
 
