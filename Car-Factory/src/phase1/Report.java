@@ -1,4 +1,4 @@
-package carFactory;
+package phase1;
 
 import java.io.BufferedWriter;
 import java.io.File;

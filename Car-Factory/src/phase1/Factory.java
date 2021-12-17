@@ -1,8 +1,12 @@
-package carFactory;
+package phase1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-
+/**
+ *
+ * class factory class inheritance and implement at the same time.
+ *Shows some information about the warehouse, employee, and cost of the project.
+ */
 public class Factory extends Building implements Cloneable{
 
     private ArrayList<Warehouse> allWarehouses = new ArrayList<>();

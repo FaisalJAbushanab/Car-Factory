@@ -1,11 +1,14 @@
-package carFactory;
+package phase1;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
-
+/**
+ * Shows time, cost and factor information.
+ *
+ */
 public class Request implements Cloneable{
 
     private ArrayList<Computer> computers = new ArrayList<>();

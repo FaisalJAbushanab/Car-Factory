@@ -1,12 +1,22 @@
-package carFactory;
+package phase1;
 
 import java.util.Arrays;
-
+/**
+ *
+ * class Warehouse class inheritance and implement at the same time.
+ *
+ */
 public class Warehouse extends Building implements Cloneable{
 
     private int[] materialQuantity;
     private Material material;
-
+    /**
+     *
+     * @param buildingCapacity
+     * @param location
+     * @param workingHours
+     * @param material
+     */
     public Warehouse(int[] buildingCapacity, String location,
                      int workingHours, Material material) {
         super(buildingCapacity, location, workingHours);

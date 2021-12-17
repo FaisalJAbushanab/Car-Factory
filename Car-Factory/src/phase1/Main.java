@@ -1,9 +1,13 @@
-package carFactory;
+package phase1;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Random;
-
+/**
+ *
+ *  class show runs the program according to the existing factors.
+ *
+ */
 public class Main {
 
 	private ArrayList<Factory> factories = new ArrayList<>();
