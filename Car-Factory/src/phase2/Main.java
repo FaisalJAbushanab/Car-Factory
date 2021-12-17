@@ -107,7 +107,7 @@ public class Main {
 			}
 			numOfRequests = 0;
 			for(Request request : requests) {
-				unoccupyFineshedFactories(request, i);
+				unoccupyFinishedFactories(request, i);
 			}
 		}
 //		String conclusion = "\nNumber of successful requests: " + numberOfSuccess + "\n"
@@ -136,14 +136,16 @@ public class Main {
 	public ArrayList<Request> getRequests() {
 		return requests;
 	}
-	public void unoccupyFineshedFactories(Request request, int currentDay) {
-		int passedDays = currentDay - Integer.parseInt(request.getDay());
-		if(passedDays >= request.getSelectedTime()) {
-			Factory factory = request.getTakenFactory();
-			if (factory != null) {
+
+	public void unoccupyFinishedFactories(Request request, int currentDay) {
+		Factory factory = request.getTakenFactory();
+		if (factory != null) {
+			int passedDays = currentDay - Integer.parseInt(request.getDay());
+			if(passedDays >= factory.getRequirments(request,
+					factories.indexOf(factory))[1]) {
+				factory.deductMaterials(request);
 				factory.setUnOccupied();
 			}
 		}
 	}
-	
 }

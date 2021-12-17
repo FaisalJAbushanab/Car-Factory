@@ -17,9 +17,31 @@ public class Factory extends Building implements Cloneable{
     public Factory(int[] workerCapacity, String location, int workingHours) {
         super(workerCapacity, location, workingHours);
 
-        setEmployees(); // Generate Employees
-        setEmployeesList(); // add all the employees to employeesList
+        generateEmployees(); // Generate Employees
         setOperatingCost();  // calculate operation cost
+    }
+
+    public void fullUpEmployees() {
+//        for(int i= 0; i < numOfEmployees; i++) {
+//            int rand = (int)Math.floor(Math.random()*(6)+1);
+//            if((3 >= rand) && (worker < super.getCapacity()[0])) {
+//                Employee employee = new Worker();
+//                employees.add(employee); // add new worker to the list
+//                worker++;
+//            }else if((5 >= rand) && (technician < super.getCapacity()[1])) {
+//                Employee employee = new Technician();
+//                employees.add(employee); // add new technician to the list
+//                technician++;
+//            }else if((5 < rand) && (engineer < super.getCapacity()[2])){
+//                Employee employee = new Engineer();
+//                employees.add(employee);  // add new engineer to the list
+//                engineer++;
+//            }
+//            else {
+//                continue;
+//            }
+//        }
+//        setEmployeesList();
     }
 
     public boolean isOccupied() {
@@ -29,11 +51,13 @@ public class Factory extends Building implements Cloneable{
     public void setOccupied() {
         isOccupied = true; // occupy the factory
     }
+
     public void setUnOccupied() {
         isOccupied = false; // unoccupy the factory
     }
 
     private void setOperatingCost() {
+        // TODO salary on location
         for (Employee employee : employees) {
 //            System.out.println(employee.toString());
             operatingCost += employee.getSalary(); // add employees' salaries to the operation cost
@@ -42,8 +66,11 @@ public class Factory extends Building implements Cloneable{
     }
 
     private void setEmployeesList() {
+//        employeesList[0] =  0;
+//        employeesList[1] =  0;
+//        employeesList[2] =  0;
         for (Employee employee : employees) {
-            if (employee instanceof Worker) { 
+            if (employee instanceof Worker) {
                 employeesList[0] += 1; // increase index 0 means increasing in worker numbers
             } else if (employee instanceof Technician) {
                 employeesList[1] += 1; // increase index 1 means increasing in Technician numbers
@@ -53,8 +80,7 @@ public class Factory extends Building implements Cloneable{
         }
     }
 
-     private void setEmployees() {
-        // TODO salary on location
+     private void generateEmployees() {
         int max = super.getCapacity()[0] + super.getCapacity()[1] + super.getCapacity()[2]; // get employees capacity of the factory
         int min = max/2;
         int numOfEmployees = (int)Math.floor(Math.random()*((max)-min+1)+min); // generate random number of employees
@@ -64,11 +90,11 @@ public class Factory extends Building implements Cloneable{
         for(int i= 0; i < numOfEmployees; i++) {
             int rand = (int)Math.floor(Math.random()*(6)+1);
             if((3 >= rand) && (worker < super.getCapacity()[0])) {
-                Employee employee = new Worker(); 
+                Employee employee = new Worker();
                 employees.add(employee); // add new worker to the list
                 worker++;
             }else if((5 >= rand) && (technician < super.getCapacity()[1])) {
-                Employee employee = new Technician(); 
+                Employee employee = new Technician();
                 employees.add(employee); // add new technician to the list
                 technician++;
             }else if((5 < rand) && (engineer < super.getCapacity()[2])){
@@ -80,6 +106,7 @@ public class Factory extends Building implements Cloneable{
                 continue;
             }
         }
+        setEmployeesList(); // add all the employees to employeesList
     }
 
     public void setWarehouseAccess(ArrayList<Warehouse> warehouses) {
@@ -127,6 +154,14 @@ public class Factory extends Building implements Cloneable{
             }
         }
         return computerSumMaterials;
+    }
+
+    public void deductMaterials(Request request) {
+        int[] computerSumMaterials = new int[9];
+        computerSumMaterials = getComputersTotalMaterial(request.getComputers());
+        for (int i = 0; i < computerSumMaterials.length; i++) {
+            warehouseAccessTotalMaterials[i] -= computerSumMaterials[i];
+        }
     }
 
     public int calculateCostMats(int[] computerSumMaterials) {

@@ -80,11 +80,11 @@ public class Controller2 {
 		// Generate Reports
 		Report report = new Report(simulationDate, requests, factories, warehouses);
 		report.generateReport();
-		String mainOutputText = Report.getMainReport();
+		String mainOutputText = report.getMainReport();
 		//TODO here are other reports
-		String warehousesOutputText = Report.getWarehousesReport();
-		String factoriesOutputText = Report.getFactoriesReport();
-		String requestsoutputText = Report.getRequestsReport();
+		String warehousesOutputText = report.getWarehousesReport();
+		String factoriesOutputText = report.getFactoriesReport();
+		String requestsoutputText = report.getRequestsReport();
 
 		phase2Output.appendText(mainOutputText);
 		tempFactoriesOutput = factoriesOutputText;
