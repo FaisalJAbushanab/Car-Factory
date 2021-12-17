@@ -87,20 +87,33 @@ public class Factory extends Building implements Cloneable{
         int worker = 0;
         int technician = 0;
         int engineer = 0;
+        String location = getLocation();
         for(int i= 0; i < numOfEmployees; i++) {
             int rand = (int)Math.floor(Math.random()*(6)+1);
             if((3 >= rand) && (worker < super.getCapacity()[0])) {
                 Employee employee = new Worker();
-                employees.add(employee); // add new worker to the list
-                worker++;
+                if(location != "Riyadh") {
+                	int empSalary = employee.getSalary();
+                	employee.setSalary(empSalary/2);
+                	employees.add(employee); // add new worker to the list
+                	worker++;
+                }
             }else if((5 >= rand) && (technician < super.getCapacity()[1])) {
-                Employee employee = new Technician();
-                employees.add(employee); // add new technician to the list
-                technician++;
+            	Employee employee = new Technician();
+            	if(location != "Riyadh") {
+                	int empSalary = employee.getSalary();
+                	employee.setSalary(empSalary/2);
+                	employees.add(employee); // add new technician to the list
+                	technician++;
+                }
             }else if((5 < rand) && (engineer < super.getCapacity()[2])){
                 Employee employee = new Engineer();
-                employees.add(employee);  // add new engineer to the list
-                engineer++;
+                if(location != "Riyadh") {
+                	int empSalary = employee.getSalary();
+                	employee.setSalary(empSalary/2);
+                	employees.add(employee); // add new engineer to the list
+                	engineer++;
+                }
             }
             else {
                 continue;
