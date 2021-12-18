@@ -16,7 +16,10 @@ import phase2.Main;
 import phase2.Report;
 import phase2.*;
 
+import java.awt.Desktop;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
@@ -222,5 +225,9 @@ public class Controller2 {
         }
 
     }
+	public void openLink(ActionEvent event) throws URISyntaxException, IOException {
+    	Desktop.getDesktop().browse(new URI("https://faisaljabushanab.github.io/javadoc/"));
+    }
+
 
 }

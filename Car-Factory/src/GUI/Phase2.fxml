@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
@@ -94,5 +95,14 @@
             </ImageView>
          </graphic>
       </Button>
+      <Hyperlink layoutX="677.0" layoutY="589.0" onAction="#openLink" style="-fx-background-color: white; -fx-background-radius: 15px; -fx-padding: 4px 20px;" text="Javadoc">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../javadoc.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Hyperlink>
    </children>
 </AnchorPane>

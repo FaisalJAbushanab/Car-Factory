@@ -1,0 +1,402 @@
+Number of factories generated: 50
+
+#1: 	Location: Jeddah | Working hours: 24 | Operating cost: 8694
+	Employees capacity: 567 workers 381 technicians 169 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 431 workers 275 technicians 156 engineers 
+	Access to warehouses: #1 #2 #4 #7 #8 #9 #11 #22 #25 #41 #44 #48 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4980765, 5137078, 5682626, 1042925, 892076, 2977618, 3887409, 3264672, 3837109]
+
+#2: 	Location: Dammam | Working hours: 18 | Operating cost: 6342
+	Employees capacity: 563 workers 255 technicians 138 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 339 workers 224 technicians 90 engineers 
+	Access to warehouses: #5 #12 #14 #15 #18 #28 #31 #33 #34 #35 #36 #40 #43 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6462810, 6356104, 4703618, 1131480, 928273, 3251060, 5507385, 4048614, 3789891]
+
+#3: 	Location: Riyadh | Working hours: 12 | Operating cost: 6444
+	Employees capacity: 488 workers 231 technicians 150 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 321 workers 210 technicians 111 engineers 
+	Access to warehouses: #3 #16 #17 #20 #21 #24 #26 #30 #37 #38 #42 #45 #47 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6105890, 6101795, 5180732, 1156980, 843462, 3116993, 5110257, 3927358, 3904598]
+
+#4: 	Location: Makkah | Working hours: 24 | Operating cost: 7002
+	Employees capacity: 483 workers 221 technicians 140 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 386 workers 221 technicians 113 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#5: 	Location: Riyadh | Working hours: 12 | Operating cost: 5844
+	Employees capacity: 336 workers 383 technicians 123 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 272 workers 195 technicians 104 engineers 
+	Access to warehouses: #3 #16 #17 #20 #21 #24 #26 #30 #37 #38 #42 #45 #47 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6105890, 6101795, 5180732, 1156980, 843462, 3116993, 5110257, 3927358, 3904598]
+
+#6: 	Location: Makkah | Working hours: 24 | Operating cost: 7284
+	Employees capacity: 599 workers 248 technicians 197 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 355 workers 248 technicians 121 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#7: 	Location: Makkah | Working hours: 24 | Operating cost: 6642
+	Employees capacity: 449 workers 289 technicians 128 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 354 workers 213 technicians 109 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#8: 	Location: Makkah | Working hours: 24 | Operating cost: 8700
+	Employees capacity: 388 workers 324 technicians 198 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 388 workers 324 technicians 138 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#9: 	Location: Riyadh | Working hours: 18 | Operating cost: 7272
+	Employees capacity: 441 workers 350 technicians 188 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 374 workers 236 technicians 122 engineers 
+	Access to warehouses: #3 #16 #17 #20 #21 #24 #26 #30 #37 #38 #42 #45 #47 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6105890, 6101795, 5180732, 1156980, 843462, 3116993, 5110257, 3927358, 3904598]
+
+#10: 	Location: Jeddah | Working hours: 18 | Operating cost: 5736
+	Employees capacity: 525 workers 382 technicians 163 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 299 workers 189 technicians 93 engineers 
+	Access to warehouses: #1 #2 #4 #7 #8 #9 #11 #22 #25 #41 #44 #48 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4980765, 5137078, 5682626, 1042925, 892076, 2977618, 3887409, 3264672, 3837109]
+
+#11: 	Location: Riyadh | Working hours: 18 | Operating cost: 5388
+	Employees capacity: 475 workers 247 technicians 146 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 280 workers 180 technicians 86 engineers 
+	Access to warehouses: #3 #16 #17 #20 #21 #24 #26 #30 #37 #38 #42 #45 #47 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6105890, 6101795, 5180732, 1156980, 843462, 3116993, 5110257, 3927358, 3904598]
+
+#12: 	Location: Makkah | Working hours: 18 | Operating cost: 8736
+	Employees capacity: 561 workers 296 technicians 176 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 462 workers 296 technicians 134 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#13: 	Location: Jeddah | Working hours: 24 | Operating cost: 5904
+	Employees capacity: 590 workers 382 technicians 174 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 307 workers 196 technicians 95 engineers 
+	Access to warehouses: #1 #2 #4 #7 #8 #9 #11 #22 #25 #41 #44 #48 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4980765, 5137078, 5682626, 1042925, 892076, 2977618, 3887409, 3264672, 3837109]
+
+#14: 	Location: Jeddah | Working hours: 12 | Operating cost: 5730
+	Employees capacity: 387 workers 280 technicians 188 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 290 workers 184 technicians 99 engineers 
+	Access to warehouses: #1 #2 #4 #7 #8 #9 #11 #22 #25 #41 #44 #48 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4980765, 5137078, 5682626, 1042925, 892076, 2977618, 3887409, 3264672, 3837109]
+
+#15: 	Location: Makkah | Working hours: 24 | Operating cost: 8616
+	Employees capacity: 473 workers 263 technicians 195 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 448 workers 263 technicians 154 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#16: 	Location: Dammam | Working hours: 24 | Operating cost: 3228
+	Employees capacity: 303 workers 230 technicians 117 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 188 workers 109 technicians 44 engineers 
+	Access to warehouses: #5 #12 #14 #15 #18 #28 #31 #33 #34 #35 #36 #40 #43 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6462810, 6356104, 4703618, 1131480, 928273, 3251060, 5507385, 4048614, 3789891]
+
+#17: 	Location: Makkah | Working hours: 12 | Operating cost: 4824
+	Employees capacity: 473 workers 259 technicians 118 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 239 workers 149 technicians 89 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#18: 	Location: Dammam | Working hours: 12 | Operating cost: 6348
+	Employees capacity: 415 workers 384 technicians 110 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 334 workers 197 technicians 110 engineers 
+	Access to warehouses: #5 #12 #14 #15 #18 #28 #31 #33 #34 #35 #36 #40 #43 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6462810, 6356104, 4703618, 1131480, 928273, 3251060, 5507385, 4048614, 3789891]
+
+#19: 	Location: Jeddah | Working hours: 18 | Operating cost: 7542
+	Employees capacity: 574 workers 223 technicians 177 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 403 workers 223 technicians 136 engineers 
+	Access to warehouses: #1 #2 #4 #7 #8 #9 #11 #22 #25 #41 #44 #48 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4980765, 5137078, 5682626, 1042925, 892076, 2977618, 3887409, 3264672, 3837109]
+
+#20: 	Location: Makkah | Working hours: 12 | Operating cost: 5688
+	Employees capacity: 566 workers 352 technicians 123 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 289 workers 178 technicians 101 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#21: 	Location: Makkah | Working hours: 12 | Operating cost: 8688
+	Employees capacity: 537 workers 358 technicians 195 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 451 workers 311 technicians 125 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#22: 	Location: Makkah | Working hours: 12 | Operating cost: 8916
+	Employees capacity: 421 workers 383 technicians 138 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 421 workers 333 technicians 133 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#23: 	Location: Dammam | Working hours: 18 | Operating cost: 6294
+	Employees capacity: 332 workers 341 technicians 168 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 309 workers 196 technicians 116 engineers 
+	Access to warehouses: #5 #12 #14 #15 #18 #28 #31 #33 #34 #35 #36 #40 #43 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6462810, 6356104, 4703618, 1131480, 928273, 3251060, 5507385, 4048614, 3789891]
+
+#24: 	Location: Jeddah | Working hours: 12 | Operating cost: 6882
+	Employees capacity: 487 workers 302 technicians 170 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 368 workers 241 technicians 99 engineers 
+	Access to warehouses: #1 #2 #4 #7 #8 #9 #11 #22 #25 #41 #44 #48 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4980765, 5137078, 5682626, 1042925, 892076, 2977618, 3887409, 3264672, 3837109]
+
+#25: 	Location: Makkah | Working hours: 18 | Operating cost: 5088
+	Employees capacity: 390 workers 282 technicians 126 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 257 workers 171 technicians 83 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#26: 	Location: Makkah | Working hours: 24 | Operating cost: 5922
+	Employees capacity: 539 workers 399 technicians 138 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 319 workers 202 technicians 88 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#27: 	Location: Riyadh | Working hours: 12 | Operating cost: 8412
+	Employees capacity: 513 workers 385 technicians 119 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 435 workers 308 technicians 117 engineers 
+	Access to warehouses: #3 #16 #17 #20 #21 #24 #26 #30 #37 #38 #42 #45 #47 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6105890, 6101795, 5180732, 1156980, 843462, 3116993, 5110257, 3927358, 3904598]
+
+#28: 	Location: Makkah | Working hours: 12 | Operating cost: 5634
+	Employees capacity: 447 workers 263 technicians 183 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 303 workers 210 technicians 72 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#29: 	Location: Makkah | Working hours: 18 | Operating cost: 6864
+	Employees capacity: 553 workers 231 technicians 135 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 385 workers 231 technicians 99 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#30: 	Location: Makkah | Working hours: 24 | Operating cost: 4260
+	Employees capacity: 384 workers 271 technicians 134 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 238 workers 125 technicians 74 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#31: 	Location: Makkah | Working hours: 12 | Operating cost: 6516
+	Employees capacity: 458 workers 362 technicians 157 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 319 workers 223 technicians 107 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#32: 	Location: Dammam | Working hours: 12 | Operating cost: 7818
+	Employees capacity: 475 workers 262 technicians 123 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 436 workers 249 technicians 123 engineers 
+	Access to warehouses: #5 #12 #14 #15 #18 #28 #31 #33 #34 #35 #36 #40 #43 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6462810, 6356104, 4703618, 1131480, 928273, 3251060, 5507385, 4048614, 3789891]
+
+#33: 	Location: Dammam | Working hours: 12 | Operating cost: 6384
+	Employees capacity: 317 workers 345 technicians 109 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 315 workers 223 technicians 101 engineers 
+	Access to warehouses: #5 #12 #14 #15 #18 #28 #31 #33 #34 #35 #36 #40 #43 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6462810, 6356104, 4703618, 1131480, 928273, 3251060, 5507385, 4048614, 3789891]
+
+#34: 	Location: Dammam | Working hours: 18 | Operating cost: 7038
+	Employees capacity: 554 workers 317 technicians 196 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 333 workers 264 technicians 104 engineers 
+	Access to warehouses: #5 #12 #14 #15 #18 #28 #31 #33 #34 #35 #36 #40 #43 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6462810, 6356104, 4703618, 1131480, 928273, 3251060, 5507385, 4048614, 3789891]
+
+#35: 	Location: Riyadh | Working hours: 12 | Operating cost: 5838
+	Employees capacity: 303 workers 387 technicians 147 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 288 workers 194 technicians 99 engineers 
+	Access to warehouses: #3 #16 #17 #20 #21 #24 #26 #30 #37 #38 #42 #45 #47 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6105890, 6101795, 5180732, 1156980, 843462, 3116993, 5110257, 3927358, 3904598]
+
+#36: 	Location: Riyadh | Working hours: 24 | Operating cost: 6498
+	Employees capacity: 513 workers 327 technicians 104 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 314 workers 230 technicians 103 engineers 
+	Access to warehouses: #3 #16 #17 #20 #21 #24 #26 #30 #37 #38 #42 #45 #47 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6105890, 6101795, 5180732, 1156980, 843462, 3116993, 5110257, 3927358, 3904598]
+
+#37: 	Location: Riyadh | Working hours: 24 | Operating cost: 4506
+	Employees capacity: 406 workers 315 technicians 148 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 215 workers 145 technicians 82 engineers 
+	Access to warehouses: #3 #16 #17 #20 #21 #24 #26 #30 #37 #38 #42 #45 #47 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6105890, 6101795, 5180732, 1156980, 843462, 3116993, 5110257, 3927358, 3904598]
+
+#38: 	Location: Makkah | Working hours: 24 | Operating cost: 4746
+	Employees capacity: 394 workers 232 technicians 101 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 229 workers 146 technicians 90 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#39: 	Location: Dammam | Working hours: 24 | Operating cost: 5274
+	Employees capacity: 339 workers 293 technicians 154 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 252 workers 192 technicians 81 engineers 
+	Access to warehouses: #5 #12 #14 #15 #18 #28 #31 #33 #34 #35 #36 #40 #43 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6462810, 6356104, 4703618, 1131480, 928273, 3251060, 5507385, 4048614, 3789891]
+
+#40: 	Location: Riyadh | Working hours: 18 | Operating cost: 6150
+	Employees capacity: 596 workers 387 technicians 136 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 302 workers 207 technicians 103 engineers 
+	Access to warehouses: #3 #16 #17 #20 #21 #24 #26 #30 #37 #38 #42 #45 #47 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6105890, 6101795, 5180732, 1156980, 843462, 3116993, 5110257, 3927358, 3904598]
+
+#41: 	Location: Makkah | Working hours: 12 | Operating cost: 5682
+	Employees capacity: 374 workers 370 technicians 102 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 263 workers 189 technicians 102 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#42: 	Location: Riyadh | Working hours: 12 | Operating cost: 6402
+	Employees capacity: 462 workers 347 technicians 186 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 309 workers 208 technicians 114 engineers 
+	Access to warehouses: #3 #16 #17 #20 #21 #24 #26 #30 #37 #38 #42 #45 #47 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6105890, 6101795, 5180732, 1156980, 843462, 3116993, 5110257, 3927358, 3904598]
+
+#43: 	Location: Makkah | Working hours: 24 | Operating cost: 6876
+	Employees capacity: 513 workers 346 technicians 184 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 316 workers 229 technicians 124 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#44: 	Location: Makkah | Working hours: 12 | Operating cost: 7068
+	Employees capacity: 530 workers 263 technicians 158 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 340 workers 236 technicians 122 engineers 
+	Access to warehouses: #6 #10 #13 #19 #23 #27 #29 #32 #39 #46 #49 #50 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4652138, 5050720, 5398455, 1091834, 907162, 3239753, 4882210, 5027185, 3677109]
+
+#45: 	Location: Jeddah | Working hours: 24 | Operating cost: 6300
+	Employees capacity: 401 workers 211 technicians 159 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 337 workers 211 technicians 97 engineers 
+	Access to warehouses: #1 #2 #4 #7 #8 #9 #11 #22 #25 #41 #44 #48 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4980765, 5137078, 5682626, 1042925, 892076, 2977618, 3887409, 3264672, 3837109]
+
+#46: 	Location: Riyadh | Working hours: 12 | Operating cost: 6510
+	Employees capacity: 390 workers 352 technicians 144 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 299 workers 219 technicians 116 engineers 
+	Access to warehouses: #3 #16 #17 #20 #21 #24 #26 #30 #37 #38 #42 #45 #47 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6105890, 6101795, 5180732, 1156980, 843462, 3116993, 5110257, 3927358, 3904598]
+
+#47: 	Location: Dammam | Working hours: 24 | Operating cost: 7644
+	Employees capacity: 336 workers 372 technicians 140 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 336 workers 298 technicians 114 engineers 
+	Access to warehouses: #5 #12 #14 #15 #18 #28 #31 #33 #34 #35 #36 #40 #43 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6462810, 6356104, 4703618, 1131480, 928273, 3251060, 5507385, 4048614, 3789891]
+
+#48: 	Location: Jeddah | Working hours: 18 | Operating cost: 6036
+	Employees capacity: 541 workers 387 technicians 152 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 335 workers 187 technicians 99 engineers 
+	Access to warehouses: #1 #2 #4 #7 #8 #9 #11 #22 #25 #41 #44 #48 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4980765, 5137078, 5682626, 1042925, 892076, 2977618, 3887409, 3264672, 3837109]
+
+#49: 	Location: Jeddah | Working hours: 12 | Operating cost: 7674
+	Employees capacity: 305 workers 352 technicians 196 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 305 workers 286 technicians 134 engineers 
+	Access to warehouses: #1 #2 #4 #7 #8 #9 #11 #22 #25 #41 #44 #48 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [4980765, 5137078, 5682626, 1042925, 892076, 2977618, 3887409, 3264672, 3837109]
+
+#50: 	Location: Riyadh | Working hours: 18 | Operating cost: 6600
+	Employees capacity: 349 workers 238 technicians 164 engineers 
+	Employees Salaries: $6/hour	$12/hour	$18/hour 
+	Employees: 300 workers 238 technicians 108 engineers 
+	Access to warehouses: #3 #16 #17 #20 #21 #24 #26 #30 #37 #38 #42 #45 #47 
+	Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+	Amount: [6105890, 6101795, 5180732, 1156980, 843462, 3116993, 5110257, 3927358, 3904598]
+
