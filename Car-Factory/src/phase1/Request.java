@@ -26,7 +26,7 @@ public class Request implements Cloneable{
     public int takenFactoryIndex;
     private String dateRequested;
     /**
-     * The constructier inserts into the program the
+     * The constructor inserts into the program the
      * date time when show request and type of time like minute, hour and day
      * @param whenRequested
      * @param day
@@ -109,7 +109,7 @@ public class Request implements Cloneable{
         return arr;
     }
     /**
-     *  gets average cost of all factories
+     *  sets a request cost based on average cost of all factories
      * @param factories
      */
     // gets average cost of all factories
@@ -124,7 +124,9 @@ public class Request implements Cloneable{
         }
         selectedCost = getRandom(15,5, averageCost);
     }
-
+    /**
+     * sets array of total requirements needed for all computers in request
+     */
     // sets array of total requirements needed for all computers in request
     private void setComputerSumRequirements() {
         for (Computer comps : computers) {
@@ -159,6 +161,9 @@ public class Request implements Cloneable{
         return minute;
     }
 
+    /**
+     * gets a random value depending on range given
+     */
     // gets a random value depending on range given
     private int getRandom(int lower, int upper, int val) {
         int addOrSub = (int) Math.floor(Math.random() * (2) + 1);
@@ -240,6 +245,9 @@ public class Request implements Cloneable{
         }
     }
 
+    /**
+     * return a score evaluated by found factory requirements
+     */
     private double getScore(int[] values) {
         double costScore = (selectedCost / (double) values[0]) / 2;
         double timeScore = (selectedTime / (double) values[1]) / 2;
@@ -259,6 +267,9 @@ public class Request implements Cloneable{
         return dateRequested;
     }
 
+    /**
+     * gets request summary details
+     */
     // summary of request state
     public String getFullfilmentInfo() {
         String requestInfo = "Request's Selected Cost: $" + selectedCost +
@@ -291,7 +302,10 @@ public class Request implements Cloneable{
         return takenFactoryProvidedTime;
     }
 
-    // summary for request request's
+    /**
+     * gets all request computer details
+     */
+    // summary for request computer's
     public String getComputersInformation() {
         StringBuilder info = new StringBuilder("Number of Computers generated: " + computers.size() + "\n");
         info.append("[workers, technicians, engineers]\n");

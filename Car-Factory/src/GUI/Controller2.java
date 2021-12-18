@@ -22,7 +22,9 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-
+/**
+ * controller for phase 2
+ */
 public class Controller2 {
 	private Stage stage;
 	private Scene scene;
@@ -30,27 +32,222 @@ public class Controller2 {
 
 	private int days2;
 	private int max2;
-	public String tempText;
-	public String tempFactoriesOutput;
-	public String tempWarehousesOutput;
-	public String tempRequestsOutput;
-	public String tempPercentage1;
-	public String tempOutput1;
-	public String tempFactoriesOutput1;
-	public String tempWarehousesOutput1;
-	public String tempRequestsOutput1;
-	public String tempTableOutput1;
+	private String tempText;
+	private String tempFactoriesOutput;
+	private String tempWarehousesOutput;
+	private String tempRequestsOutput;
+	private String tempPercentage1;
+	private String tempOutput1;
+	private String tempFactoriesOutput1;
+	private String tempWarehousesOutput1;
+	private String tempRequestsOutput1;
+	private String tempTableOutput1;
 	@FXML
-	public TextArea phase2Output;
-	public TextField phase2Days;
-	public TextField phase2Max;
-	public Label pos2;
-	public Button fBtn2;
-	public Button wBtn2;
-	public Button rBtn2;
-	public Button tBtn2;
-	public String tempTableOutput;
+	private TextArea phase2Output;
+	private TextField phase2Days;
+	private TextField phase2Max;
+	private Label percentageOfSuccess2;
+	private Button factoryButton2;
+	private Button warehouseButton2;
+	private Button requestButton2;
+	private Button tableButton2;
+	private String tempTableOutput;
 
+	public Stage getStage() {
+		return stage;
+	}
+
+	public Scene getScene() {
+		return scene;
+	}
+
+	public Parent getRoot() {
+		return root;
+	}
+
+	public int getDays2() {
+		return days2;
+	}
+
+	public int getMax2() {
+		return max2;
+	}
+
+	public String getTempText() {
+		return tempText;
+	}
+
+	public String getTempFactoriesOutput() {
+		return tempFactoriesOutput;
+	}
+
+	public String getTempWarehousesOutput() {
+		return tempWarehousesOutput;
+	}
+
+	public String getTempRequestsOutput() {
+		return tempRequestsOutput;
+	}
+
+	public String getTempPercentage1() {
+		return tempPercentage1;
+	}
+
+	public String getTempOutput1() {
+		return tempOutput1;
+	}
+
+	public String getTempFactoriesOutput1() {
+		return tempFactoriesOutput1;
+	}
+
+	public String getTempWarehousesOutput1() {
+		return tempWarehousesOutput1;
+	}
+
+	public String getTempRequestsOutput1() {
+		return tempRequestsOutput1;
+	}
+
+	public String getTempTableOutput1() {
+		return tempTableOutput1;
+	}
+
+	public TextArea getPhase2Output() {
+		return phase2Output;
+	}
+
+	public TextField getPhase2Days() {
+		return phase2Days;
+	}
+
+	public TextField getPhase2Max() {
+		return phase2Max;
+	}
+
+	public Label getPercentageOfSuccess2() {
+		return percentageOfSuccess2;
+	}
+
+	public Button getFactoryButton2() {
+		return factoryButton2;
+	}
+
+	public Button getWarehouseButton2() {
+		return warehouseButton2;
+	}
+
+	public Button getRequestButton2() {
+		return requestButton2;
+	}
+
+	public Button getTableButton2() {
+		return tableButton2;
+	}
+
+	public String getTempTableOutput() {
+		return tempTableOutput;
+	}
+
+	public void setStage(Stage stage) {
+		this.stage = stage;
+	}
+
+	public void setScene(Scene scene) {
+		this.scene = scene;
+	}
+
+	public void setRoot(Parent root) {
+		this.root = root;
+	}
+
+	public void setDays2(int days2) {
+		this.days2 = days2;
+	}
+
+	public void setMax2(int max2) {
+		this.max2 = max2;
+	}
+
+	public void setTempText(String tempText) {
+		this.tempText = tempText;
+	}
+
+	public void setTempFactoriesOutput(String tempFactoriesOutput) {
+		this.tempFactoriesOutput = tempFactoriesOutput;
+	}
+
+	public void setTempWarehousesOutput(String tempWarehousesOutput) {
+		this.tempWarehousesOutput = tempWarehousesOutput;
+	}
+
+	public void setTempRequestsOutput(String tempRequestsOutput) {
+		this.tempRequestsOutput = tempRequestsOutput;
+	}
+
+	public void setTempPercentage1(String tempPercentage1) {
+		this.tempPercentage1 = tempPercentage1;
+	}
+
+	public void setTempOutput1(String tempOutput1) {
+		this.tempOutput1 = tempOutput1;
+	}
+
+	public void setTempFactoriesOutput1(String tempFactoriesOutput1) {
+		this.tempFactoriesOutput1 = tempFactoriesOutput1;
+	}
+
+	public void setTempWarehousesOutput1(String tempWarehousesOutput1) {
+		this.tempWarehousesOutput1 = tempWarehousesOutput1;
+	}
+
+	public void setTempRequestsOutput1(String tempRequestsOutput1) {
+		this.tempRequestsOutput1 = tempRequestsOutput1;
+	}
+
+	public void setTempTableOutput1(String tempTableOutput1) {
+		this.tempTableOutput1 = tempTableOutput1;
+	}
+
+	public void setPhase2Output(TextArea phase2Output) {
+		this.phase2Output = phase2Output;
+	}
+
+	public void setPhase2Days(TextField phase2Days) {
+		this.phase2Days = phase2Days;
+	}
+
+	public void setPhase2Max(TextField phase2Max) {
+		this.phase2Max = phase2Max;
+	}
+
+	public void setPercentageOfSuccess2(Label percentageOfSuccess2) {
+		this.percentageOfSuccess2 = percentageOfSuccess2;
+	}
+
+	public void setFactoryButton2(Button factoryButton2) {
+		this.factoryButton2 = factoryButton2;
+	}
+
+	public void setWarehouseButton2(Button warehouseButton2) {
+		this.warehouseButton2 = warehouseButton2;
+	}
+
+	public void setRequestButton2(Button requestButton2) {
+		this.requestButton2 = requestButton2;
+	}
+
+	public void setTableButton2(Button tableButton2) {
+		this.tableButton2 = tableButton2;
+	}
+
+	public void setTempTableOutput(String tempTableOutput) {
+		this.tempTableOutput = tempTableOutput;
+	}
+
+	/**
+	 * switches to phase 1
+	 */
 	public void switchToPhase1(ActionEvent event) throws IOException {
 
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("Phase1.fxml"));
@@ -61,7 +258,7 @@ public class Controller2 {
 		controller.phase1Output.setText(tempOutput1);
 		controller.pos1.setText(tempPercentage1);
 		controller.tempOutput2.setText(phase2Output.getText());
-		controller.tempPercentage2 = pos2.getText();
+		controller.tempPercentage2 = percentageOfSuccess2.getText();
 		
 		controller.tempFactoriesOutput2 = tempFactoriesOutput;
         controller.tempWarehousesOutput2 = tempWarehousesOutput;
@@ -80,23 +277,26 @@ public class Controller2 {
             controller.tempTableOutput = tempTableOutput1;
 		}
 
-//		controller.tempPercentage2.setText(pos1.getText());
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
 		stage.show();
 
 	}
-
+	/**
+	 * resets simulation
+	 */
 	public void resetSimulation(ActionEvent event) throws IOException {
 		phase2Output.setText("");
-		pos2.setText("");
-		fBtn2.setOpacity(0);
-		wBtn2.setOpacity(0);
-		rBtn2.setOpacity(0);
-		tBtn2.setOpacity(0);
+		percentageOfSuccess2.setText("");
+		factoryButton2.setOpacity(0);
+		warehouseButton2.setOpacity(0);
+		requestButton2.setOpacity(0);
+		tableButton2.setOpacity(0);
 	}
-
+	/**
+	 * runs simulation
+	 */
 	public void runSimulation(ActionEvent event) throws IOException, CloneNotSupportedException {
 		LocalDateTime simulationDate = LocalDateTime.now();
 		try {
@@ -114,7 +314,6 @@ public class Controller2 {
 			Report report = new Report(simulationDate, requests, factories, warehouses);
 			report.generateReport();
 			String mainOutputText = report.getMainReport();
-			//TODO here are other reports
 			String warehousesOutputText = report.getWarehousesReport();
 			String factoriesOutputText = report.getFactoriesReport();
 			String requestsoutputText = report.getRequestsReport();
@@ -125,11 +324,11 @@ public class Controller2 {
 			tempWarehousesOutput = warehousesOutputText;
 			tempRequestsOutput = requestsoutputText;
 			tempTableOutput = tableOutputText;
-			pos2.setText(String.format("%s%.2f%s","Percentage Of Success: ", report.getPos(), "%"));
-			fBtn2.setOpacity(1);
-			wBtn2.setOpacity(1);
-			rBtn2.setOpacity(1);
-			tBtn2.setOpacity(1);
+			percentageOfSuccess2.setText(String.format("%s%.2f%s","Percentage Of Success: ", report.getPos(), "%"));
+			factoryButton2.setOpacity(1);
+			warehouseButton2.setOpacity(1);
+			requestButton2.setOpacity(1);
+			tableButton2.setOpacity(1);
 		}else {
             popUpError(event);
         }
@@ -137,7 +336,9 @@ public class Controller2 {
         popUpError(event);
     }
 	}
-
+	/**
+	 *button for factories report
+	 */
 	public void popUpFactories(ActionEvent event) throws IOException {
 
 		try {
@@ -155,6 +356,9 @@ public class Controller2 {
 		}
 
 	}
+	/**
+	 *button for warehouses report
+	 */
 	public void popUpWarehouses(ActionEvent event) throws IOException {
 
 		try {
@@ -163,7 +367,7 @@ public class Controller2 {
 			Controller controller = loader.getController();
 			controller.warehousesOutput.setText(tempWarehousesOutput);
 			Stage stage = new Stage();
-			stage.setTitle("Factories info");
+			stage.setTitle("Warehouses info");
 			stage.setScene(new Scene(root));
 
 			stage.show();
@@ -172,6 +376,9 @@ public class Controller2 {
 		}
 
 	}
+	/**
+	 *button for requests report
+	 */
 	public void popUpRequests(ActionEvent event) throws IOException {
 
 		try {
@@ -180,7 +387,7 @@ public class Controller2 {
 			Controller controller = loader.getController();
 			controller.requestsOutput.setText(tempRequestsOutput);
 			Stage stage = new Stage();
-			stage.setTitle("Factories info");
+			stage.setTitle("Requests info");
 			stage.setScene(new Scene(root));
 
 			stage.show();
@@ -189,7 +396,9 @@ public class Controller2 {
 		}
 
 	}
-	
+	/**
+	 *button for table view
+	 */
 	public void popUpTable(ActionEvent event) throws IOException {
 
         try {
@@ -207,7 +416,9 @@ public class Controller2 {
         }
 
     }
-	
+	/**
+	 * pop up in case of Error
+	 */
 	public void popUpError(ActionEvent event) throws IOException {
 
         try {
@@ -223,8 +434,10 @@ public class Controller2 {
         } catch(Exception e) {
             e.printStackTrace();
         }
-
     }
+	/**
+	 *link for our JAVADOC
+	 */
 	public void openLink(ActionEvent event) throws URISyntaxException, IOException {
     	Desktop.getDesktop().browse(new URI("https://faisaljabushanab.github.io/javadoc/"));
     }

@@ -47,7 +47,7 @@ public class Main {
 
 
 	/**
-	 *  simulation begins here
+	 *  generate report object and call generate method here
 	 * @param simulationDate
 	 * @throws IOException
 	 * @throws CloneNotSupportedException
@@ -68,7 +68,6 @@ public class Main {
 	public void generateWarehouses(int days, int numberOfWarehouses) {
 
 		Random random = new Random();
-//		int numberWarehouse = fullUp(days*10, days*20);
 		for (int i = 0; i < numberOfWarehouses; i++) {
 
 			int Location = random.nextInt(location.length);
@@ -98,10 +97,8 @@ public class Main {
 	 */
 	public void generateFactories(int days, int numberOfFactories) {
 		Random random = new Random();
-		// for establishing a relation between #workers and #computers in each request
+		// potential for establishing a relation between #workers and #computers in each request
 		int potential = fullUp(days * 0.9, days * 1.1);
-		// 1B- generate random number of factories
-//		int numberFactory = fullUp(days*4, days*8);
 		for (int i = 0; i < numberOfFactories; i++) {
 
 			int Location = random.nextInt(location.length);

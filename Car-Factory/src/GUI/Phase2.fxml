@@ -54,7 +54,7 @@
          </font>
       </Button>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d3d3d3" height="44.0" layoutX="-10.0" layoutY="605.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="270.0" />
-      <Label fx:id="pos2" layoutX="12.0" layoutY="608.0" prefHeight="25.0" prefWidth="240.0" textFill="RED" wrapText="true">
+      <Label fx:id="percentageOfSuccess2" layoutX="12.0" layoutY="608.0" prefHeight="25.0" prefWidth="240.0" textFill="RED" wrapText="true">
          <font>
             <Font size="16.0" />
          </font>

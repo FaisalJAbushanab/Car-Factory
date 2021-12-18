@@ -9,8 +9,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 /**
  *
- * report class.
- * responsible to write out reports of the simulation for the GUI.
+ * Report class responsible to write out reports of the simulation for the GUI.
  */
 public class Report {
     private ArrayList<Request> requests;
@@ -24,7 +23,7 @@ public class Report {
     private String name;
     private double pos;
     /**
-     * constrcuts report object at simulation time
+     * constructs report object at simulation time
      */
     public Report(LocalDateTime simDate, ArrayList<Request> requests,
                   ArrayList<Factory> factories, ArrayList<Warehouse> warehouses) throws CloneNotSupportedException {
@@ -58,7 +57,9 @@ public class Report {
     public String getTableReport() {
         return table;
     }
-
+    /**
+     * creates table report
+     */
     private void writeTable(ArrayList<Request> requests, ArrayList<Factory> factories) {
         ArrayList<String> conditionArray = new ArrayList<>();
         ArrayList<String> requirementsArray = new ArrayList<>();
@@ -87,7 +88,9 @@ public class Report {
             table += "\n";
         }
     }
-
+    /**
+     * writes on file the main information of the simulation
+     */
     // writes on file the main information of the simulation
     public void writeMainReport() throws IOException {
         int numOfSuccess = 0;
@@ -109,7 +112,9 @@ public class Report {
         pos = (double) numOfSuccess / requests.size() * 100;
         writeToFile((name + " Main"), mainReport);
     }
-
+    /**
+     * writes on file the warehouse information of the simulation
+     */
     // writes on file the warehouse information of the simulation
     public void writeWarehousesReport() throws IOException {
         warehousesReport += "Number of warehouse generated: " + warehouses.size() + "\n\n";
@@ -119,7 +124,9 @@ public class Report {
         }
         writeToFile((name + " Warehouses"), warehousesReport);
     }
-
+    /**
+     * writes on file the factories information of the simulation
+     */
     // writes on file the factories information of the simulation
     public void writeFactoriesReport() throws IOException {
         factoriesReport += "Number of factories generated: " + factories.size() + "\n\n";
@@ -129,7 +136,9 @@ public class Report {
         }
         writeToFile((name + " Factories"), factoriesReport);
     }
-
+    /**
+     * writes on file the requests information of the simulation
+     */
     // writes on file the requests information of the simulation
     public void writeRequestsReport() throws IOException {
         requestsReport += "Number of requests generated: " + requests.size() + "\n\n";
@@ -140,7 +149,9 @@ public class Report {
         }
         writeToFile((name + " Requests"), requestsReport);
     }
-
+    /**
+     * write to file a report named after simulation date
+     */
     // write to file a report named after simulation date
     private void writeToFile(String name, String report) throws IOException {
         name += ".txt";
@@ -157,7 +168,6 @@ public class Report {
             }
         }
     }
-
 
     public String getMainReport() {
         return mainReport;

@@ -9,7 +9,6 @@ public class Computer {
 	public String[] name;
 	public int[] constructMaterial;
 	public int[] numberOfEmployees;
-//	public int productionTime; // in hours
 	/**
 	 *
 	 * @param name

@@ -11,7 +11,6 @@ import java.util.Random;
  */
 public class Main {
 	private ArrayList<Factory> factories = new ArrayList<>();
-
 	private ArrayList<Warehouse> warehouses = new ArrayList<>();
 	private ArrayList<Request> requests = new ArrayList<>();
 	private Report report;
@@ -43,7 +42,7 @@ public class Main {
 	}
 
 	/**
-	 *  simulation begins here
+	 *  generate report object and call generate method here
 	 * @param simulationDate
 	 * @throws IOException
 	 * @throws CloneNotSupportedException
@@ -51,8 +50,10 @@ public class Main {
 	 */
 
 	private void generateReport(LocalDateTime simulationDate) throws IOException, CloneNotSupportedException {
+		// construct report object
 		Report report = new Report(simulationDate, requests, factories, warehouses);
 		this.report = report;
+		// generate report
 		report.generateReport();
 	}
 
@@ -65,11 +66,12 @@ public class Main {
 
 		Random random = new Random();
 		for (int i = 0; i < numberOfWarehouses; i++) {
-
+			// get random locaction and working hours
 			int Location = random.nextInt(location.length);
 			int WorkingHours = random.nextInt(workingHours.length);
 
 			int[] storage_Capacity = new int[9];
+			// random storage capacity
 			// [aluminium, plastic, glass, silicon, gold, copper, iron, chrome, silver]
 			storage_Capacity[0] = fullUp(5000, 10000);
 			storage_Capacity[1] = fullUp(5000, 10000);
@@ -82,6 +84,7 @@ public class Main {
 			storage_Capacity[8] = fullUp(500, 1000);
 			// create material object
 			Material material = new Material();
+			// construct warehouse object
 			Warehouse warehouse = new Warehouse(storage_Capacity, location[Location], workingHours[WorkingHours], material);
 			warehouses.add(warehouse);
 		}
@@ -99,26 +102,25 @@ public class Main {
 
 	public void generateFactories(int days, int numberOfFactories) {
 		Random random = new Random();
-		// for establishing a relation between #workers and #computers in each request
+		// potential for establishing a relation between #workers and #computers in each request
 		int potential = fullUp(days*0.9, days*1.1);
-//		int numberFactory = fullUp(days*4, days*8);
 		for (int i = 0; i < numberOfFactories; i++) {
-
+			// random location and working hours
 			int Location = random.nextInt(location.length);
 			int WorkingHours = random.nextInt(workingHours.length);
 
 			int[] workers_Capacity = new int[3];
+			// randomized workers capacity
 			// [workers, technician, engineer]
 			workers_Capacity[0] = fullUp(potential*30, potential*60);
 			workers_Capacity[1] = fullUp(potential*20, potential*40);
 			workers_Capacity[2] = fullUp(potential*10, potential*20);
-
+			// construct factory object
 			Factory factory = new Factory(workers_Capacity, location[Location], workingHours[WorkingHours]);
 			factory.setWarehouseAccess(warehouses);
 			factories.add(factory);
 		}
 	}
-
 
 	public ArrayList<Factory> getFactories() {
 		return factories;
@@ -145,9 +147,10 @@ public class Main {
 				// minutes loop
 				for (int k = 0; k < 60; k++) {
 					if (numOfRequests < maxRequestsPerDay) {
-						// probability of getting 1 is 1/500
+						// probability of getting a request is 1/500
 						int createOrNot = (int) Math.floor(Math.random() * (500) + 1);
 						if (createOrNot == 1) {
+							// construct request object
 							Request request = new Request(simulationDate , factories,
 									i, j, k, fullUp(potential*0.8,potential*1.2));
 							requests.add(request);
@@ -159,6 +162,7 @@ public class Main {
 				}
 			}
 			numOfRequests = 0;
+			// check if a request is completed
 			for(Request request : requests) {
 				if (request.getTakenFactory() != null
 					|| !request.isComplete()) {
