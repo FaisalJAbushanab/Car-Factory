@@ -113,7 +113,6 @@ public class Controller1 {
                 String factoriesOutputText = report.getFactoriesReport();
                 String requestsOutputText = report.getRequestsReport();
                 String tableOutputText = report.getTableReport();
-
                 phase1Output.appendText(mainOutputText);
                 tempFactoriesOutput = factoriesOutputText;
                 tempWarehousesOutput = warehousesOutputText;

@@ -13,6 +13,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -94,35 +95,43 @@ public class Controller2 {
 
 	public void runSimulation(ActionEvent event) throws IOException, CloneNotSupportedException {
 		LocalDateTime simulationDate = LocalDateTime.now();
-		phase2Output.setText("");
-		days2 = Integer.parseInt(phase2Days.getText());
-		max2 = Integer.parseInt(phase2Max.getText());
-
-		Main run = new Main(days2, max2);
-		ArrayList<Warehouse> warehouses = run.getWarehouses();
-		ArrayList<Factory> factories = run.getFactories();
-		ArrayList<Request> requests = run.getRequests();
-
-		// Generate Reports
-		Report report = new Report(simulationDate, requests, factories, warehouses);
-		report.generateReport();
-		String mainOutputText = report.getMainReport();
-		//TODO here are other reports
-		String warehousesOutputText = report.getWarehousesReport();
-		String factoriesOutputText = report.getFactoriesReport();
-		String requestsoutputText = report.getRequestsReport();
-		String tableOutputText = report.getTableReport();
-
-		phase2Output.appendText(mainOutputText);
-		tempFactoriesOutput = factoriesOutputText;
-		tempWarehousesOutput = warehousesOutputText;
-		tempRequestsOutput = requestsoutputText;
-		tempTableOutput = tableOutputText;
-		pos2.setText(String.format("%s%.2f%s","Percentage Of Success: ", report.getPos(), "%"));
-		fBtn2.setOpacity(1);
-		wBtn2.setOpacity(1);
-		rBtn2.setOpacity(1);
-		tBtn2.setOpacity(1);
+		try {
+			days2 = Integer.parseInt(phase2Days.getText());
+			max2 = Integer.parseInt(phase2Max.getText());
+		
+		if(days2 > 0 && max2 >0) {
+			phase2Output.setText("");
+			Main run = new Main(days2, max2);
+			ArrayList<Warehouse> warehouses = run.getWarehouses();
+			ArrayList<Factory> factories = run.getFactories();
+			ArrayList<Request> requests = run.getRequests();
+	
+			// Generate Reports
+			Report report = new Report(simulationDate, requests, factories, warehouses);
+			report.generateReport();
+			String mainOutputText = report.getMainReport();
+			//TODO here are other reports
+			String warehousesOutputText = report.getWarehousesReport();
+			String factoriesOutputText = report.getFactoriesReport();
+			String requestsoutputText = report.getRequestsReport();
+			String tableOutputText = report.getTableReport();
+	
+			phase2Output.appendText(mainOutputText);
+			tempFactoriesOutput = factoriesOutputText;
+			tempWarehousesOutput = warehousesOutputText;
+			tempRequestsOutput = requestsoutputText;
+			tempTableOutput = tableOutputText;
+			pos2.setText(String.format("%s%.2f%s","Percentage Of Success: ", report.getPos(), "%"));
+			fBtn2.setOpacity(1);
+			wBtn2.setOpacity(1);
+			rBtn2.setOpacity(1);
+			tBtn2.setOpacity(1);
+		}else {
+            popUpError(event);
+        }
+    } catch(NumberFormatException e){
+        popUpError(event);
+    }
 	}
 
 	public void popUpFactories(ActionEvent event) throws IOException {
@@ -186,6 +195,24 @@ public class Controller2 {
             controller.tableOutput.setText(tempTableOutput);
             Stage stage = new Stage();
             stage.setTitle("Table View");
+            stage.setScene(new Scene(root));
+
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+	
+	public void popUpError(ActionEvent event) throws IOException {
+
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Error.fxml"));
+            root = loader.load();
+            Controller controller = loader.getController();
+            Stage stage = new Stage();
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setTitle("Error");
             stage.setScene(new Scene(root));
 
             stage.show();
