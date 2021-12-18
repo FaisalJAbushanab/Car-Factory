@@ -14,8 +14,12 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import phase1.Main;
 import phase1.Report;
+import java.net.URI;
+import java.awt.*;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
 
 public class Controller1 {
     private Stage stage;
@@ -211,6 +215,10 @@ public class Controller1 {
             e.printStackTrace();
         }
 
+    }
+    
+    public void openLink(ActionEvent event) throws URISyntaxException, IOException {
+    	Desktop.getDesktop().browse(new URI("https://faisaljabushanab.github.io/javadoc/"));
     }
 
 }
