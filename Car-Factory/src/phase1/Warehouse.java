@@ -32,15 +32,15 @@ public class Warehouse extends Building implements Cloneable{
     }
 
     public String getWarehouseInformation() {
-        String info = "Location: " + super.getLocation() +
+        String info = "\tLocation: " + super.getLocation() +
                 " | Working hours: " + super.getWorkingHours() + "\n";
-        info += "[aluminium grams, plastic grams, glass grams, silicon mg " +
+        info += "\t[aluminium grams, plastic grams, glass grams, silicon mg " +
                 ", gold mg , copper mg, iron grams, chrome mg, silver mg]\n";
-        info += "Storage capacity: " + Arrays.toString(super.getCapacity()) + "\n";
-        info += "Materials: " + Arrays.toString(getMaterial().getMaterialQuantity()) + "\n";
-        info += "[$ per grams, $ per grams, $ per grams, $ per mg " +
+        info += "\tStorage capacity: " + Arrays.toString(super.getCapacity()) + "\n";
+        info += "\tMaterials: " + Arrays.toString(getMaterial().getMaterialQuantity()) + "\n";
+        info += "\t[$ per grams, $ per grams, $ per grams, $ per mg " +
                 ", $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]\n";
-        info += "Material prices: " + Arrays.toString(getMaterial().getMaterialPrice()) + "\n";
+        info += "\tMaterial prices: " + Arrays.toString(getMaterial().getMaterialPrice()) + "\n";
         return info + "\n";
     }
 }
