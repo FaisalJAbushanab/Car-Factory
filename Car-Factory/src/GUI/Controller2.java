@@ -31,6 +31,10 @@ public class Controller2 {
 	public String tempRequestsOutput;
 	public String tempPercentage1;
 	public String tempOutput1;
+	public String tempFactoriesOutput1;
+	public String tempWarehousesOutput1;
+	public String tempRequestsOutput1;
+	public String tempTableOutput1;
 	@FXML
 	public TextArea phase2Output;
 	public TextField phase2Days;
@@ -39,6 +43,8 @@ public class Controller2 {
 	public Button fBtn2;
 	public Button wBtn2;
 	public Button rBtn2;
+	public Button tBtn2;
+	public String tempTableOutput;
 
 	public void switchToPhase1(ActionEvent event) throws IOException {
 
@@ -48,7 +54,26 @@ public class Controller2 {
 		controller.phase1Days.setText(phase2Days.getText());
 		controller.phase1Max.setText(phase2Max.getText());
 		controller.phase1Output.setText(tempOutput1);
+		controller.pos1.setText(tempPercentage1);
 		controller.tempOutput2.setText(phase2Output.getText());
+		controller.tempPercentage2 = pos2.getText();
+		
+		controller.tempFactoriesOutput2 = tempFactoriesOutput;
+        controller.tempWarehousesOutput2 = tempWarehousesOutput;
+        controller.tempRequestsOutput2 = tempRequestsOutput;
+        controller.tempTableOutput2 = tempTableOutput;
+		
+		if(controller.phase1Output.getText() != "") {
+			controller.fBtn1.setOpacity(1);
+            controller.wBtn1.setOpacity(1);
+            controller.rBtn1.setOpacity(1);
+            controller.tBtn1.setOpacity(1);
+            
+            controller.tempFactoriesOutput = tempFactoriesOutput1;
+            controller.tempWarehousesOutput = tempWarehousesOutput1;
+            controller.tempRequestsOutput = tempRequestsOutput1;
+            controller.tempTableOutput = tempTableOutput1;
+		}
 
 //		controller.tempPercentage2.setText(pos1.getText());
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -64,6 +89,7 @@ public class Controller2 {
 		fBtn2.setOpacity(0);
 		wBtn2.setOpacity(0);
 		rBtn2.setOpacity(0);
+		tBtn2.setOpacity(0);
 	}
 
 	public void runSimulation(ActionEvent event) throws IOException, CloneNotSupportedException {
@@ -85,15 +111,18 @@ public class Controller2 {
 		String warehousesOutputText = report.getWarehousesReport();
 		String factoriesOutputText = report.getFactoriesReport();
 		String requestsoutputText = report.getRequestsReport();
+		String tableOutputText = report.getTableReport();
 
 		phase2Output.appendText(mainOutputText);
 		tempFactoriesOutput = factoriesOutputText;
 		tempWarehousesOutput = warehousesOutputText;
 		tempRequestsOutput = requestsoutputText;
+		tempTableOutput = tableOutputText;
 		pos2.setText(String.format("%s%.2f%s","Percentage Of Success: ", report.getPos(), "%"));
 		fBtn2.setOpacity(1);
 		wBtn2.setOpacity(1);
 		rBtn2.setOpacity(1);
+		tBtn2.setOpacity(1);
 	}
 
 	public void popUpFactories(ActionEvent event) throws IOException {
@@ -147,5 +176,23 @@ public class Controller2 {
 		}
 
 	}
+	
+	public void popUpTable(ActionEvent event) throws IOException {
+
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Table.fxml"));
+            root = loader.load();
+            Controller controller = loader.getController();
+            controller.tableOutput.setText(tempTableOutput);
+            Stage stage = new Stage();
+            stage.setTitle("Table View");
+            stage.setScene(new Scene(root));
+
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+
+    }
 
 }
