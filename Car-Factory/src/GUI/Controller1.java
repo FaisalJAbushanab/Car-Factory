@@ -1,7 +1,7 @@
 package GUI;
 
-import carFactory.*;
-import carFactory.Main;
+import phase1.*;
+import phase1.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

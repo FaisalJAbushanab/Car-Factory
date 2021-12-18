@@ -1,5 +1,9 @@
-package carFactory;
-
+package phase1;
+/**
+ * This class is an enum and it shows a set of constants that are related to each other in the specifications,
+ *  where we showed the values ​​of the blocks, the quality level, the name of the manufacturer
+ *  and the type of employees based on the computer industry: engineer, worker, technician
+ */
 public enum Computers {
 
 
@@ -32,8 +36,23 @@ public enum Computers {
 		COMPUTER21("hp", "pc" , "low quality", 350 ,  380 , 300 ,  300,  100,  200,  400,  400,  200, 35, 20, 10),
 		COMPUTER22("hp", "laptop" , "high quality" , 300 , 200 , 300 , 200 , 60 , 80 , 400  , 100 , 50, 40, 25, 15),
 		COMPUTER23("hp", "laptop" , "mid quality" , 250 ,  200 , 250 , 100 , 50 , 70 , 400 , 60 , 50, 35, 25, 15),
-		COMPUTER24("hp", "laptop" , "low quality" , 200 , 250 , 250 , 100 ,  50 ,  70 , 400 ,  60 , 40, 30, 20, 10);
-		
+		COMPUTER24("hp", "laptop" , "low quality" , 200 , 250 , 250 , 100 ,  50 ,  70 , 400 ,  60 , 40, 30, 20, 10),
+
+		COMPUTER25("lenovo", "pc" ,"high quality", 490 , 440 , 390  , 500 ,  200 , 400 , 500 ,  600, 300, 60, 30, 20),
+		COMPUTER26("lenovo" ,"pc" , "mid quality", 410 , 380 , 340  , 400 , 100 , 300 , 450 , 500 , 200, 45, 25, 15),
+		COMPUTER27("lenovo", "pc" , "low quality", 290 ,  360 , 310 ,  300,  100,  200,  400,  400,  200, 45, 20, 10),
+		COMPUTER28("lenovo", "laptop" , "high quality" , 315 , 250 , 290 , 200 , 60 , 80 , 400  , 100 , 50, 55, 30, 15),
+		COMPUTER29("lenovo", "laptop" , "mid quality" , 250 ,  250 , 275 , 100 , 50 , 70 , 400 , 60 , 50, 35, 25, 15),
+		COMPUTER30("lenovo", "laptop" , "low quality" , 280 , 300 , 270 , 100 ,  50 ,  70 , 350 ,  60 , 40, 25, 20, 10),
+
+
+		COMPUTER31("Apple", "pc" ,"high quality", 425 , 400 , 380  , 500 ,  200 , 270 , 500 ,  600 , 300, 80, 30, 15),
+		COMPUTER32("Apple" ,"pc" , "mid quality", 380 , 380 , 330  , 400 , 100 , 250 , 450 , 500 , 200, 60, 25, 15),
+		COMPUTER33("Apple", "pc" , "low quality", 320 ,  360 , 315 ,  300,  100,  190,  400,  400,  200, 35, 25, 10),
+		COMPUTER34("Apple", "laptop" , "high quality" , 220 , 220 , 270 , 200 , 50 , 110 , 400  , 100 , 50, 55, 35, 20),
+		COMPUTER35("Apple", "laptop" , "mid quality" , 210 ,  200 , 260 , 100 , 40 , 90 , 350 , 60 , 50,  45, 15, 10),
+		COMPUTER36("Apple", "laptop" , "low quality" , 175 , 200 , 230 , 100 ,  40 ,  90 , 300 ,  60 , 40, 35, 15, 10);
+
 		private final String company;
 		private final String type;
 		private final String quality;
@@ -49,7 +68,24 @@ public enum Computers {
 		private final int Workers;
 		private final int Technicians;
 		private final int  Engineers;
-		
+	/**
+	 *
+	 * @param company
+	 * @param type
+	 * @param quality
+	 * @param mass1
+	 * @param mass2
+	 * @param mass3
+	 * @param mass4
+	 * @param mass5
+	 * @param mass6
+	 * @param mass7
+	 * @param mass8
+	 * @param mass9
+	 * @param Workers
+	 * @param Technicians
+	 * @param Engineers
+	 */
 		Computers(String company, String type, String quality,
 				  int mass1, int mass2, int mass3, int mass4,
 				  int mass5, int mass6, int mass7, int mass8, int mass9, int Workers, int Technicians, int  Engineers){

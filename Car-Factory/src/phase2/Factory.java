@@ -2,13 +2,18 @@ package phase2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-
+/**
+ *
+ * class factory class inheritance and implement at the same time.
+ *Shows some information about the warehouse, employee, and cost of the project.
+ */
 public class Factory extends Building implements Cloneable{
 
     private ArrayList<Warehouse> allWarehouses = new ArrayList<>();
     private ArrayList<Warehouse> warehouseAccess = new ArrayList<>();
     private ArrayList<Employee> employees = new ArrayList<>();
     private int[] employeesList = new int[3];
+    private int[] employeesSalaries = new int[3];
     private int[] warehouseAccessTotalMaterials = new int[9];
     private int operatingCost;
     private boolean isOccupied = false;
@@ -21,28 +26,6 @@ public class Factory extends Building implements Cloneable{
         setOperatingCost();  // calculate operation cost
     }
 
-    public void fullUpEmployees() {
-//        for(int i= 0; i < numOfEmployees; i++) {
-//            int rand = (int)Math.floor(Math.random()*(6)+1);
-//            if((3 >= rand) && (worker < super.getCapacity()[0])) {
-//                Employee employee = new Worker();
-//                employees.add(employee); // add new worker to the list
-//                worker++;
-//            }else if((5 >= rand) && (technician < super.getCapacity()[1])) {
-//                Employee employee = new Technician();
-//                employees.add(employee); // add new technician to the list
-//                technician++;
-//            }else if((5 < rand) && (engineer < super.getCapacity()[2])){
-//                Employee employee = new Engineer();
-//                employees.add(employee);  // add new engineer to the list
-//                engineer++;
-//            }
-//            else {
-//                continue;
-//            }
-//        }
-//        setEmployeesList();
-    }
 
     public boolean isOccupied() {
         return isOccupied; // return the status of the factory
@@ -57,18 +40,14 @@ public class Factory extends Building implements Cloneable{
     }
 
     private void setOperatingCost() {
-        // TODO salary on location
         for (Employee employee : employees) {
-//            System.out.println(employee.toString());
             operatingCost += employee.getSalary(); // add employees' salaries to the operation cost
         }
-//        System.out.println(operatingCost); // print the operating cost
+        setEmployeesSalaries();
     }
 
     private void setEmployeesList() {
-//        employeesList[0] =  0;
-//        employeesList[1] =  0;
-//        employeesList[2] =  0;
+
         for (Employee employee : employees) {
             if (employee instanceof Worker) {
                 employeesList[0] += 1; // increase index 0 means increasing in worker numbers
@@ -97,6 +76,9 @@ public class Factory extends Building implements Cloneable{
                 	employee.setSalary(empSalary/2);
                 	employees.add(employee); // add new worker to the list
                 	worker++;
+                } else {
+                    employees.add(employee); // add new engineer to the list
+                    engineer++;
                 }
             }else if((5 >= rand) && (technician < super.getCapacity()[1])) {
             	Employee employee = new Technician();
@@ -105,6 +87,9 @@ public class Factory extends Building implements Cloneable{
                 	employee.setSalary(empSalary/2);
                 	employees.add(employee); // add new technician to the list
                 	technician++;
+                }else {
+                    employees.add(employee); // add new engineer to the list
+                    engineer++;
                 }
             }else if((5 < rand) && (engineer < super.getCapacity()[2])){
                 Employee employee = new Engineer();
@@ -113,6 +98,9 @@ public class Factory extends Building implements Cloneable{
                 	employee.setSalary(empSalary/2);
                 	employees.add(employee); // add new engineer to the list
                 	engineer++;
+                } else {
+                    employees.add(employee); // add new engineer to the list
+                    engineer++;
                 }
             }
             else {
@@ -255,29 +243,47 @@ public class Factory extends Building implements Cloneable{
         }
         return (int) time;
     }
+    private void setEmployeesSalaries() {
+        int[] salaries = new int[3];
+        for (Employee employee : employees) {
+            if (employee instanceof Worker) {
+                salaries[0] = employee.getSalary();
+            } else if (employee instanceof Technician) {
+                salaries[1] = employee.getSalary();
+            } else {
+                salaries[2] = employee.getSalary();
+            }
+        }
+        employeesSalaries = salaries;
+    }
 
     public int getOperatingCost() {
         return operatingCost; // return the total operating cost
     }
 
     public String getFactoryInformation() { // get all factory's information
-        String info = "Location: " + super.getLocation() +
+        String info = "\tLocation: " + super.getLocation() +
                 " | Working hours: " + super.getWorkingHours() +
-                " | Operating cost: " + getOperatingCost() +"\n";
-        info += "Employees capacity: " + + super.getCapacity()[0] + " workers "
+                " | Operating cost: " + getOperatingCost() + "\n";
+        info += "\tEmployees capacity: "
+                + super.getCapacity()[0] + " workers "
                 + super.getCapacity()[1] + " technicians "
                 + super.getCapacity()[2] + " engineers \n";
-        info += "Employees: " + employeesList[0] + " workers "
+        info += "\tEmployees Salaries: "
+                + "$" +  employeesSalaries[0] + "/hour\t"
+                + "$" +  employeesSalaries[1] + "/hour\t"
+                + "$" +  employeesSalaries[2] + "/hour \n";
+        info += "\tEmployees: "
+                + employeesList[0] + " workers "
                 + employeesList[1] + " technicians "
                 + employeesList[2] + " engineers \n";
-        info += "Access to warehouses: ";
-        for (Warehouse access: warehouseAccess) { 
-            info += "#" + (allWarehouses.indexOf(access)+1) + " "; // get all the warehouses that the factory has access to
+        info += "\tAccess to warehouses: ";
+        for (Warehouse access : warehouseAccess) {
+            info += "#" + (allWarehouses.indexOf(access) + 1) + " "; // get all the warehouses that the factory has access to
         }
-        info += "\nMaterials: [aluminium grams, plastic grams, glass grams, silicon mg " +
+        info += "\n\tMaterials: [aluminium grams, plastic grams, glass grams, silicon mg " +
                 ", gold mg, copper mg, iron grams, chrome mg, silver mg]\n" +
-                "Amount: " + Arrays.toString(getWarehouseTotalMaterials()) + "\n";
-        info += "number of times this factory has been occupied: " + getNumOfoccupies() + "\n";
+                "\tAmount: " + Arrays.toString(getWarehouseTotalMaterials()) + "\n";
         return info + "\n";
     }
 

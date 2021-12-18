@@ -1,4 +1,4 @@
-package carFactory;
+package phase1;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -56,24 +56,31 @@ public class Report {
     }
 
     private void writeTable(ArrayList<Request> requests, ArrayList<Factory> factories) {
-//        ArrayList<String> requestArray = new ArrayList<>();
-//        ArrayList<String> factoryArray = new ArrayList<>();
+        ArrayList<String> conditionArray = new ArrayList<>();
+        ArrayList<String> requirementsArray = new ArrayList<>();
         table = String.format("| %s / %s |\t", "Material", "Time");
         for(Factory factory : factories) {
-            table += String.format("| %8s%-2d  |\t","Factory#" ,(1 + factories.indexOf(factory)));
+            table += String.format("\t|\t\t  %8s%-2d  \t\t\t|\t","Factory#" ,(1 + factories.indexOf(factory)));
         }
         table += "\n";
         for(Request request : requests) {
             table += String.format("| %14s%-3d |\t","Request#",(1 + requests.indexOf(request)));
-            ArrayList<Computer> condition = request.getComputers();
+            ArrayList<Computer> computers = request.getComputers();
             for(Factory factory : factories) {
-                Boolean mat = factory.checkMaterial(condition);
-                Boolean time = factory.checkTime(condition);
-                table += String.format("| %-5b / %-5b |\t", mat, time);
+                String condition = String.format("\t|{ %-5b / %-5b }",
+                        factory.checkMaterial(computers),
+                        factory.checkTime(computers));
+                conditionArray.add(condition);
+                String requirements = String.format("{ $%-5d / %-2d days }|",
+                        factory.getRequirments(request, factories.indexOf(factory))[0],
+                        factory.getRequirments(request, factories.indexOf(factory))[1]);
+                requirementsArray.add(requirements);
             }
+            TableViewer tableViewer = new TableViewer(conditionArray, requirementsArray);
+            table += tableViewer.viewTable(1, factories.size());
+            conditionArray.clear();
+            requirementsArray.clear();
             table += "\n";
-//            TableViewer tableViewer = new TableViewer(requestArray, factoryArray);
-//            table += tableViewer.viewTable(1, factoryArray.size());
         }
     }
 
