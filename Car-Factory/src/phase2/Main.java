@@ -1,5 +1,6 @@
 package phase2;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Random;
@@ -9,27 +10,36 @@ import java.util.Random;
  *
  */
 public class Main {
-	
 	private ArrayList<Factory> factories = new ArrayList<>();
+
 	private ArrayList<Warehouse> warehouses = new ArrayList<>();
 	private ArrayList<Request> requests = new ArrayList<>();
+	private Report report;
 	private String[] location = { "Riyadh", "Makkah", "Dammam", "Jeddah" };
 	private int[] workingHours = { 12, 18, 24 };
 	private int numberOfSuccess = 0;
-	
+	private LocalDateTime simulationDate = LocalDateTime.now();
 	// simulation begins here
-	public Main(int days, int maxRequestsPerDay) {
-		
+
+	public Main(int days, int maxRequestsPerDay) throws IOException, CloneNotSupportedException {
+		// 1- Generate random number of warehouses
 		generateWarehouses(days, 50);
+		// 2- Generate random number of factories
 		generateFactories(days, 50);
+		// 3- Generate random number of requests
 		generateRequests(days, maxRequestsPerDay);
-		
+		// 4- Generate Report
+		generateReport(simulationDate);
 	}
-	// 1A- generate random number of warehouses
+	private void generateReport(LocalDateTime simulationDate) throws IOException, CloneNotSupportedException {
+		Report report = new Report(simulationDate, requests, factories, warehouses);
+		this.report = report;
+		report.generateReport();
+	}
+
 	public void generateWarehouses(int days, int numberOfWarehouses) {
-		
+
 		Random random = new Random();
-//		int numberWarehouse = fullUp(days*10, days*20);
 		for (int i = 0; i < numberOfWarehouses; i++) {
 
 			int Location = random.nextInt(location.length);
@@ -51,12 +61,15 @@ public class Main {
 			warehouses.add(new Warehouse(storage_Capacity, location[Location], workingHours[WorkingHours], material));
 		}
 	}
-	
+
+	public Report getReport() {
+		return report;
+	}
+
 	public void generateFactories(int days, int numberOfFactories) {
 		Random random = new Random();
 		// for establishing a relation between #workers and #computers in each request
 		int potential = fullUp(days*0.9, days*1.1);
-		// 1B- generate random number of factories
 //		int numberFactory = fullUp(days*4, days*8);
 		for (int i = 0; i < numberOfFactories; i++) {
 
@@ -75,7 +88,6 @@ public class Main {
 		}
 	}
 
-	// Generate random requests
 
 	public ArrayList<Factory> getFactories() {
 		return factories;
@@ -88,10 +100,9 @@ public class Main {
 	public void generateRequests(int days, int maxRequestsPerDay) {
 		int numOfRequests = 0;
 		int potential = fullUp(days*0.9, days*1.1);
-		LocalDateTime simulationDate = LocalDateTime.now();
 
 		// days loop
-		for (int i = 1; i <= days; i++) {
+		for (int i = 0; i <= days; i++) {
 			// hours loop
 			for (int j = 0; j < 24; j++) {
 				// minutes loop
@@ -103,7 +114,7 @@ public class Main {
 							Request request = new Request(simulationDate , factories,
 									i, j, k, fullUp(potential*0.8,potential*1.2));
 							requests.add(request);
-							// 4- fulfill requests
+							// 4.1- fulfill requests
 							numberOfSuccess += request.findFactory(factories);
 							numOfRequests++;
 						}

@@ -1,7 +1,5 @@
 package GUI;
 
-import phase2.*;
-import phase2.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,6 +12,9 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import phase2.Main;
+import phase2.Report;
+import phase2.*;
 
 import java.io.IOException;
 import java.time.LocalDateTime;

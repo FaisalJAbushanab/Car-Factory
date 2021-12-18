@@ -1,7 +1,5 @@
 package GUI;
 
-import phase1.*;
-import phase1.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,10 +12,10 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import phase1.Main;
+import phase1.Report;
 
 import java.io.IOException;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 
 public class Controller1 {
     private Stage stage;
@@ -94,20 +92,15 @@ public class Controller1 {
     }
 
     public void runSimulation(ActionEvent event) throws IOException, CloneNotSupportedException {
-        LocalDateTime simulationDate = LocalDateTime.now();
         try {
             days1 = Integer.parseInt(phase1Days.getText());
             max1 = Integer.parseInt(phase1Max.getText());
             if(days1 > 0 && max1 >0) {
                 phase1Output.setText("");
                 Main run = new Main(days1, max1);
-                ArrayList<Warehouse> warehouses = run.getWarehouses();
-                ArrayList<Factory> factories = run.getFactories();
-                ArrayList<Request> requests = run.getRequests();
 
-                // Generate Reports
-                Report report = new Report(simulationDate, requests, factories, warehouses);
-                report.generateReport();
+                // output Reports
+                Report report = run.getReport();
                 String mainOutputText = report.getMainReport();
                 String warehousesOutputText = report.getWarehousesReport();
                 String factoriesOutputText = report.getFactoriesReport();

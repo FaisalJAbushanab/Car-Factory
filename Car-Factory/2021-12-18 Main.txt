@@ -1,796 +1,321 @@
 ----------------------------------------------------------------------------------
-1: request 2021-12-19 15:36 did not find a factory!
-Request's Selected Cost: $32704 and Selected Time: 49 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-2: request 2021-12-19 20:53 did not find a factory!
-Request's Selected Cost: $33727 and Selected Time: 52 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-3: request 2021-12-19 22:29 found factory#50
-Request's Selected Cost: $31265 and Selected Time: 43 Days 
-Factory's Provided Cost: $29844 and Provided Time: 25 Days 
-
-----------------------------------------------------------------------------------
-4: request 2021-12-19 23:01 found factory#9
-Request's Selected Cost: $26497 and Selected Time: 47 Days 
-Factory's Provided Cost: $25110 and Provided Time: 30 Days 
-
-----------------------------------------------------------------------------------
-5: request 2021-12-20 02:37 did not find a factory!
-Request's Selected Cost: $27759 and Selected Time: 47 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-6: request 2021-12-20 22:07 did not find a factory!
-Request's Selected Cost: $29737 and Selected Time: 45 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-7: request 2021-12-21 02:09 did not find a factory!
-Request's Selected Cost: $26653 and Selected Time: 44 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-8: request 2021-12-21 04:43 did not find a factory!
-Request's Selected Cost: $32425 and Selected Time: 51 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-9: request 2021-12-21 10:01 did not find a factory!
-Request's Selected Cost: $31456 and Selected Time: 45 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-10: request 2021-12-21 13:09 did not find a factory!
-Request's Selected Cost: $33882 and Selected Time: 52 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-11: request 2021-12-21 19:01 found factory#26
-Request's Selected Cost: $28073 and Selected Time: 41 Days 
-Factory's Provided Cost: $20227 and Provided Time: 20 Days 
-
-----------------------------------------------------------------------------------
-12: request 2021-12-23 01:53 found factory#47
-Request's Selected Cost: $29026 and Selected Time: 34 Days 
-Factory's Provided Cost: $27218 and Provided Time: 22 Days 
-
-----------------------------------------------------------------------------------
-13: request 2021-12-23 04:12 found factory#6
-Request's Selected Cost: $29317 and Selected Time: 42 Days 
-Factory's Provided Cost: $21665 and Provided Time: 24 Days 
-
-----------------------------------------------------------------------------------
-14: request 2021-12-23 09:10 did not find a factory!
-Request's Selected Cost: $30183 and Selected Time: 52 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-15: request 2021-12-23 11:15 did not find a factory!
-Request's Selected Cost: $32016 and Selected Time: 51 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-16: request 2021-12-23 13:10 did not find a factory!
-Request's Selected Cost: $25604 and Selected Time: 36 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-17: request 2021-12-23 13:53 did not find a factory!
-Request's Selected Cost: $31915 and Selected Time: 49 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-18: request 2021-12-23 19:39 found factory#18
-Request's Selected Cost: $30408 and Selected Time: 39 Days 
-Factory's Provided Cost: $24899 and Provided Time: 27 Days 
-
-----------------------------------------------------------------------------------
-19: request 2021-12-24 00:41 did not find a factory!
-Request's Selected Cost: $33743 and Selected Time: 48 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-20: request 2021-12-24 04:31 did not find a factory!
-Request's Selected Cost: $30774 and Selected Time: 55 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-21: request 2021-12-24 09:26 did not find a factory!
-Request's Selected Cost: $32691 and Selected Time: 51 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-22: request 2021-12-24 17:22 did not find a factory!
-Request's Selected Cost: $28311 and Selected Time: 48 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-23: request 2021-12-24 20:37 found factory#19
-Request's Selected Cost: $25364 and Selected Time: 32 Days 
-Factory's Provided Cost: $22711 and Provided Time: 29 Days 
-
-----------------------------------------------------------------------------------
-24: request 2021-12-25 04:57 did not find a factory!
-Request's Selected Cost: $28638 and Selected Time: 46 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-25: request 2021-12-25 09:26 found factory#46
-Request's Selected Cost: $24604 and Selected Time: 37 Days 
-Factory's Provided Cost: $22461 and Provided Time: 25 Days 
-
-----------------------------------------------------------------------------------
-26: request 2021-12-25 13:32 did not find a factory!
-Request's Selected Cost: $31305 and Selected Time: 48 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-27: request 2021-12-25 21:37 found factory#29
-Request's Selected Cost: $32642 and Selected Time: 47 Days 
-Factory's Provided Cost: $32099 and Provided Time: 27 Days 
-
-----------------------------------------------------------------------------------
-28: request 2021-12-26 03:29 did not find a factory!
-Request's Selected Cost: $29163 and Selected Time: 36 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-29: request 2021-12-26 04:39 did not find a factory!
-Request's Selected Cost: $31487 and Selected Time: 38 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-30: request 2021-12-26 04:58 did not find a factory!
-Request's Selected Cost: $30846 and Selected Time: 36 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-31: request 2021-12-26 19:05 found factory#42
-Request's Selected Cost: $26800 and Selected Time: 36 Days 
-Factory's Provided Cost: $24260 and Provided Time: 18 Days 
-
-----------------------------------------------------------------------------------
-32: request 2021-12-26 19:22 did not find a factory!
-Request's Selected Cost: $32257 and Selected Time: 46 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-33: request 2021-12-27 02:50 did not find a factory!
-Request's Selected Cost: $29054 and Selected Time: 30 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-34: request 2021-12-28 04:34 did not find a factory!
-Request's Selected Cost: $32987 and Selected Time: 49 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-35: request 2021-12-28 05:34 did not find a factory!
-Request's Selected Cost: $30055 and Selected Time: 31 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-36: request 2021-12-28 10:56 did not find a factory!
-Request's Selected Cost: $31894 and Selected Time: 47 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-37: request 2021-12-28 21:58 found factory#45
-Request's Selected Cost: $30062 and Selected Time: 46 Days 
-Factory's Provided Cost: $26908 and Provided Time: 37 Days 
-
-----------------------------------------------------------------------------------
-38: request 2021-12-29 00:34 did not find a factory!
-Request's Selected Cost: $27721 and Selected Time: 47 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-39: request 2021-12-29 07:08 did not find a factory!
-Request's Selected Cost: $31214 and Selected Time: 36 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-40: request 2021-12-29 07:19 did not find a factory!
-Request's Selected Cost: $30971 and Selected Time: 49 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-41: request 2021-12-29 15:02 found factory#21
-Request's Selected Cost: $23876 and Selected Time: 33 Days 
-Factory's Provided Cost: $18130 and Provided Time: 23 Days 
-
-----------------------------------------------------------------------------------
-42: request 2021-12-29 16:47 did not find a factory!
-Request's Selected Cost: $24571 and Selected Time: 28 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-43: request 2021-12-29 19:43 did not find a factory!
-Request's Selected Cost: $28367 and Selected Time: 46 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-44: request 2021-12-29 20:02 found factory#2
-Request's Selected Cost: $30246 and Selected Time: 41 Days 
-Factory's Provided Cost: $28062 and Provided Time: 36 Days 
-
-----------------------------------------------------------------------------------
-45: request 2021-12-29 21:31 did not find a factory!
-Request's Selected Cost: $32286 and Selected Time: 36 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-46: request 2021-12-30 00:30 did not find a factory!
-Request's Selected Cost: $24117 and Selected Time: 31 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-47: request 2021-12-30 09:23 did not find a factory!
-Request's Selected Cost: $29436 and Selected Time: 36 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-48: request 2021-12-30 11:10 did not find a factory!
-Request's Selected Cost: $32092 and Selected Time: 54 Days 
-This Request did not find a factory!  
+1: request 2021-12-18 23:28 found factory#2
+Request's Selected Cost: $13135 and Selected Time: 13 Days 
+Factory's Provided Cost: $11146 and Provided Time: 9 Days 
 
 ----------------------------------------------------------------------------------
-49: request 2021-12-30 19:20 did not find a factory!
-Request's Selected Cost: $24781 and Selected Time: 38 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-50: request 2021-12-31 00:48 found factory#32
-Request's Selected Cost: $27464 and Selected Time: 27 Days 
-Factory's Provided Cost: $24931 and Provided Time: 19 Days 
-
-----------------------------------------------------------------------------------
-51: request 2021-12-31 02:01 found factory#14
-Request's Selected Cost: $29211 and Selected Time: 41 Days 
-Factory's Provided Cost: $25658 and Provided Time: 33 Days 
-
-----------------------------------------------------------------------------------
-52: request 2021-12-31 16:29 found factory#7
-Request's Selected Cost: $27614 and Selected Time: 39 Days 
-Factory's Provided Cost: $26901 and Provided Time: 35 Days 
-
-----------------------------------------------------------------------------------
-53: request 2021-12-31 17:12 did not find a factory!
-Request's Selected Cost: $26824 and Selected Time: 37 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-54: request 2021-12-31 20:17 did not find a factory!
-Request's Selected Cost: $31749 and Selected Time: 54 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-55: request 2022-01-01 16:12 did not find a factory!
-Request's Selected Cost: $29408 and Selected Time: 37 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-56: request 2022-01-01 21:31 did not find a factory!
-Request's Selected Cost: $25683 and Selected Time: 45 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-57: request 2022-01-02 00:42 did not find a factory!
-Request's Selected Cost: $24057 and Selected Time: 40 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-58: request 2022-01-02 17:59 did not find a factory!
-Request's Selected Cost: $29862 and Selected Time: 31 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-59: request 2022-01-03 12:27 found factory#36
-Request's Selected Cost: $28458 and Selected Time: 26 Days 
-Factory's Provided Cost: $26719 and Provided Time: 18 Days 
-
-----------------------------------------------------------------------------------
-60: request 2022-01-03 13:27 did not find a factory!
-Request's Selected Cost: $27881 and Selected Time: 44 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-61: request 2022-01-03 19:05 did not find a factory!
-Request's Selected Cost: $32415 and Selected Time: 37 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-62: request 2022-01-03 21:37 did not find a factory!
-Request's Selected Cost: $28735 and Selected Time: 42 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-63: request 2022-01-04 08:57 did not find a factory!
-Request's Selected Cost: $29986 and Selected Time: 41 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-64: request 2022-01-05 00:42 did not find a factory!
-Request's Selected Cost: $30664 and Selected Time: 43 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-65: request 2022-01-05 11:48 did not find a factory!
-Request's Selected Cost: $30491 and Selected Time: 41 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-66: request 2022-01-06 02:33 did not find a factory!
-Request's Selected Cost: $25329 and Selected Time: 54 Days 
-This Request did not find a factory!  
+2: request 2021-12-19 08:37 found factory#16
+Request's Selected Cost: $12185 and Selected Time: 19 Days 
+Factory's Provided Cost: $12034 and Provided Time: 9 Days 
 
 ----------------------------------------------------------------------------------
-67: request 2022-01-06 04:31 did not find a factory!
-Request's Selected Cost: $27312 and Selected Time: 34 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-68: request 2022-01-06 12:44 did not find a factory!
-Request's Selected Cost: $30566 and Selected Time: 45 Days 
-This Request did not find a factory!  
+3: request 2021-12-19 11:26 found factory#11
+Request's Selected Cost: $10802 and Selected Time: 16 Days 
+Factory's Provided Cost: $9662 and Provided Time: 9 Days 
 
 ----------------------------------------------------------------------------------
-69: request 2022-01-07 00:34 did not find a factory!
-Request's Selected Cost: $27545 and Selected Time: 35 Days 
+4: request 2021-12-19 13:10 did not find a factory!
+Request's Selected Cost: $10668 and Selected Time: 21 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-70: request 2022-01-07 05:45 did not find a factory!
-Request's Selected Cost: $30352 and Selected Time: 51 Days 
-This Request did not find a factory!  
+5: request 2021-12-19 14:41 found factory#1
+Request's Selected Cost: $10666 and Selected Time: 15 Days 
+Factory's Provided Cost: $9131 and Provided Time: 7 Days 
 
 ----------------------------------------------------------------------------------
-71: request 2022-01-07 14:35 did not find a factory!
-Request's Selected Cost: $30153 and Selected Time: 37 Days 
-This Request did not find a factory!  
+6: request 2021-12-20 05:41 found factory#42
+Request's Selected Cost: $10217 and Selected Time: 18 Days 
+Factory's Provided Cost: $9160 and Provided Time: 12 Days 
 
 ----------------------------------------------------------------------------------
-72: request 2022-01-08 07:46 did not find a factory!
-Request's Selected Cost: $29975 and Selected Time: 44 Days 
+7: request 2021-12-20 09:18 did not find a factory!
+Request's Selected Cost: $12998 and Selected Time: 18 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-73: request 2022-01-08 08:51 did not find a factory!
-Request's Selected Cost: $30691 and Selected Time: 37 Days 
+8: request 2021-12-20 18:17 did not find a factory!
+Request's Selected Cost: $10957 and Selected Time: 21 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-74: request 2022-01-08 18:25 did not find a factory!
-Request's Selected Cost: $32641 and Selected Time: 51 Days 
-This Request did not find a factory!  
+9: request 2021-12-21 10:23 found factory#43
+Request's Selected Cost: $10839 and Selected Time: 18 Days 
+Factory's Provided Cost: $10613 and Provided Time: 10 Days 
 
 ----------------------------------------------------------------------------------
-75: request 2022-01-08 19:22 did not find a factory!
-Request's Selected Cost: $31737 and Selected Time: 46 Days 
-This Request did not find a factory!  
+10: request 2021-12-21 17:08 found factory#7
+Request's Selected Cost: $12068 and Selected Time: 19 Days 
+Factory's Provided Cost: $10888 and Provided Time: 12 Days 
 
 ----------------------------------------------------------------------------------
-76: request 2022-01-08 20:29 did not find a factory!
-Request's Selected Cost: $25751 and Selected Time: 42 Days 
+11: request 2021-12-21 17:55 did not find a factory!
+Request's Selected Cost: $11302 and Selected Time: 22 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-77: request 2022-01-08 20:30 did not find a factory!
-Request's Selected Cost: $26691 and Selected Time: 40 Days 
-This Request did not find a factory!  
+12: request 2021-12-21 19:32 found factory#44
+Request's Selected Cost: $11934 and Selected Time: 17 Days 
+Factory's Provided Cost: $10826 and Provided Time: 13 Days 
 
 ----------------------------------------------------------------------------------
-78: request 2022-01-09 10:56 did not find a factory!
-Request's Selected Cost: $26116 and Selected Time: 40 Days 
-This Request did not find a factory!  
+13: request 2021-12-22 09:45 found factory#38
+Request's Selected Cost: $11925 and Selected Time: 19 Days 
+Factory's Provided Cost: $11080 and Provided Time: 15 Days 
 
 ----------------------------------------------------------------------------------
-79: request 2022-01-09 18:52 did not find a factory!
-Request's Selected Cost: $27435 and Selected Time: 53 Days 
+14: request 2021-12-22 11:02 did not find a factory!
+Request's Selected Cost: $12116 and Selected Time: 20 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-80: request 2022-01-10 04:41 did not find a factory!
-Request's Selected Cost: $30581 and Selected Time: 40 Days 
-This Request did not find a factory!  
+15: request 2021-12-22 19:21 found factory#47
+Request's Selected Cost: $10105 and Selected Time: 12 Days 
+Factory's Provided Cost: $9356 and Provided Time: 11 Days 
 
 ----------------------------------------------------------------------------------
-81: request 2022-01-10 10:46 did not find a factory!
-Request's Selected Cost: $24701 and Selected Time: 38 Days 
+16: request 2021-12-23 00:23 did not find a factory!
+Request's Selected Cost: $13089 and Selected Time: 20 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-82: request 2022-01-10 19:04 found factory#43
-Request's Selected Cost: $30345 and Selected Time: 38 Days 
-Factory's Provided Cost: $29335 and Provided Time: 36 Days 
+17: request 2021-12-23 10:04 found factory#49
+Request's Selected Cost: $12567 and Selected Time: 16 Days 
+Factory's Provided Cost: $12294 and Provided Time: 10 Days 
 
 ----------------------------------------------------------------------------------
-83: request 2022-01-10 21:28 did not find a factory!
-Request's Selected Cost: $31487 and Selected Time: 45 Days 
+18: request 2021-12-23 11:15 did not find a factory!
+Request's Selected Cost: $9494 and Selected Time: 16 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-84: request 2022-01-11 01:01 did not find a factory!
-Request's Selected Cost: $30800 and Selected Time: 42 Days 
-This Request did not find a factory!  
+19: request 2021-12-24 04:46 found factory#40
+Request's Selected Cost: $13203 and Selected Time: 19 Days 
+Factory's Provided Cost: $12748 and Provided Time: 16 Days 
 
 ----------------------------------------------------------------------------------
-85: request 2022-01-11 12:15 did not find a factory!
-Request's Selected Cost: $25721 and Selected Time: 42 Days 
+20: request 2021-12-24 11:25 did not find a factory!
+Request's Selected Cost: $11664 and Selected Time: 15 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-86: request 2022-01-11 20:53 did not find a factory!
-Request's Selected Cost: $29489 and Selected Time: 43 Days 
+21: request 2021-12-24 14:37 did not find a factory!
+Request's Selected Cost: $13632 and Selected Time: 22 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-87: request 2022-01-12 08:06 found factory#37
-Request's Selected Cost: $27203 and Selected Time: 35 Days 
-Factory's Provided Cost: $16742 and Provided Time: 19 Days 
-
-----------------------------------------------------------------------------------
-88: request 2022-01-12 17:16 did not find a factory!
-Request's Selected Cost: $28368 and Selected Time: 39 Days 
+22: request 2021-12-24 22:55 did not find a factory!
+Request's Selected Cost: $12997 and Selected Time: 19 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-89: request 2022-01-13 06:28 did not find a factory!
-Request's Selected Cost: $28579 and Selected Time: 45 Days 
+23: request 2021-12-25 07:00 did not find a factory!
+Request's Selected Cost: $11814 and Selected Time: 15 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-90: request 2022-01-15 02:04 did not find a factory!
-Request's Selected Cost: $33415 and Selected Time: 52 Days 
+24: request 2021-12-25 08:37 did not find a factory!
+Request's Selected Cost: $10570 and Selected Time: 20 Days 
 This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-91: request 2022-01-15 05:09 found factory#26
-Request's Selected Cost: $27266 and Selected Time: 33 Days 
-Factory's Provided Cost: $19381 and Provided Time: 17 Days 
 
 ----------------------------------------------------------------------------------
-92: request 2022-01-15 14:20 did not find a factory!
-Request's Selected Cost: $30622 and Selected Time: 43 Days 
+25: request 2021-12-25 10:35 did not find a factory!
+Request's Selected Cost: $10196 and Selected Time: 19 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-93: request 2022-01-16 12:40 did not find a factory!
-Request's Selected Cost: $31196 and Selected Time: 47 Days 
-This Request did not find a factory!  
+26: request 2021-12-25 12:21 found factory#34
+Request's Selected Cost: $11563 and Selected Time: 15 Days 
+Factory's Provided Cost: $11031 and Provided Time: 7 Days 
 
 ----------------------------------------------------------------------------------
-94: request 2022-01-16 15:42 found factory#26
-Request's Selected Cost: $29200 and Selected Time: 39 Days 
-Factory's Provided Cost: $19269 and Provided Time: 18 Days 
+27: request 2021-12-25 15:27 found factory#41
+Request's Selected Cost: $11753 and Selected Time: 11 Days 
+Factory's Provided Cost: $11314 and Provided Time: 7 Days 
 
 ----------------------------------------------------------------------------------
-95: request 2022-01-16 21:19 did not find a factory!
-Request's Selected Cost: $27201 and Selected Time: 47 Days 
+28: request 2021-12-25 16:15 did not find a factory!
+Request's Selected Cost: $13274 and Selected Time: 18 Days 
 This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-96: request 2022-01-17 03:06 found factory#6
-Request's Selected Cost: $27963 and Selected Time: 37 Days 
-Factory's Provided Cost: $21270 and Provided Time: 25 Days 
 
 ----------------------------------------------------------------------------------
-97: request 2022-01-17 04:48 did not find a factory!
-Request's Selected Cost: $29489 and Selected Time: 36 Days 
+29: request 2021-12-26 02:07 did not find a factory!
+Request's Selected Cost: $11361 and Selected Time: 12 Days 
 This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-98: request 2022-01-17 08:14 found factory#47
-Request's Selected Cost: $28836 and Selected Time: 40 Days 
-Factory's Provided Cost: $27852 and Provided Time: 20 Days 
 
 ----------------------------------------------------------------------------------
-99: request 2022-01-17 11:37 did not find a factory!
-Request's Selected Cost: $29112 and Selected Time: 43 Days 
+30: request 2021-12-26 06:15 did not find a factory!
+Request's Selected Cost: $11504 and Selected Time: 21 Days 
 This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-100: request 2022-01-17 13:17 found factory#13
-Request's Selected Cost: $26069 and Selected Time: 28 Days 
-Factory's Provided Cost: $23488 and Provided Time: 21 Days 
 
 ----------------------------------------------------------------------------------
-101: request 2022-01-18 01:20 did not find a factory!
-Request's Selected Cost: $28283 and Selected Time: 48 Days 
+31: request 2021-12-27 02:47 did not find a factory!
+Request's Selected Cost: $15489 and Selected Time: 17 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-102: request 2022-01-18 02:56 did not find a factory!
-Request's Selected Cost: $32720 and Selected Time: 53 Days 
+32: request 2021-12-27 10:17 did not find a factory!
+Request's Selected Cost: $11941 and Selected Time: 20 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-103: request 2022-01-18 07:00 did not find a factory!
-Request's Selected Cost: $31600 and Selected Time: 50 Days 
+33: request 2021-12-27 12:40 did not find a factory!
+Request's Selected Cost: $13851 and Selected Time: 19 Days 
 This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-104: request 2022-01-18 10:45 found factory#50
-Request's Selected Cost: $30167 and Selected Time: 43 Days 
-Factory's Provided Cost: $27969 and Provided Time: 23 Days 
 
 ----------------------------------------------------------------------------------
-105: request 2022-01-18 13:07 did not find a factory!
-Request's Selected Cost: $29217 and Selected Time: 48 Days 
+34: request 2021-12-27 15:18 did not find a factory!
+Request's Selected Cost: $12244 and Selected Time: 20 Days 
 This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-106: request 2022-01-18 17:19 found factory#26
-Request's Selected Cost: $26225 and Selected Time: 28 Days 
-Factory's Provided Cost: $19905 and Provided Time: 19 Days 
 
 ----------------------------------------------------------------------------------
-107: request 2022-01-18 20:28 did not find a factory!
-Request's Selected Cost: $32459 and Selected Time: 46 Days 
-This Request did not find a factory!  
+35: request 2021-12-28 00:09 found factory#9
+Request's Selected Cost: $11017 and Selected Time: 12 Days 
+Factory's Provided Cost: $10234 and Provided Time: 10 Days 
 
 ----------------------------------------------------------------------------------
-108: request 2022-01-18 21:00 did not find a factory!
-Request's Selected Cost: $30010 and Selected Time: 34 Days 
+36: request 2021-12-28 03:36 did not find a factory!
+Request's Selected Cost: $13445 and Selected Time: 22 Days 
 This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-109: request 2022-01-19 03:54 found factory#6
-Request's Selected Cost: $29253 and Selected Time: 37 Days 
-Factory's Provided Cost: $20316 and Provided Time: 25 Days 
-
-----------------------------------------------------------------------------------
-110: request 2022-01-19 11:59 found factory#50
-Request's Selected Cost: $28699 and Selected Time: 44 Days 
-Factory's Provided Cost: $28428 and Provided Time: 23 Days 
 
 ----------------------------------------------------------------------------------
-111: request 2022-01-19 17:44 did not find a factory!
-Request's Selected Cost: $32456 and Selected Time: 37 Days 
+37: request 2021-12-28 15:04 did not find a factory!
+Request's Selected Cost: $12541 and Selected Time: 23 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-112: request 2022-01-20 14:32 did not find a factory!
-Request's Selected Cost: $28726 and Selected Time: 49 Days 
-This Request did not find a factory!  
+38: request 2021-12-29 06:15 found factory#2
+Request's Selected Cost: $10361 and Selected Time: 16 Days 
+Factory's Provided Cost: $9304 and Provided Time: 11 Days 
 
 ----------------------------------------------------------------------------------
-113: request 2022-01-21 00:38 found factory#26
-Request's Selected Cost: $25437 and Selected Time: 43 Days 
-Factory's Provided Cost: $17981 and Provided Time: 21 Days 
+39: request 2021-12-29 18:25 found factory#2
+Request's Selected Cost: $13579 and Selected Time: 21 Days 
+Factory's Provided Cost: $11639 and Provided Time: 11 Days 
 
 ----------------------------------------------------------------------------------
-114: request 2022-01-21 01:25 found factory#6
-Request's Selected Cost: $30487 and Selected Time: 35 Days 
-Factory's Provided Cost: $21842 and Provided Time: 26 Days 
+40: request 2021-12-30 02:26 found factory#16
+Request's Selected Cost: $12181 and Selected Time: 15 Days 
+Factory's Provided Cost: $11909 and Provided Time: 9 Days 
 
 ----------------------------------------------------------------------------------
-115: request 2022-01-21 01:27 did not find a factory!
-Request's Selected Cost: $33343 and Selected Time: 52 Days 
+41: request 2021-12-30 10:41 did not find a factory!
+Request's Selected Cost: $10787 and Selected Time: 15 Days 
 This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-116: request 2022-01-21 11:46 found factory#9
-Request's Selected Cost: $27657 and Selected Time: 44 Days 
-Factory's Provided Cost: $23112 and Provided Time: 32 Days 
-
-----------------------------------------------------------------------------------
-117: request 2022-01-21 18:35 found factory#6
-Request's Selected Cost: $26035 and Selected Time: 33 Days 
-Factory's Provided Cost: $20131 and Provided Time: 26 Days 
-
-----------------------------------------------------------------------------------
-118: request 2022-01-22 05:18 found factory#50
-Request's Selected Cost: $31755 and Selected Time: 48 Days 
-Factory's Provided Cost: $29463 and Provided Time: 27 Days 
-
-----------------------------------------------------------------------------------
-119: request 2022-01-22 08:48 found factory#9
-Request's Selected Cost: $31306 and Selected Time: 33 Days 
-Factory's Provided Cost: $23938 and Provided Time: 27 Days 
 
 ----------------------------------------------------------------------------------
-120: request 2022-01-22 15:55 did not find a factory!
-Request's Selected Cost: $29476 and Selected Time: 48 Days 
+42: request 2021-12-30 15:00 did not find a factory!
+Request's Selected Cost: $10426 and Selected Time: 19 Days 
 This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-121: request 2022-01-22 19:06 found factory#9
-Request's Selected Cost: $27696 and Selected Time: 38 Days 
-Factory's Provided Cost: $24680 and Provided Time: 28 Days 
-
-----------------------------------------------------------------------------------
-122: request 2022-01-22 23:58 found factory#50
-Request's Selected Cost: $28551 and Selected Time: 32 Days 
-Factory's Provided Cost: $28536 and Provided Time: 24 Days 
-
-----------------------------------------------------------------------------------
-123: request 2022-01-23 00:40 found factory#26
-Request's Selected Cost: $28183 and Selected Time: 35 Days 
-Factory's Provided Cost: $18186 and Provided Time: 22 Days 
-
-----------------------------------------------------------------------------------
-124: request 2022-01-23 02:39 found factory#21
-Request's Selected Cost: $23441 and Selected Time: 37 Days 
-Factory's Provided Cost: $19278 and Provided Time: 21 Days 
 
 ----------------------------------------------------------------------------------
-125: request 2022-01-24 06:17 did not find a factory!
-Request's Selected Cost: $28965 and Selected Time: 41 Days 
-This Request did not find a factory!  
+43: request 2021-12-31 00:52 found factory#2
+Request's Selected Cost: $11125 and Selected Time: 18 Days 
+Factory's Provided Cost: $9767 and Provided Time: 12 Days 
 
 ----------------------------------------------------------------------------------
-126: request 2022-01-25 04:55 did not find a factory!
-Request's Selected Cost: $33282 and Selected Time: 40 Days 
+44: request 2021-12-31 02:09 did not find a factory!
+Request's Selected Cost: $12264 and Selected Time: 20 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-127: request 2022-01-25 10:38 did not find a factory!
-Request's Selected Cost: $28783 and Selected Time: 53 Days 
+45: request 2021-12-31 04:33 did not find a factory!
+Request's Selected Cost: $10944 and Selected Time: 17 Days 
 This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-128: request 2022-01-26 02:25 found factory#50
-Request's Selected Cost: $31702 and Selected Time: 44 Days 
-Factory's Provided Cost: $29651 and Provided Time: 24 Days 
-
-----------------------------------------------------------------------------------
-129: request 2022-01-26 12:14 found factory#9
-Request's Selected Cost: $29984 and Selected Time: 43 Days 
-Factory's Provided Cost: $23770 and Provided Time: 27 Days 
-
-----------------------------------------------------------------------------------
-130: request 2022-01-27 04:34 found factory#9
-Request's Selected Cost: $28557 and Selected Time: 39 Days 
-Factory's Provided Cost: $24047 and Provided Time: 25 Days 
 
 ----------------------------------------------------------------------------------
-131: request 2022-01-28 00:39 did not find a factory!
-Request's Selected Cost: $33129 and Selected Time: 42 Days 
+46: request 2021-12-31 06:12 did not find a factory!
+Request's Selected Cost: $12199 and Selected Time: 17 Days 
 This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-132: request 2022-01-28 05:52 found factory#9
-Request's Selected Cost: $26971 and Selected Time: 51 Days 
-Factory's Provided Cost: $24066 and Provided Time: 31 Days 
-
-----------------------------------------------------------------------------------
-133: request 2022-01-28 08:20 found factory#47
-Request's Selected Cost: $31594 and Selected Time: 41 Days 
-Factory's Provided Cost: $29443 and Provided Time: 21 Days 
-
-----------------------------------------------------------------------------------
-134: request 2022-01-28 15:25 found factory#26
-Request's Selected Cost: $28182 and Selected Time: 40 Days 
-Factory's Provided Cost: $18118 and Provided Time: 20 Days 
-
-----------------------------------------------------------------------------------
-135: request 2022-01-30 01:10 found factory#50
-Request's Selected Cost: $28351 and Selected Time: 40 Days 
-Factory's Provided Cost: $27846 and Provided Time: 24 Days 
 
 ----------------------------------------------------------------------------------
-136: request 2022-01-30 08:27 found factory#9
-Request's Selected Cost: $27974 and Selected Time: 47 Days 
-Factory's Provided Cost: $24263 and Provided Time: 31 Days 
+47: request 2022-01-01 00:04 found factory#2
+Request's Selected Cost: $13483 and Selected Time: 21 Days 
+Factory's Provided Cost: $11272 and Provided Time: 9 Days 
 
 ----------------------------------------------------------------------------------
-137: request 2022-01-30 17:09 found factory#50
-Request's Selected Cost: $29649 and Selected Time: 44 Days 
-Factory's Provided Cost: $28122 and Provided Time: 24 Days 
-
-----------------------------------------------------------------------------------
-138: request 2022-01-30 21:17 did not find a factory!
-Request's Selected Cost: $27270 and Selected Time: 44 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-139: request 2022-01-30 21:48 did not find a factory!
-Request's Selected Cost: $33420 and Selected Time: 44 Days 
+48: request 2022-01-01 09:41 did not find a factory!
+Request's Selected Cost: $12614 and Selected Time: 16 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-140: request 2022-01-30 23:00 did not find a factory!
-Request's Selected Cost: $35184 and Selected Time: 54 Days 
-This Request did not find a factory!  
+49: request 2022-01-01 16:33 found factory#2
+Request's Selected Cost: $12837 and Selected Time: 14 Days 
+Factory's Provided Cost: $10953 and Provided Time: 11 Days 
 
 ----------------------------------------------------------------------------------
-141: request 2022-01-30 23:32 did not find a factory!
-Request's Selected Cost: $27958 and Selected Time: 50 Days 
+50: request 2022-01-02 00:23 did not find a factory!
+Request's Selected Cost: $11601 and Selected Time: 16 Days 
 This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-142: request 2022-01-31 06:37 found factory#26
-Request's Selected Cost: $24943 and Selected Time: 31 Days 
-Factory's Provided Cost: $18408 and Provided Time: 19 Days 
 
 ----------------------------------------------------------------------------------
-143: request 2022-01-31 07:00 found factory#6
-Request's Selected Cost: $23715 and Selected Time: 29 Days 
-Factory's Provided Cost: $19793 and Provided Time: 26 Days 
+51: request 2022-01-02 15:06 found factory#11
+Request's Selected Cost: $9890 and Selected Time: 13 Days 
+Factory's Provided Cost: $8849 and Provided Time: 10 Days 
 
 ----------------------------------------------------------------------------------
-144: request 2022-01-31 20:02 did not find a factory!
-Request's Selected Cost: $34219 and Selected Time: 44 Days 
+52: request 2022-01-03 03:29 did not find a factory!
+Request's Selected Cost: $11248 and Selected Time: 16 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-145: request 2022-02-01 03:51 found factory#9
-Request's Selected Cost: $31126 and Selected Time: 46 Days 
-Factory's Provided Cost: $24935 and Provided Time: 25 Days 
+53: request 2022-01-03 13:46 found factory#16
+Request's Selected Cost: $12185 and Selected Time: 18 Days 
+Factory's Provided Cost: $12146 and Provided Time: 9 Days 
 
 ----------------------------------------------------------------------------------
-146: request 2022-02-01 22:42 did not find a factory!
-Request's Selected Cost: $29528 and Selected Time: 43 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-147: request 2022-02-01 23:07 found factory#9
-Request's Selected Cost: $25591 and Selected Time: 46 Days 
-Factory's Provided Cost: $23563 and Provided Time: 28 Days 
+54: request 2022-01-03 21:34 found factory#43
+Request's Selected Cost: $11825 and Selected Time: 17 Days 
+Factory's Provided Cost: $10712 and Provided Time: 9 Days 
 
 ----------------------------------------------------------------------------------
-148: request 2022-02-02 10:55 did not find a factory!
-Request's Selected Cost: $26099 and Selected Time: 42 Days 
-This Request did not find a factory!  
+55: request 2022-01-05 09:27 found factory#2
+Request's Selected Cost: $12164 and Selected Time: 19 Days 
+Factory's Provided Cost: $10164 and Provided Time: 11 Days 
 
 ----------------------------------------------------------------------------------
-149: request 2022-02-02 18:36 did not find a factory!
-Request's Selected Cost: $32992 and Selected Time: 49 Days 
+56: request 2022-01-05 15:08 did not find a factory!
+Request's Selected Cost: $10371 and Selected Time: 18 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-150: request 2022-02-03 01:54 found factory#50
-Request's Selected Cost: $28085 and Selected Time: 39 Days 
-Factory's Provided Cost: $27414 and Provided Time: 26 Days 
+57: request 2022-01-06 02:17 found factory#11
+Request's Selected Cost: $11932 and Selected Time: 14 Days 
+Factory's Provided Cost: $9446 and Provided Time: 11 Days 
 
 ----------------------------------------------------------------------------------
-151: request 2022-02-04 06:13 found factory#9
-Request's Selected Cost: $26886 and Selected Time: 47 Days 
-Factory's Provided Cost: $25122 and Provided Time: 26 Days 
+58: request 2022-01-06 02:36 found factory#2
+Request's Selected Cost: $11325 and Selected Time: 22 Days 
+Factory's Provided Cost: $10542 and Provided Time: 11 Days 
 
 ----------------------------------------------------------------------------------
-152: request 2022-02-04 07:04 did not find a factory!
-Request's Selected Cost: $30127 and Selected Time: 39 Days 
+59: request 2022-01-06 14:04 did not find a factory!
+Request's Selected Cost: $11416 and Selected Time: 19 Days 
 This Request did not find a factory!  
 
 ----------------------------------------------------------------------------------
-153: request 2022-02-04 11:38 did not find a factory!
-Request's Selected Cost: $28085 and Selected Time: 50 Days 
-This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-154: request 2022-02-05 02:12 found factory#50
-Request's Selected Cost: $30615 and Selected Time: 42 Days 
-Factory's Provided Cost: $29071 and Provided Time: 20 Days 
+60: request 2022-01-07 09:05 found factory#2
+Request's Selected Cost: $11823 and Selected Time: 18 Days 
+Factory's Provided Cost: $10078 and Provided Time: 12 Days 
 
 ----------------------------------------------------------------------------------
-155: request 2022-02-06 07:35 found factory#26
-Request's Selected Cost: $28628 and Selected Time: 31 Days 
-Factory's Provided Cost: $18820 and Provided Time: 19 Days 
+61: request 2022-01-07 16:45 found factory#43
+Request's Selected Cost: $11964 and Selected Time: 16 Days 
+Factory's Provided Cost: $10973 and Provided Time: 8 Days 
 
 ----------------------------------------------------------------------------------
-156: request 2022-02-06 13:21 did not find a factory!
-Request's Selected Cost: $30642 and Selected Time: 37 Days 
+62: request 2022-01-07 21:17 did not find a factory!
+Request's Selected Cost: $11557 and Selected Time: 17 Days 
 This Request did not find a factory!  
-
-----------------------------------------------------------------------------------
-157: request 2022-02-07 03:13 found factory#50
-Request's Selected Cost: $28368 and Selected Time: 47 Days 
-Factory's Provided Cost: $27475 and Provided Time: 24 Days 
 
 ----------------------------------------------------------------------------------
-158: request 2022-02-07 04:17 found factory#9
-Request's Selected Cost: $28197 and Selected Time: 46 Days 
-Factory's Provided Cost: $24143 and Provided Time: 26 Days 
+63: request 2022-01-08 04:28 found factory#2
+Request's Selected Cost: $12206 and Selected Time: 17 Days 
+Factory's Provided Cost: $10474 and Provided Time: 10 Days 
 
 ----------------------------------------------------------------------------------
-159: request 2022-02-07 13:33 found factory#26
-Request's Selected Cost: $24407 and Selected Time: 33 Days 
-Factory's Provided Cost: $19433 and Provided Time: 20 Days 
+64: request 2022-01-08 11:44 found factory#11
+Request's Selected Cost: $9454 and Selected Time: 15 Days 
+Factory's Provided Cost: $8724 and Provided Time: 12 Days 
 
 ----------------------------------------------------------------------------------

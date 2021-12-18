@@ -1,5 +1,6 @@
 package phase1;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Random;
@@ -13,17 +14,33 @@ public class Main {
 	private ArrayList<Factory> factories = new ArrayList<>();
 	private ArrayList<Warehouse> warehouses = new ArrayList<>();
 	private ArrayList<Request> requests = new ArrayList<>();
+	private Report report;
 	private String[] location = { "Riyadh", "Makkah", "Dammam", "Jeddah" };
 	private int[] workingHours = { 12, 18, 24 };
 	private int numberOfSuccess = 0;
+	private LocalDateTime simulationDate = LocalDateTime.now();
 
-	// simulation begins here
-	public Main(int days, int maxRequestsPerDay) {
+	public Main(int days, int maxRequestsPerDay) throws CloneNotSupportedException, IOException {
 
+		// 1- Generate random number of warehouses
 		generateWarehouses(days, 50);
+		// 2- Generate random number of factories
 		generateFactories(days, 50);
+		// 3- Generate random numbor of requests
 		generateRequests(days, maxRequestsPerDay);
+		// 4- Generate Report
+		generateReport(simulationDate);
+	}
 
+	public Report getReport() {
+		return report;
+	}
+	// simulation begins here
+
+	private void generateReport(LocalDateTime simulationDate) throws IOException, CloneNotSupportedException, IOException {
+		Report report = new Report(simulationDate, requests, factories, warehouses);
+		this.report = report;
+		report.generateReport();
 	}
 
 	// 1A- generate random number of warehouses
@@ -92,7 +109,7 @@ public class Main {
 		LocalDateTime simulationDate = LocalDateTime.now();
 
 		// days loop
-		for (int i = 1; i <= days; i++) {
+		for (int i = 0; i <= days; i++) {
 			// hours loop
 			for (int j = 0; j < 24; j++) {
 				// minutes loop
