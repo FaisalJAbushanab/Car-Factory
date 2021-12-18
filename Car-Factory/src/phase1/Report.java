@@ -7,7 +7,11 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-
+/**
+ *
+ * report class.
+ * responsible to write out reports of the simulation for the GUI.
+ */
 public class Report {
     private ArrayList<Request> requests;
     private ArrayList<Factory> factories;
@@ -20,6 +24,9 @@ public class Report {
     private String name;
     private double pos;
 
+    /**
+     * constrcuts report object at simulation time
+     */
     public Report(LocalDateTime simDate, ArrayList<Request> requests,
                   ArrayList<Factory> factories, ArrayList<Warehouse> warehouses) throws CloneNotSupportedException {
 
@@ -31,11 +38,21 @@ public class Report {
         this.name = simDate.format(myFormat);
     }
 
+    /**
+     * method genrates main report and report for factories and warehouse and table
+     * @throws IOException
+     */
+    //generate full report
     public void generateReport() throws IOException {
+        // generate main output report
         writeMainReport();
+        // generate warehouses report
         writeWarehousesReport();
+        // generate factories report
         writeFactoriesReport();
+        // generate requests report
         writeRequestsReport();
+        // generate tabele report
         writeTable(requests, factories);
     }
 

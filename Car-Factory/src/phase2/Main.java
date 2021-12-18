@@ -19,9 +19,19 @@ public class Main {
 	private int[] workingHours = { 12, 18, 24 };
 	private int numberOfSuccess = 0;
 	private LocalDateTime simulationDate = LocalDateTime.now();
-	// simulation begins here
+
+	/**
+	 * The constructier inserts into the program the
+	 * max value of requests for each day and the number of days needed.
+	 * @param days
+	 * @param maxRequestsPerDay
+	 * @throws CloneNotSupportedException
+	 * @throws IOException
+	 */
+
 
 	public Main(int days, int maxRequestsPerDay) throws IOException, CloneNotSupportedException {
+		// simulation begins here
 		// 1- Generate random number of warehouses
 		generateWarehouses(days, 50);
 		// 2- Generate random number of factories
@@ -31,12 +41,26 @@ public class Main {
 		// 4- Generate Report
 		generateReport(simulationDate);
 	}
+
+	/**
+	 *  simulation begins here
+	 * @param simulationDate
+	 * @throws IOException
+	 * @throws CloneNotSupportedException
+	 * @throws IOException
+	 */
+
 	private void generateReport(LocalDateTime simulationDate) throws IOException, CloneNotSupportedException {
 		Report report = new Report(simulationDate, requests, factories, warehouses);
 		this.report = report;
 		report.generateReport();
 	}
 
+	/**
+	 *  generate number of warehouses and  random material
+	 * @param days
+	 * @param numberOfWarehouses
+	 */
 	public void generateWarehouses(int days, int numberOfWarehouses) {
 
 		Random random = new Random();
@@ -58,13 +82,20 @@ public class Main {
 			storage_Capacity[8] = fullUp(500, 1000);
 			// create material object
 			Material material = new Material();
-			warehouses.add(new Warehouse(storage_Capacity, location[Location], workingHours[WorkingHours], material));
+			Warehouse warehouse = new Warehouse(storage_Capacity, location[Location], workingHours[WorkingHours], material);
+			warehouses.add(warehouse);
 		}
 	}
 
 	public Report getReport() {
 		return report;
 	}
+
+	/**
+	 * method generates number of factories
+	 * @param days
+	 * @param numberOfFactories
+	 */
 
 	public void generateFactories(int days, int numberOfFactories) {
 		Random random = new Random();
@@ -96,6 +127,12 @@ public class Main {
 	public ArrayList<Warehouse> getWarehouses() {
 		return warehouses;
 	}
+
+	/**
+	 * method generates random number of requests
+	 * @param days
+	 * @param maxRequestsPerDay
+	 */
 
 	public void generateRequests(int days, int maxRequestsPerDay) {
 		int numOfRequests = 0;
@@ -136,6 +173,10 @@ public class Main {
 		}
 	}
 
+	/**
+	 * method splits a request in half
+	 * @param OGrequest
+	 */
 	private void splitRequest(Request OGrequest) {
 		numberOfSuccess += OGrequest.split(factories);
 	}
@@ -155,7 +196,8 @@ public class Main {
 	public void unoccupyFinishedFactories(Request request, int currentDay) {
 		Factory factory = request.getTakenFactory();
 		int passedDays = currentDay - Integer.parseInt(request.getDay());
-		if(passedDays >= Integer.parseInt(request.getTakenFactoryProvidedTime())) {
+		String factoryTime = request.getTakenFactoryProvidedTime();
+		if(passedDays >= Integer.parseInt(factoryTime)) {
 			factory.deductMaterials(request);
 			factory.setUnOccupied();
 			request.setComplete();

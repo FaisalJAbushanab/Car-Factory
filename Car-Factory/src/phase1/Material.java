@@ -1,11 +1,13 @@
 package phase1;
 
-// using java.util.Random;
+
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Random;
-
+/**
+ * Class Material part of warehouse class
+ */
 public class Material {
 
     //[alamnuim, plastic, glass, silicon, gold, copper, iron, chrome, silver]--9
@@ -108,9 +110,9 @@ public class Material {
     public static double round(double value, int places) {
         if (places < 0) throw new IllegalArgumentException();
 
-        BigDecimal bd = BigDecimal.valueOf(value);
-        bd = bd.setScale(places, RoundingMode.HALF_UP);
-        return bd.doubleValue();
+        BigDecimal bigD = BigDecimal.valueOf(value);
+        bigD = bigD.setScale(places, RoundingMode.HALF_UP);
+        return bigD.doubleValue();
     }
 }
 

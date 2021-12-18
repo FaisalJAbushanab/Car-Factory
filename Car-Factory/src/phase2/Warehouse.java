@@ -37,10 +37,10 @@ public class Warehouse extends Building implements Cloneable{
         info += "\t[aluminium grams, plastic grams, glass grams, silicon mg " +
                 ", gold mg , copper mg, iron grams, chrome mg, silver mg]\n";
         info += "\tStorage capacity: " + Arrays.toString(super.getCapacity()) + "\n";
-        info += "\tMaterials: " + Arrays.toString(getMaterial().getMaterialQuantity()) + "\n";
+        info += "\tMaterials: " + Arrays.toString(material.getMaterialQuantity()) + "\n";
         info += "\t[$ per grams, $ per grams, $ per grams, $ per mg " +
                 ", $ per mg, $ per mg, $ per grams, $ per mg, $ per mg]\n";
-        info += "\tMaterial prices: " + Arrays.toString(getMaterial().getMaterialPrice()) + "\n";
+        info += "\tMaterial prices: " + Arrays.toString(material.getMaterialPrice()) + "\n";
         return info + "\n";
     }
 }

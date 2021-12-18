@@ -26,7 +26,15 @@ public class Request implements Cloneable{
     private String dateRequested;
     private Boolean requestComplete = false;
     private Boolean requestSplit = false;
-
+    /**
+     * The constructier inserts into the program the
+     * date time when show request and type of time like minute, hour and day
+     * @param whenRequested
+     * @param day
+     * @param hour
+     * @param minute
+     * @param size
+     */
     public Request(LocalDateTime whenRequested, ArrayList<Factory> factories,
                    int day, int hour, int minute, int size) {
         //give a special time for the request
@@ -66,7 +74,6 @@ public class Request implements Cloneable{
     }
 
     // converts simulation time into real time
-
     private String setDate(LocalDateTime simulationDate, int day, int hour, int minute) {
         simulationDate = simulationDate.plusDays(day);
         simulationDate = simulationDate.plusHours(hour);
@@ -74,6 +81,7 @@ public class Request implements Cloneable{
         DateTimeFormatter myFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
         return simulationDate.format(myFormat);
     }
+
     public int[] getEmplysArr(Computers vals) {
         int[] arr = new int[3];
         arr[0] = vals.getWorkers();
@@ -103,9 +111,11 @@ public class Request implements Cloneable{
         arr[8] = vals.getMass9();
         return arr;
     }
-
+    /**
+     *  gets average cost of all factories
+     * @param factories
+     */
     // gets average cost of all factories
-
     private void setSelectedCost(ArrayList<Factory> factories) {
         int averageCost = 0;
         setComputerSumRequirements();
@@ -184,8 +194,12 @@ public class Request implements Cloneable{
         return takenFactoryIndex;
     }
 
+    /**
+     *  finds the factory that best provides the request
+     * @param factories
+     * @return
+     */
     // finds the factory that best provides the request
-
     public int findFactory(ArrayList<Factory> factories) {
 
         double best = -1;
@@ -213,9 +227,10 @@ public class Request implements Cloneable{
         if (bestIndex != -1) {
             takenFactory = factories.get(bestIndex);
             takenFactoryIndex = bestIndex;
+            int takenFactoryOccupies = takenFactory.getNumOfoccupies()+1;
             if(!isRequestSplit())
-                factories.get(bestIndex).setOccupied();
-            factories.get(bestIndex).setNumOfoccupies((factories.get(bestIndex).getNumOfoccupies()+1));
+                takenFactory.setOccupied();
+            takenFactory.setNumOfoccupies(takenFactoryOccupies);
             System.out.printf("For request#(%s/%s:%s)\n", day, hour, minute);
             System.out.println("Factory " + (bestIndex + 1) + " has been occupied");
             return 1;

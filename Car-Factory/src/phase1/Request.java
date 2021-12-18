@@ -25,7 +25,15 @@ public class Request implements Cloneable{
     private String takenFactoryProvidedTime;
     public int takenFactoryIndex;
     private String dateRequested;
-
+    /**
+     * The constructier inserts into the program the
+     * date time when show request and type of time like minute, hour and day
+     * @param whenRequested
+     * @param day
+     * @param hour
+     * @param minute
+     * @param size
+     */
     public Request(LocalDateTime whenRequested, int day, int hour, int minute, int size) {
         //give a special time for the request
         if(day < 10)
@@ -100,7 +108,10 @@ public class Request implements Cloneable{
         arr[8] = vals.getMass9();
         return arr;
     }
-
+    /**
+     *  gets average cost of all factories
+     * @param factories
+     */
     // gets average cost of all factories
     private void setSelectedCost(ArrayList<Factory> factories) {
         int averageCost = 0;
@@ -181,6 +192,11 @@ public class Request implements Cloneable{
         return takenFactoryIndex;
     }
 
+    /**
+     *  finds the factory that best provides the request
+     * @param factories
+     * @return
+     */
     // finds the factory that best provides the request
     public int findFactory(ArrayList<Factory> factories) {
 
@@ -210,7 +226,7 @@ public class Request implements Cloneable{
         if (bestIndex != -1) {
             takenFactory = factories.get(bestIndex);
             takenFactoryIndex = bestIndex;
-            factories.get(bestIndex).setOccupied();
+            takenFactory.setOccupied();
             System.out.printf("For request#(%s/%s:%s)\n", day, hour, minute);
             System.out.println("Factory " + (bestIndex + 1) + " has been occupied");
             return 1;

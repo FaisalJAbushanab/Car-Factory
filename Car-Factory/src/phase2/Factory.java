@@ -19,6 +19,13 @@ public class Factory extends Building implements Cloneable{
     private boolean isOccupied = false;
     private int numOfoccupies;
 
+    /**
+     * The constructier inserts into the program the
+     * worker capacity and location and workinghoures
+     * @param workerCapacity
+     * @param location
+     * @param workingHours
+     */
     public Factory(int[] workerCapacity, String location, int workingHours) {
         super(workerCapacity, location, workingHours);
 
@@ -48,7 +55,6 @@ public class Factory extends Building implements Cloneable{
     }
 
     private void setEmployeesList() {
-
         for (Employee employee : employees) {
             if (employee instanceof Worker) {
                 employeesList[0] += 1; // increase index 0 means increasing in worker numbers
@@ -59,17 +65,23 @@ public class Factory extends Building implements Cloneable{
             }
         }
     }
-
+    /**
+     * method shows some informations about employees like types
+     */
      private void generateEmployees() {
-        int max = super.getCapacity()[0] + super.getCapacity()[1] + super.getCapacity()[2]; // get employees capacity of the factory
+        int max = super.getCapacity()[0] +
+                  super.getCapacity()[1] +
+                  super.getCapacity()[2]; // get employees capacity of the factory
         int min = max/2;
-        int numOfEmployees = (int)Math.floor(Math.random()*((max)-min+1)+min); // generate random number of employees
+        int numOfEmployees = (int)Math.floor(
+                Math.random()*((max)-min+1)+min); // generate random number of employees
         int worker = 0;
         int technician = 0;
         int engineer = 0;
         String location = getLocation();
         for(int i= 0; i < numOfEmployees; i++) {
-            int rand = (int)Math.floor(Math.random()*(6)+1);
+            int rand = (int)Math.floor(
+                    Math.random()*(6)+1);
             if((3 >= rand) && (worker < super.getCapacity()[0])) {
                 Employee employee = new Worker();
                 if(location != "Riyadh") {
@@ -110,25 +122,34 @@ public class Factory extends Building implements Cloneable{
         }
         setEmployeesList(); // add all the employees to employeesList
     }
-
+    /**
+     * method shows loop to WarehouseAccess
+     * @param warehouses
+     */
     public void setWarehouseAccess(ArrayList<Warehouse> warehouses) {
         allWarehouses = warehouses;
         for (Warehouse warehouse : warehouses) {
-            if (warehouse.getLocation().equals(super.getLocation())) {
+            if (warehouse.getLocation()
+                    .equals(super.getLocation())) {
                 warehouseAccess.add(warehouse); // if the location of the warehouse is the same as the location of the factory make the warehouse accesable by factory
             }
         }
         setWarehouseTotalMaterial(); // set the total material of the factory
     }
 
+    //gets the requirements for a request in this factory
     public int[] getRequirments(Request request, int index) {
         int calculatedCost = -1;
         int calculatedTime = -1;
         System.out.printf("Factory#" + index + " of request#(%s/%s:%s)\n",
                 request.getDay(), request.getHour(), request.getMinute());
-        if(checkMaterial(request.getComputers()) & checkTime(request.getComputers())) {
-            calculatedCost = calculateCostMats(getComputersTotalMaterial(request.getComputers())) + operatingCost;
-            calculatedTime = calculateTime(request.getComputers());
+
+        ArrayList<Computer> requestComputers = request.getComputers();
+        if (checkMaterial(requestComputers) &
+                checkTime(requestComputers)) {
+            int[] requestComputerMats = getComputersTotalMaterial(requestComputers);
+            calculatedCost = calculateCostMats(requestComputerMats) + operatingCost;
+            calculatedTime = calculateTime(requestComputers);
             System.out.printf("cost is: %d\ntime is: %d\n", calculatedCost, calculatedTime );
         }
         return new int[] {calculatedCost, calculatedTime};
@@ -160,7 +181,8 @@ public class Factory extends Building implements Cloneable{
 
     public void deductMaterials(Request request) {
         int[] computerSumMaterials = new int[9];
-        computerSumMaterials = getComputersTotalMaterial(request.getComputers());
+        ArrayList<Computer> requestComputers = request.getComputers();
+        computerSumMaterials = getComputersTotalMaterial(requestComputers);
         for (int i = 0; i < computerSumMaterials.length; i++) {
             warehouseAccessTotalMaterials[i] -= computerSumMaterials[i];
         }
@@ -170,11 +192,11 @@ public class Factory extends Building implements Cloneable{
         double matsCost = 1000000000;
         double tempCost = 0;
         for (Warehouse access : warehouseAccess) {
-            double[] materialPrice = access.getMaterial().getMaterialPrice(); // get material price of the warehouse
+            Material material = access.getMaterial();
+            double[] materialPrice = material.getMaterialPrice(); // get material price of the warehouse
             for (int i = 0; i < materialPrice.length; i++) {
                 tempCost += materialPrice[i] * computerSumMaterials[i];
             }
-
             if (tempCost < matsCost) {
                 matsCost = tempCost;
             }
@@ -182,19 +204,27 @@ public class Factory extends Building implements Cloneable{
         }
         return (int) matsCost;
     }
-
+    /**
+     * method boolean shows check materials for computers
+     * @param computers
+     * @return
+     */
     public boolean checkMaterial(ArrayList<Computer> computers) {
         boolean materialSufficient = true;
         for (int i = 0; i < getWarehouseTotalMaterials().length; i++) {
             if (getComputersTotalMaterial(computers)[i] > getWarehouseTotalMaterials()[i]) { // compare the material required by the request and compare it to the material available by the factory
-                materialSufficient = false; 
+                materialSufficient = false;
                 break;
             }
         }
         System.out.println("material sufficient: " + materialSufficient);
         return materialSufficient;
     }
-
+    /**
+     * method boolean shows check time for computers
+     * @param computers
+     * @return
+     */
     public boolean checkTime(ArrayList<Computer> computers) {
         boolean timeSufficient = true;
         int[] computerSumEmployee = new int[3];
@@ -217,7 +247,6 @@ public class Factory extends Building implements Cloneable{
         int worker = 0;
         int technnician = 0;
         int engineer = 0;
-//        System.out.println("in calc time");
         double time = 0;
         double repeated = 0;
         boolean breakedOut = false;

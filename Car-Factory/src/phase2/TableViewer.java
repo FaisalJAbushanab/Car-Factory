@@ -1,7 +1,9 @@
 package phase2;
 
 import java.util.ArrayList;
-
+/**
+ * Class TableViewer constructs table for report
+ */
 public class TableViewer {
 
     private ArrayList<String> codes  = new ArrayList<String>();

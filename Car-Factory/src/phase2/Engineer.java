@@ -1,5 +1,7 @@
 package phase2;
-
+/**
+ * Class Engineer implements Employee interface
+ */
 public class Engineer implements Employee {
 
     private int SALARY = 18;
