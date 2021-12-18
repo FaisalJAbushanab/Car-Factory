@@ -103,11 +103,9 @@ public class Controller2 {
 		ArrayList<Factory> factories = run.getFactories();
 		ArrayList<Request> requests = run.getRequests();
 
-		// Generate Reports
-		Report report = new Report(simulationDate, requests, factories, warehouses);
-		report.generateReport();
+		// output Reports
+		Report report = run.getReport();
 		String mainOutputText = report.getMainReport();
-		//TODO here are other reports
 		String warehousesOutputText = report.getWarehousesReport();
 		String factoriesOutputText = report.getFactoriesReport();
 		String requestsoutputText = report.getRequestsReport();

@@ -105,7 +105,7 @@ public class Controller1 {
                 ArrayList<Factory> factories = run.getFactories();
                 ArrayList<Request> requests = run.getRequests();
 
-                // Generate Reports
+                // output Reports
                 Report report = run.getReport();
                 String mainOutputText = report.getMainReport();
                 String warehousesOutputText = report.getWarehousesReport();
