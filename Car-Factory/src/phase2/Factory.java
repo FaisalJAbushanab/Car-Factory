@@ -24,6 +24,7 @@ public class Factory extends Building implements Cloneable{
 
         generateEmployees(); // Generate Employees
         setOperatingCost();  // calculate operation cost
+
     }
 
 

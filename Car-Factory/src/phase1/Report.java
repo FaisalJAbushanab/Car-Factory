@@ -23,18 +23,6 @@ public class Report {
     public Report(LocalDateTime simDate, ArrayList<Request> requests,
                   ArrayList<Factory> factories, ArrayList<Warehouse> warehouses) throws CloneNotSupportedException {
 
-//        for (Warehouse OGwarehouse : warehouses) {
-//            Warehouse clonedWarehouse = (Warehouse) OGwarehouse.clone();
-//            warehouses.add(clonedWarehouse);
-//        }
-//        for (Factory OGfactory : factories) {
-//            Factory clonedFactory = (Factory) OGfactory.clone();
-//            factories.add(clonedFactory);
-//        }
-//        for (Request OGrequest : requests) {
-//            Request clonedRequest = (Request) OGrequest.clone();
-//            requests.add(clonedRequest);
-//        }
         this.requests = requests;
         this.factories = factories;
         this.warehouses = warehouses;

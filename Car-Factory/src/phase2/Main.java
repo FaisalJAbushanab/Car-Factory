@@ -26,11 +26,10 @@ public class Main {
 		generateWarehouses(days, 50);
 		// 2- Generate random number of factories
 		generateFactories(days, 50);
-		// 3- Generate random numbor of requests
+		// 3- Generate random number of requests
 		generateRequests(days, maxRequestsPerDay);
 		// 4- Generate Report
 		generateReport(simulationDate);
-
 	}
 	private void generateReport(LocalDateTime simulationDate) throws IOException, CloneNotSupportedException {
 		Report report = new Report(simulationDate, requests, factories, warehouses);
@@ -101,10 +100,9 @@ public class Main {
 	public void generateRequests(int days, int maxRequestsPerDay) {
 		int numOfRequests = 0;
 		int potential = fullUp(days*0.9, days*1.1);
-		LocalDateTime simulationDate = LocalDateTime.now();
 
 		// days loop
-		for (int i = 1; i <= days; i++) {
+		for (int i = 0; i <= days; i++) {
 			// hours loop
 			for (int j = 0; j < 24; j++) {
 				// minutes loop
@@ -116,7 +114,7 @@ public class Main {
 							Request request = new Request(simulationDate , factories,
 									i, j, k, fullUp(potential*0.8,potential*1.2));
 							requests.add(request);
-							// 4- fulfill requests
+							// 4.1- fulfill requests
 							numberOfSuccess += request.findFactory(factories);
 							numOfRequests++;
 						}

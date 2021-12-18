@@ -109,7 +109,7 @@ public class Main {
 		LocalDateTime simulationDate = LocalDateTime.now();
 
 		// days loop
-		for (int i = 1; i <= days; i++) {
+		for (int i = 0; i <= days; i++) {
 			// hours loop
 			for (int j = 0; j < 24; j++) {
 				// minutes loop
