@@ -87,6 +87,7 @@ public class Report {
     // writes on file the main information of the simulation
     public void writeMainReport() throws IOException {
         int numOfSuccess = 0;
+    	mainReport += "----------------------------------------------------------------------------------\n";
         for (Request request : requests) {
             if (request.getTakenFactory() != null) {
                 mainReport += (requests.indexOf(request) + 1) + ": request "
@@ -99,6 +100,7 @@ public class Report {
                         + request.getDateRequested() + " did not find a factory!\n";
                 mainReport += request.getFullfilmentInfo();
             }
+            mainReport += "----------------------------------------------------------------------------------\n";
         }
         pos = (double) numOfSuccess / requests.size() * 100;
         writeToFile((name + " Main"), mainReport);

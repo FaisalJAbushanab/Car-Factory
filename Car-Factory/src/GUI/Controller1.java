@@ -31,6 +31,11 @@ public class Controller1 {
     public String tempWarehousesOutput;
     public String tempRequestsOutput;
     public String tempTableOutput;
+    public String tempPercentage2;
+    public String tempFactoriesOutput2;
+	public String tempWarehousesOutput2;
+	public String tempRequestsOutput2;
+	public String tempTableOutput2;
     @FXML
     public TextArea phase1Output;
     public TextField phase1Days;
@@ -41,6 +46,7 @@ public class Controller1 {
     public Button wBtn1;
     public Button rBtn1;
     public Button tBtn1;
+    
 
     public void switchToPhase2(ActionEvent event) throws IOException {
 
@@ -50,7 +56,25 @@ public class Controller1 {
         controller.phase2Days.setText(phase1Days.getText());
         controller.phase2Max.setText(phase1Max.getText());
         controller.phase2Output.setText(tempOutput2.getText());
+        controller.pos2.setText(tempPercentage2);
+        
         controller.tempOutput1 = phase1Output.getText();
+        controller.tempFactoriesOutput1 = tempFactoriesOutput;
+        controller.tempWarehousesOutput1 = tempWarehousesOutput;
+        controller.tempRequestsOutput1 = tempRequestsOutput;
+        controller.tempTableOutput1 = tempTableOutput;
+        
+        if(controller.phase2Output.getText() != "") {
+			controller.fBtn2.setOpacity(1);
+            controller.wBtn2.setOpacity(1);
+            controller.rBtn2.setOpacity(1);
+            controller.tBtn2.setOpacity(1);
+            
+            controller.tempFactoriesOutput = tempFactoriesOutput2;
+            controller.tempWarehousesOutput = tempWarehousesOutput2;
+            controller.tempRequestsOutput = tempRequestsOutput2;
+            controller.tempTableOutput = tempTableOutput2;
+		}
 
         controller.tempPercentage1 = pos1.getText();
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();

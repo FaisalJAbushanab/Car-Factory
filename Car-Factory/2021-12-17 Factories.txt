@@ -1,0 +1,242 @@
+Number of factories generated: 30
+
+#1: Location: Jeddah | Working hours: 12 | Operating cost: 7770
+Employees capacity: 1069 workers 482 technicians 290 engineers 
+Employees: 810 workers 482 technicians 272 engineers 
+Access to warehouses: #3 #7 #25 #26 #28 #34 #37 #40 #42 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [5366252, 4121149, 3988351, 809330, 726592, 2276234, 4704629, 3116521, 2731407]
+number of times this factory has been occupied: 0
+
+#2: Location: Riyadh | Working hours: 12 | Operating cost: 0
+Employees capacity: 1057 workers 736 technicians 352 engineers 
+Employees: 0 workers 0 technicians 0 engineers 
+Access to warehouses: #1 #2 #4 #9 #10 #18 #19 #21 #22 #27 #35 #36 #44 #49 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [4935145, 5359523, 5784057, 409416, 720213, 2882945, 5261786, 3862749, 3221633]
+number of times this factory has been occupied: 17
+
+#3: Location: Riyadh | Working hours: 24 | Operating cost: 0
+Employees capacity: 651 workers 741 technicians 274 engineers 
+Employees: 0 workers 0 technicians 0 engineers 
+Access to warehouses: #1 #2 #4 #9 #10 #18 #19 #21 #22 #27 #35 #36 #44 #49 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [5842705, 6188183, 6664877, 1165216, 983853, 3420275, 6366836, 4683449, 3619463]
+number of times this factory has been occupied: 5
+
+#4: Location: Dammam | Working hours: 18 | Operating cost: 6261
+Employees capacity: 1139 workers 496 technicians 370 engineers 
+Employees: 642 workers 397 technicians 217 engineers 
+Access to warehouses: #6 #8 #11 #14 #15 #17 #23 #24 #30 #31 #33 #41 #47 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [4807156, 4805448, 5669074, 1149261, 1022748, 2955429, 5564540, 3056216, 4034742]
+number of times this factory has been occupied: 0
+
+#5: Location: Jeddah | Working hours: 12 | Operating cost: 8061
+Employees capacity: 1077 workers 624 technicians 255 engineers 
+Employees: 770 workers 576 technicians 255 engineers 
+Access to warehouses: #3 #7 #25 #26 #28 #34 #37 #40 #42 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [5366252, 4121149, 3988351, 809330, 726592, 2276234, 4704629, 3116521, 2731407]
+number of times this factory has been occupied: 0
+
+#6: Location: Makkah | Working hours: 18 | Operating cost: 6279
+Employees capacity: 698 workers 611 technicians 230 engineers 
+Employees: 633 workers 433 technicians 198 engineers 
+Access to warehouses: #5 #12 #13 #16 #20 #29 #32 #38 #39 #43 #45 #46 #48 #50 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [6810959, 4754038, 5840875, 1242915, 1017965, 3595142, 4416368, 4155495, 4181535]
+number of times this factory has been occupied: 0
+
+#7: Location: Riyadh | Working hours: 12 | Operating cost: 0
+Employees capacity: 806 workers 545 technicians 214 engineers 
+Employees: 0 workers 0 technicians 0 engineers 
+Access to warehouses: #1 #2 #4 #9 #10 #18 #19 #21 #22 #27 #35 #36 #44 #49 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [6007165, 6339993, 6840952, 1270916, 1022013, 3486415, 6590736, 4777929, 3669353]
+number of times this factory has been occupied: 0
+
+#8: Location: Jeddah | Working hours: 12 | Operating cost: 6882
+Employees capacity: 843 workers 493 technicians 263 engineers 
+Employees: 709 workers 449 technicians 229 engineers 
+Access to warehouses: #3 #7 #25 #26 #28 #34 #37 #40 #42 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [5366252, 4121149, 3988351, 809330, 726592, 2276234, 4704629, 3116521, 2731407]
+number of times this factory has been occupied: 0
+
+#9: Location: Jeddah | Working hours: 12 | Operating cost: 6138
+Employees capacity: 1071 workers 665 technicians 253 engineers 
+Employees: 628 workers 421 technicians 192 engineers 
+Access to warehouses: #3 #7 #25 #26 #28 #34 #37 #40 #42 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [5366252, 4121149, 3988351, 809330, 726592, 2276234, 4704629, 3116521, 2731407]
+number of times this factory has been occupied: 0
+
+#10: Location: Makkah | Working hours: 24 | Operating cost: 6111
+Employees capacity: 1030 workers 691 technicians 357 engineers 
+Employees: 605 workers 395 technicians 214 engineers 
+Access to warehouses: #5 #12 #13 #16 #20 #29 #32 #38 #39 #43 #45 #46 #48 #50 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [6810959, 4754038, 5840875, 1242915, 1017965, 3595142, 4416368, 4155495, 4181535]
+number of times this factory has been occupied: 0
+
+#11: Location: Makkah | Working hours: 12 | Operating cost: 6444
+Employees capacity: 894 workers 575 technicians 194 engineers 
+Employees: 658 workers 454 technicians 194 engineers 
+Access to warehouses: #5 #12 #13 #16 #20 #29 #32 #38 #39 #43 #45 #46 #48 #50 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [6810959, 4754038, 5840875, 1242915, 1017965, 3595142, 4416368, 4155495, 4181535]
+number of times this factory has been occupied: 0
+
+#12: Location: Dammam | Working hours: 12 | Operating cost: 8253
+Employees capacity: 1025 workers 653 technicians 227 engineers 
+Employees: 902 workers 584 technicians 227 engineers 
+Access to warehouses: #6 #8 #11 #14 #15 #17 #23 #24 #30 #31 #33 #41 #47 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [4807156, 4805448, 5669074, 1149261, 1022748, 2955429, 5564540, 3056216, 4034742]
+number of times this factory has been occupied: 0
+
+#13: Location: Riyadh | Working hours: 24 | Operating cost: 0
+Employees capacity: 1102 workers 684 technicians 378 engineers 
+Employees: 0 workers 0 technicians 0 engineers 
+Access to warehouses: #1 #2 #4 #9 #10 #18 #19 #21 #22 #27 #35 #36 #44 #49 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [5495525, 5859363, 6329377, 834816, 869893, 3175895, 5952386, 4297589, 3435883]
+number of times this factory has been occupied: 11
+
+#14: Location: Makkah | Working hours: 18 | Operating cost: 7443
+Employees capacity: 728 workers 634 technicians 207 engineers 
+Employees: 728 workers 566 technicians 207 engineers 
+Access to warehouses: #5 #12 #13 #16 #20 #29 #32 #38 #39 #43 #45 #46 #48 #50 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [6810959, 4754038, 5840875, 1242915, 1017965, 3595142, 4416368, 4155495, 4181535]
+number of times this factory has been occupied: 0
+
+#15: Location: Makkah | Working hours: 18 | Operating cost: 6339
+Employees capacity: 581 workers 627 technicians 281 engineers 
+Employees: 581 workers 472 technicians 196 engineers 
+Access to warehouses: #5 #12 #13 #16 #20 #29 #32 #38 #39 #43 #45 #46 #48 #50 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [6810959, 4754038, 5840875, 1242915, 1017965, 3595142, 4416368, 4155495, 4181535]
+number of times this factory has been occupied: 0
+
+#16: Location: Jeddah | Working hours: 12 | Operating cost: 5322
+Employees capacity: 1122 workers 493 technicians 301 engineers 
+Employees: 488 workers 385 technicians 172 engineers 
+Access to warehouses: #3 #7 #25 #26 #28 #34 #37 #40 #42 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [5366252, 4121149, 3988351, 809330, 726592, 2276234, 4704629, 3116521, 2731407]
+number of times this factory has been occupied: 1
+
+#17: Location: Dammam | Working hours: 18 | Operating cost: 8253
+Employees capacity: 721 workers 653 technicians 270 engineers 
+Employees: 721 workers 610 technicians 270 engineers 
+Access to warehouses: #6 #8 #11 #14 #15 #17 #23 #24 #30 #31 #33 #41 #47 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [4807156, 4805448, 5669074, 1149261, 1022748, 2955429, 5564540, 3056216, 4034742]
+number of times this factory has been occupied: 0
+
+#18: Location: Jeddah | Working hours: 24 | Operating cost: 6780
+Employees capacity: 791 workers 582 technicians 299 engineers 
+Employees: 710 workers 463 technicians 208 engineers 
+Access to warehouses: #3 #7 #25 #26 #28 #34 #37 #40 #42 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [5366252, 4121149, 3988351, 809330, 726592, 2276234, 4704629, 3116521, 2731407]
+number of times this factory has been occupied: 0
+
+#19: Location: Makkah | Working hours: 12 | Operating cost: 8577
+Employees capacity: 1036 workers 485 technicians 338 engineers 
+Employees: 929 workers 485 technicians 320 engineers 
+Access to warehouses: #5 #12 #13 #16 #20 #29 #32 #38 #39 #43 #45 #46 #48 #50 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [6810959, 4754038, 5840875, 1242915, 1017965, 3595142, 4416368, 4155495, 4181535]
+number of times this factory has been occupied: 0
+
+#20: Location: Makkah | Working hours: 18 | Operating cost: 6969
+Employees capacity: 649 workers 501 technicians 292 engineers 
+Employees: 649 workers 501 technicians 224 engineers 
+Access to warehouses: #5 #12 #13 #16 #20 #29 #32 #38 #39 #43 #45 #46 #48 #50 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [6810959, 4754038, 5840875, 1242915, 1017965, 3595142, 4416368, 4155495, 4181535]
+number of times this factory has been occupied: 0
+
+#21: Location: Jeddah | Working hours: 18 | Operating cost: 7704
+Employees capacity: 1035 workers 582 technicians 282 engineers 
+Employees: 773 workers 521 technicians 251 engineers 
+Access to warehouses: #3 #7 #25 #26 #28 #34 #37 #40 #42 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [5366252, 4121149, 3988351, 809330, 726592, 2276234, 4704629, 3116521, 2731407]
+number of times this factory has been occupied: 0
+
+#22: Location: Riyadh | Working hours: 12 | Operating cost: 0
+Employees capacity: 986 workers 650 technicians 265 engineers 
+Employees: 0 workers 0 technicians 0 engineers 
+Access to warehouses: #1 #2 #4 #9 #10 #18 #19 #21 #22 #27 #35 #36 #44 #49 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [5987365, 6321103, 6820097, 1256516, 1016903, 3476865, 6564336, 4764189, 3662463]
+number of times this factory has been occupied: 2
+
+#23: Location: Dammam | Working hours: 18 | Operating cost: 6693
+Employees capacity: 570 workers 517 technicians 329 engineers 
+Employees: 570 workers 517 technicians 209 engineers 
+Access to warehouses: #6 #8 #11 #14 #15 #17 #23 #24 #30 #31 #33 #41 #47 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [4807156, 4805448, 5669074, 1149261, 1022748, 2955429, 5564540, 3056216, 4034742]
+number of times this factory has been occupied: 0
+
+#24: Location: Dammam | Working hours: 18 | Operating cost: 5871
+Employees capacity: 615 workers 404 technicians 315 engineers 
+Employees: 579 workers 404 technicians 190 engineers 
+Access to warehouses: #6 #8 #11 #14 #15 #17 #23 #24 #30 #31 #33 #41 #47 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [4807156, 4805448, 5669074, 1149261, 1022748, 2955429, 5564540, 3056216, 4034742]
+number of times this factory has been occupied: 0
+
+#25: Location: Riyadh | Working hours: 18 | Operating cost: 0
+Employees capacity: 737 workers 604 technicians 353 engineers 
+Employees: 0 workers 0 technicians 0 engineers 
+Access to warehouses: #1 #2 #4 #9 #10 #18 #19 #21 #22 #27 #35 #36 #44 #49 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [6007165, 6339993, 6840952, 1270916, 1022013, 3486415, 6590736, 4777929, 3669353]
+number of times this factory has been occupied: 0
+
+#26: Location: Jeddah | Working hours: 24 | Operating cost: 6300
+Employees capacity: 1108 workers 663 technicians 231 engineers 
+Employees: 653 workers 440 technicians 189 engineers 
+Access to warehouses: #3 #7 #25 #26 #28 #34 #37 #40 #42 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [5366252, 4121149, 3988351, 809330, 726592, 2276234, 4704629, 3116521, 2731407]
+number of times this factory has been occupied: 0
+
+#27: Location: Dammam | Working hours: 12 | Operating cost: 7011
+Employees capacity: 730 workers 517 technicians 375 engineers 
+Employees: 687 workers 453 technicians 248 engineers 
+Access to warehouses: #6 #8 #11 #14 #15 #17 #23 #24 #30 #31 #33 #41 #47 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [4807156, 4805448, 5669074, 1149261, 1022748, 2955429, 5564540, 3056216, 4034742]
+number of times this factory has been occupied: 0
+
+#28: Location: Makkah | Working hours: 24 | Operating cost: 7035
+Employees capacity: 578 workers 760 technicians 325 engineers 
+Employees: 578 workers 534 technicians 233 engineers 
+Access to warehouses: #5 #12 #13 #16 #20 #29 #32 #38 #39 #43 #45 #46 #48 #50 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [6810959, 4754038, 5840875, 1242915, 1017965, 3595142, 4416368, 4155495, 4181535]
+number of times this factory has been occupied: 0
+
+#29: Location: Dammam | Working hours: 18 | Operating cost: 5892
+Employees capacity: 997 workers 612 technicians 266 engineers 
+Employees: 537 workers 421 technicians 195 engineers 
+Access to warehouses: #6 #8 #11 #14 #15 #17 #23 #24 #30 #31 #33 #41 #47 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [4807156, 4805448, 5669074, 1149261, 1022748, 2955429, 5564540, 3056216, 4034742]
+number of times this factory has been occupied: 0
+
+#30: Location: Jeddah | Working hours: 18 | Operating cost: 7362
+Employees capacity: 822 workers 682 technicians 292 engineers 
+Employees: 699 workers 486 technicians 261 engineers 
+Access to warehouses: #3 #7 #25 #26 #28 #34 #37 #40 #42 
+Materials: [aluminium grams, plastic grams, glass grams, silicon mg , gold mg, copper mg, iron grams, chrome mg, silver mg]
+Amount: [5366252, 4121149, 3988351, 809330, 726592, 2276234, 4704629, 3116521, 2731407]
+number of times this factory has been occupied: 0
+

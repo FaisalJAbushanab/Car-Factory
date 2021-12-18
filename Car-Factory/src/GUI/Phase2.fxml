@@ -58,6 +58,15 @@
             <Font size="16.0" />
          </font>
       </Label>
+      <Button fx:id="tBtn2" layoutX="667.0" layoutY="232.0" mnemonicParsing="false" onAction="#popUpTable" opacity="0.0" prefHeight="44.0" prefWidth="113.0" text="Table View">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../table.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
       <Button fx:id="fBtn2" layoutX="689.0" layoutY="281.0" mnemonicParsing="false" onAction="#popUpFactories" opacity="0.0" prefHeight="91.0" prefWidth="91.0">
          <graphic>
             <ImageView fitHeight="69.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">

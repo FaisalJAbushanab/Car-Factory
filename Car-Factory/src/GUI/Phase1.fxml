@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -27,7 +28,10 @@
       <TextArea id="phase1Output" fx:id="phase1Output" layoutX="43.0" layoutY="278.0" prefHeight="302.0" prefWidth="619.0">
          <font>
             <Font size="18.0" />
-         </font></TextArea>
+         </font>
+         <tooltip>
+            <Tooltip text="area where the main output should appear" />
+         </tooltip></TextArea>
       <Label layoutX="58.0" layoutY="188.0" prefHeight="25.0" prefWidth="135.0" text="Number of days" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="16.0" />
@@ -38,19 +42,22 @@
             <Font name="System Bold Italic" size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="phase1Days" layoutX="227.0" layoutY="188.0" prefHeight="25.0" prefWidth="56.0" />
-      <TextField fx:id="phase1Max" layoutX="371.0" layoutY="229.0" prefHeight="25.0" prefWidth="56.0" />
-      <Button fx:id="tBtn1" layoutX="668.0" layoutY="232.0" mnemonicParsing="false" onAction="#popUpTable" opacity="0.0" prefHeight="44.0" prefWidth="113.0" text="Table View">
-         <graphic>
-            <ImageView fitHeight="44.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../table.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button fx:id="run1" layoutX="515.0" layoutY="229.0" mnemonicParsing="false" onAction="#runSimulation" prefHeight="25.0" prefWidth="66.0" text="Run" />
-      <Button fx:id="reset1" layoutX="587.0" layoutY="229.0" mnemonicParsing="false" onAction="#resetSimulation" prefHeight="25.0" prefWidth="66.0" text="Reset" />
+      <TextField fx:id="phase1Days" layoutX="227.0" layoutY="188.0" prefHeight="25.0" prefWidth="56.0">
+         <tooltip>
+            <Tooltip text="the number of days you want this simulation to run through" />
+         </tooltip></TextField>
+      <TextField fx:id="phase1Max" layoutX="371.0" layoutY="229.0" prefHeight="25.0" prefWidth="56.0">
+         <tooltip>
+            <Tooltip text="the number of requests that shouldn't be exceeded each day" />
+         </tooltip></TextField>
+      <Button fx:id="run1" layoutX="515.0" layoutY="229.0" mnemonicParsing="false" onAction="#runSimulation" prefHeight="25.0" prefWidth="66.0" text="Run">
+         <tooltip>
+            <Tooltip text="Run the simulation and generate reports" />
+         </tooltip></Button>
+      <Button fx:id="reset1" layoutX="587.0" layoutY="229.0" mnemonicParsing="false" onAction="#resetSimulation" prefHeight="25.0" prefWidth="66.0" text="Reset">
+         <tooltip>
+            <Tooltip text="Reset the output " />
+         </tooltip></Button>
       <Button layoutY="108.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="397.0" style="-fx-background-color: #243342; -fx-background-radius: 0; -fx-border-style: hidden hidden solid hidden; -fx-border-color: #f1c40f; -fx-border-width: 2;" text="Phase 1" textFill="WHITE">
          <font>
             <Font size="20.0" />
@@ -60,13 +67,28 @@
          <font>
             <Font size="20.0" />
          </font>
+         <tooltip>
+            <Tooltip text="move to phase2" />
+         </tooltip>
       </Button>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d3d3d3" height="44.0" layoutX="-10.0" layoutY="605.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="270.0" />
-      <Label fx:id="pos1" layoutX="12.0" layoutY="608.0" prefHeight="25.0" prefWidth="240.0" textFill="RED" wrapText="true">
+      <Label fx:id="pos1" layoutX="15.0" layoutY="603.0" prefHeight="32.0" prefWidth="235.0" textFill="RED">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
+      <Button fx:id="tBtn1" layoutX="668.0" layoutY="232.0" mnemonicParsing="false" onAction="#popUpTable" opacity="0.0" prefHeight="44.0" prefWidth="113.0" text="Table View">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../table.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="the main output in a table form" />
+         </tooltip>
+      </Button>
       <Button fx:id="fBtn1" layoutX="689.0" layoutY="281.0" mnemonicParsing="false" onAction="#popUpFactories" opacity="0.0" prefHeight="91.0" prefWidth="91.0">
          <graphic>
             <ImageView fitHeight="69.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
@@ -75,6 +97,9 @@
                </image>
             </ImageView>
          </graphic>
+         <tooltip>
+            <Tooltip text="Factories info summary" />
+         </tooltip>
       </Button>
       <Button fx:id="wBtn1" layoutX="689.0" layoutY="384.0" mnemonicParsing="false" onAction="#popUpWarehouses" opacity="0.0" prefHeight="91.0" prefWidth="91.0">
          <graphic>
@@ -84,6 +109,9 @@
                </image>
             </ImageView>
          </graphic>
+         <tooltip>
+            <Tooltip text="Warehouses info summary" />
+         </tooltip>
       </Button>
       <Button fx:id="rBtn1" layoutX="689.0" layoutY="485.0" mnemonicParsing="false" onAction="#popUpRequests" opacity="0.0" prefHeight="91.0" prefWidth="91.0">
          <graphic>
@@ -93,6 +121,9 @@
                </image>
             </ImageView>
          </graphic>
+         <tooltip>
+            <Tooltip text="Requests info summary" />
+         </tooltip>
       </Button>
    </children>
 </AnchorPane>
